@@ -1,7 +1,8 @@
-# AppArmor profile for The Tor Browser Bundle (TBB) #
+# AppArmor profile for whole system #
 
-An AppArmor profile to confine The Tor Browser Bundle (TBB). This profile
-is developed by the Whonix team. TBB is developed by The Tor Project.
+Confines all, systemd, init, all systemd units, apt, all applications.
+
+Does not confine initramfs.
 
 This package is produced independently of, and carries no guarantee from,
 The Tor Project.
@@ -41,7 +42,7 @@ sudo apt-get install apparmor-profile-everything
 
 ## How to Build deb Package ##
 
-Replace `apparmor-profile-everything` with the actual name of this package with `apparmor-profile-everything` and see [instructions](https://www.whonix.org/wiki/Dev/Build_Documentation/apparmor-profile-everything).
+Replace `apparmor-profile-torbrowser` with the actual name of this package with `apparmor-profile-everything` and see [instructions](https://www.whonix.org/wiki/Dev/Build_Documentation/apparmor-profile-torbrowser).
 
 ## Contact ##
 
