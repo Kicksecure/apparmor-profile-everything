@@ -2,10 +2,10 @@ apparmor-profile-everything (3:0.2-1) unstable; urgency=low
 
   * New upstream version.
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Sun, 31 Oct 2019 13:00:00 +0000
+ -- Patrick Schleizer <adrelanos@riseup.net>  Thu, 31 Oct 2019 13:00:00 +0000
 
 apparmor-profile-everything (3:0.1-2) unstable; urgency=low
 
   * Initial release.
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Sun, 31 Oct 2019 12:00:00 +0000
+ -- Patrick Schleizer <adrelanos@riseup.net>  Thu, 31 Oct 2019 12:00:00 +0000
