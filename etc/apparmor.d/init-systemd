@@ -43,12 +43,31 @@ profile init-systemd /lib/systemd/** flags=(attach_disconnected) {
   capability sys_tty_config,
   capability syslog,
 
-  ## Signals are needed to start/stop services.
-  ## TODO: Restrict if possible.
-  signal,
+  ## Allow us to send ourselves signals.
+  signal (receive, send) peer=init-systemd,
+  signal (receive, send) peer=init-systemd//null-/usr/sbin/jitterentropy-rngd,
+  signal (receive, send) peer=init-systemd//null-/lib/systemd/systemd-udevd,
+  signal (receive, send) peer=init-systemd//null-/sbin/auditd,
+  signal (receive, send) peer=init-systemd//null-/usr/lib/whonix-firewall/enable-firewall,
+  signal (receive, send) peer=init-systemd//null-/usr/lib/whonix-firewall/enable-firewall//null-/usr/bin/whonix_firewall,
+  signal (receive, send) peer=init-systemd//null-/usr/lib/whonix-firewall/enable-firewall//null-/usr/bin/whonix_firewall//null-/usr/bin/whonix-gateway-firewall,
+  signal (receive, send) peer=init-systemd//null-/usr/lib/whonix-firewall/enable-firewall//null-/usr/bin/whonix_firewall//null-/usr/bin/whonix-gateway-firewall//null-/usr/sbin/xtables-nft-multi,
 
-  ## TODO: Restrict if possible.
-  ptrace (read, readby, tracedby),
+  ## Allow us to kill any process,
+  signal set=(term, kill, stop, int),
+
+  ## Allow us to gain some information about ourselves, whonixcheck
+  ## and unconfined processes.
+  ptrace read peer=init-systemd,
+  ptrace read peer=init-systemd//null-/usr/sbin/jitterentropy-rngd,
+  ptrace read peer=init-systemd//null-/lib/systemd/systemd-udevd,
+  ptrace read peer=init-systemd//null-/sbin/auditd,
+  ptrace read peer=init-systemd//null-/usr/lib/whonix-firewall/enable-firewall,
+  ptrace read peer=init-systemd//null-/usr/lib/whonix-firewall/enable-firewall//null-/usr/bin/whonix_firewall,
+  ptrace read peer=init-systemd//null-/usr/lib/whonix-firewall/enable-firewall//null-/usr/bin/whonix_firewall//null-/usr/bin/whonix-gateway-firewall,
+  ptrace read peer=init-systemd//null-/usr/lib/whonix-firewall/enable-firewall//null-/usr/bin/whonix_firewall//null-/usr/bin/whonix-gateway-firewall//null-/usr/sbin/xtables-nft-multi,
+  ptrace read peer=/usr/bin/whonixcheck,
+  ptrace read peer=unconfined,
 
   ## TODO: Restrict if possible.
   unix,
@@ -74,8 +93,7 @@ profile init-systemd /lib/systemd/** flags=(attach_disconnected) {
   ## Only executing the Tor Browser is allowed.
   ## TODO: Restrict access.
   /home/ r,
-  ## TODO: Restrict this permission to the owner.
-  /home/** rwlk,
+  owner /home/** rwlk,
 
   ## Only "start-tor-browser" and "firefox" is executable as the
   ## Tor Browser AppArmor profile will handle the rest.
@@ -106,6 +124,7 @@ profile init-systemd /lib/systemd/** flags=(attach_disconnected) {
   /usr/{,local/}share/** rpix,
   /usr/{,local/}include/ r,
   /usr/{,local/}include/** rpix,
+  owner /usr/lib/python3/dist-packages/*/__pycache__/ rwm,
   owner /usr/lib/python3/dist-packages/*/__pycache__/** rwm,
   /opt/ r,
   /opt/** rpix,
@@ -284,6 +303,6 @@ profile init-systemd /lib/systemd/** flags=(attach_disconnected) {
   /{,var/}run/** rw,
   /{,var/}run/shm/** rwl,
   owner /{,var/}run/** rwk,
-  owner /var/swapfile w,
+  owner /var/swapfile rw,
 
 }
