@@ -1,0 +1,107 @@
+commit 4b5fd6c6c900678f4886728042189c3616533c10
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 11:28:50 2019 -0400
+
+    rename scripts to avoid potential future name conflict
+
+commit 6665a49fefa168f98927e3c6162c94a2374e1f3a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 11:27:57 2019 -0400
+
+    add /var/lib/dpkg/info/** to dangerous-files
+
+commit 2014ff22fc8d38a480cda778ddad8dc02a3badbd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 11:25:37 2019 -0400
+
+    copyright
+
+commit 97e265db9131905db973c7469eb31d9bc986b364
+Merge: 11b214f 90a3c7b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 11:24:33 2019 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 90a3c7bd400384c91d3c1c630128fe3d1b8b1d4d
+Merge: 11b214f 3cea22f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 15:23:30 2019 +0000
+
+    Merge pull request #1 from madaidan/apparmor
+    
+    Add profiles
+
+commit 11b214f3ebfdfed0f0d8727cabb92afdb5f9bbf1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 11:22:59 2019 -0400
+
+    trigger initramfs update
+    
+    activate-noawait update-initramfs
+
+commit 3cea22fddee8dcba89d812cf3f49ad3419600480
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Oct 31 15:12:46 2019 +0000
+
+    Licensing
+
+commit 836ea79544fadacbebea965e532820186ff46844
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Oct 31 15:12:34 2019 +0000
+
+    Licensing
+
+commit 0bd299f47788fdd01253f410084738167060e09a
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Oct 31 15:12:02 2019 +0000
+
+    Licensing
+
+commit 29b4ebd55a5cc2e6829bab2d102b1375415a0006
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Oct 31 15:11:21 2019 +0000
+
+    Update apt-get
+
+commit f627ce32b6dbbd50b8d3d21c1d9721e11950fa05
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Oct 31 15:11:09 2019 +0000
+
+    Licensing
+
+commit 11495973bfcae2ed2a031c41c48e6568436af842
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Oct 31 15:05:01 2019 +0000
+
+    Create dangerous-files
+
+commit 83238d5f7e8226a7b8355ef505b55515b5ada078
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Oct 31 15:04:30 2019 +0000
+
+    Create apt-get
+
+commit 2400b9258151599e573ba9de589e1b8dc7218f82
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Oct 31 15:04:08 2019 +0000
+
+    Create init-systemd
+
+commit 49d1505d6ea762147cbe96d9a10250089d816397
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Oct 31 15:03:23 2019 +0000
+
+    Create apparmor
+
+commit 539b0875def0131caca2eaae61a81cb5acec15ec
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Oct 31 15:02:51 2019 +0000
+
+    Create apparmor
+
+commit 703469cbbe509d3e17b0b6725e267d0ee13988c5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 10:57:49 2019 -0400
+
+    initial commit
