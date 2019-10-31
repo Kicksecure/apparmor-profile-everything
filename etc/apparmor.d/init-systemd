@@ -276,7 +276,7 @@ profile init-systemd /lib/systemd/** flags=(attach_disconnected) {
   /var/{,cache,lib,log}/ r,
   /var/cache/** r,
   /var/{,lib,log}/** rw,
-  /var/lib/dpkg/info/** rwpix,
+  /var/lib/dpkg/info/** rpix,
   owner /var/{,cache,lib,db}/** rwkl,
   owner /var/log/wtmp rwk,
   owner /var/spool/cron/crontabs/ r,

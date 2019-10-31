@@ -37,6 +37,8 @@
   audit deny /usr/lib/apt/ w,
   audit deny /usr/lib/apt/** w,
   audit deny /usr/bin/apt-get w,
+  audit deny /var/lib/dpkg/info/ w,
+  audit deny /var/lib/dpkg/info/** w,
 
   ## Explicitly deny access to the AppArmor profiles
   ## to prevent a malicious program from modifying
