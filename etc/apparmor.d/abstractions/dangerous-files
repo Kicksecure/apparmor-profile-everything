@@ -1,0 +1,63 @@
+  ## This abstraction denies access to dangerous files/capabilities
+  ## that may result in a bypass of the full system policy,
+  ## kernel privileges or other unwanted things.
+  ##
+  ## Many things are blocked in the full system policy
+  ## already but this prevents the errors from spamming
+  ## the logs.
+
+  ## Deny write access to files that can allow
+  ## disabling AppArmor.
+  ##
+  ## Compromising the initramfs can disable AppArmor
+  ## as the profile has to be enforced in the
+  ## initramfs.
+  ##
+  ## Compromising the bootloader can disable AppArmor
+  ## with the "apparmor=0" boot parameter.
+  audit deny /**/initramfs-tools/ w,
+  audit deny /**/initramfs-tools/** w,
+  audit deny /**/grub.d/ w,
+  audit deny /**/grub.d/** w,
+  audit deny /**/grub/ w,
+  audit deny /**/grub/** w,
+
+  ## Disallow any changes to APT to prevent an
+  ## attacker from abusing APT's Invoke options, using
+  ## a malicious package from a local repository to replace
+  ## the kernel or overwriting APT binaries.
+  ##
+  ## This is needed as APT has access to /boot and the kernel/initrd
+  ## images to update the kernel which is a dangerous permission.
+  audit deny /etc/apt/ w,
+  audit deny /etc/apt/** w,
+  audit deny /usr/lib/apt/ w,
+  audit deny /usr/lib/apt/** w,
+  audit deny /usr/bin/apt-get w,
+
+  ## Explicitly deny access to the AppArmor profiles
+  ## to prevent a malicious program from modifying
+  ## them.
+  #audit deny /etc/apparmor.d/ rw,
+  #audit deny /etc/apparmor.d/** rw,
+
+  ## /dev/{,k}mem and /dev/port give direct, read-write access to
+  ## memory which is extremely dangerous.
+  audit deny /dev/{,k}mem rw,
+  audit deny /dev/port rw,
+
+  ## We do not want any MAC changes as that would allow
+  ## for a bypass of the policy.
+  audit deny capability mac_admin,
+  audit deny capability mac_override,
+
+  ## ioperm(), iopl(), /dev/{,k}mem, /proc/kcore and MSRs
+  ## can be abused to get kernel privileges and write access
+  ## to arbitrary memory. The sys_rawio capability grants
+  ## access to them so it is denied.
+  audit deny capability sys_rawio,
+
+  ## Deny write access to firmware binaries to prevent an
+  ## attacker from replacing them with malicious versions.
+  audit deny /**/firmware/ w,
+  audit deny /**/firmware/** w,
