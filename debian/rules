@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+## Copyright (C) 2012 - 2019 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_install:
+	## TODO
+	#dh_apparmor --profile-name='home.tor-browser.firefox'
+	dh_install
+
+override_dh_installchangelogs:
+	dh_installchangelogs changelog.upstream upstream

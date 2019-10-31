@@ -1,0 +1,6 @@
+## Copyright (C) 2019 - 2019 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+version=4
+opts=filenamemangle=s/.+\/v?(\d\S+)\.tar\.gz/apparmor-profile-everything-$1\.tar\.gz/ \
+  https://github.com/Whonix/apparmor-profile-everything/tags .*/v?(\d\S+)\.tar\.gz
