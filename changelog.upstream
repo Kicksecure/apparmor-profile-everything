@@ -1,3 +1,41 @@
+commit 5c939dcc60b74d1b57e1fdc97021702b1c0d2c6b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 16:03:57 2019 +0000
+
+    readme
+
+commit 8e6d4c41695aa81364412dd7f38cbb00db8862cf
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 15:59:44 2019 +0000
+
+    fix lintian warnings
+
+commit e60a973e021c08b7f86434f6cc18a80aac2f0674
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 15:59:27 2019 +0000
+
+    apparmor debhelper integration
+
+commit f1df167de05f3d2f88838366d661d039c8be1716
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 15:49:28 2019 +0000
+
+    fix lintian warning
+
+commit 6c6745018276616f29e6d17d2405571bd84bae7a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 15:42:14 2019 +0000
+
+    add changelog.upstream
+
+commit 4535cd1f1f7e9bf82b9a5037542655e69f60ae1c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 15:42:03 2019 +0000
+
+    chmod +x
+    
+    to fix lintian warning
+
 commit 4b5fd6c6c900678f4886728042189c3616533c10
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Oct 31 11:28:50 2019 -0400
