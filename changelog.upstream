@@ -1,3 +1,37 @@
+commit fb0fd205748b7b20968c6a05f1e5cb1f016be12b
+Merge: 7ad4b2f 72931b1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 16:44:36 2019 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 72931b1ca35c76bc1d84123d399b684e13931834
+Merge: 7ad4b2f d0c0afd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 16:43:54 2019 +0000
+
+    Merge pull request #2 from madaidan/improve-apparmor
+    
+    Improve profile
+
+commit d0c0afd9b651bb67fbec290860d86d85587b4a3a
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Oct 31 16:36:54 2019 +0000
+
+    Depend on apparmor-profile-torbrowser
+
+commit efd3296ed27b769637d4766f6087aa17b9d16108
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Oct 31 16:35:57 2019 +0000
+
+    Improve profile
+
+commit 7ad4b2fb0d9e7aedb247b6e93daf3e6559fae4a2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 16:04:51 2019 +0000
+
+    bumped changelog version
+
 commit 5c939dcc60b74d1b57e1fdc97021702b1c0d2c6b
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Oct 31 16:03:57 2019 +0000
