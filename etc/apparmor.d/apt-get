@@ -1,0 +1,170 @@
+## Copyright (C) 2012 - 2018 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+#include <tunables/global>
+
+profile /usr/bin/apt-get flags=(attach_disconnected) {
+  #include <abstractions/base>
+  ##include <abstractions/dangerous-files>
+
+  ## TODO: Further restict these. Use extended capability rules.
+  ## TODO: Review if all of these are needed, especially sys_admin,
+  ## sys_module and sys_rawio.
+  capability audit_write,
+  capability chown,
+  capability dac_override,
+  capability dac_read_search,
+  capability fowner,
+  capability fsetid,
+  capability kill,
+  capability setgid,
+  capability setuid,
+  capability mknod,
+  capability sys_admin,
+  capability sys_chroot,
+  capability sys_ptrace,
+  capability sys_rawio,
+  capability sys_module,
+  capability sys_tty_config,
+
+  ## Network access.
+  ##
+  ## Only IPv4 TCP traffic is allowed as Whonix
+  ## disables IPv6 and Tor only supports TCP.
+  network inet tcp,
+
+  ## TODO: Deny if possible.
+  ptrace read,
+
+  / r,
+
+  ## Programs and libraries.
+  ## TODO: Allow execution of only needed binaries.
+  /{,usr/,usr/local/}{,s}bin/ r,
+  /{,usr/,usr/local/}{,s}bin/** rwmix,
+  owner /{,usr/,usr/local/}{,s}bin/** rwixl,
+  /opt/ r,
+  /opt/** rwmix,
+  owner /opt/** rwixl,
+  /lib{,32,64}/ r,
+  /lib{,32,64}/** rwmix,
+  owner /lib{,32,64}/** rwixl,
+  /usr/{,local/}lib/ r,
+  /usr/{,local/}lib/** rwmixlk,
+  owner /usr/{,local/}lib/** rwmixlk,
+  /usr/{,local/}{,share,include}/ r,
+  /usr/{,local/}{,share,include}/** rwix,
+  owner /usr/{,local/}{,share,include}/** rwixl,
+  /usr/{,local/}games/ r,
+  /usr/{,local/}games/** rw,
+  owner /usr/{,local/}games/** rwl,
+
+  ## Contains kernel module source files.
+  ## TODO: Make sure this cannot be abused.
+  /usr/src/ r,
+  /usr/src/** rw,
+  owner /usr/src/** rwixl,
+
+  ## Sysfs access.
+  ## TODO: Restrict /sys/devices/ access.
+  owner /sys/module/*/ r,
+  owner /sys/module/*/{,refcnt,coresize,uevent,initstate} r,
+  owner /sys/module/*/holders/ r,
+  owner /sys/kernel/security/apparmor/ r,
+  owner /sys/devices/ r,
+  owner /sys/devices/** r,
+  owner /sys/devices/*:[0-9][0-9]/*:[0-9][0-9]/ r,
+  owner /sys/devices/*:[0-9][0-9]/*:[0-9][0-9]/*:[0-9][0-9]/ r,
+  owner /sys/devices/pci[0-9]*/** r,
+  owner /sys/devices/*/ r,
+  owner /sys/devices/**/modalias r,
+  owner /sys/devices/**/{,power,input}/ r,
+  owner /sys/devices/platform/*/{,tty,serio[0-9],rtc,regulator,cmos_nvram0}/ r,
+  owner /sys/devices/pnp0/[0-9][0-9]:[0-9][0-9]/ r,
+  owner /sys/devices/platform/{,reg-dummy,rtc_cmos,vesa-framebuffer.0,alarmtimer,serial8250,i8042,pcspkr}/ r,
+  owner /sys/devices/{,uprobe,kprobe,msr}/format/ r,
+  owner /sys/devices/msr/events/ r,
+  owner /sys/devices/system/cpu/{,cpu[0-9]*/}*/ r,
+  owner /sys/devices/system/cpu/modalias r,
+  owner /sys/devices/system/{,machinecheck,edac,edac/mc,container,clockevents,clocksource,node,memory}/ r,
+  owner /sys/devices/system/machinecheck/machinecheck[0-9]*/ r,
+  owner /sys/devices/system/clock{,source,events}/clock{,source,event}[0-9]*/ r,
+  owner /sys/devices/system/clockevents/broadcast/ r,
+  owner /sys/devices/system/{,memory,node}/{,memory,node}[0-9]*/ r,
+  owner /sys/devices/virtual/** r,
+  owner /sys/block/ r,
+  owner /sys/bus/ r,
+  owner /sys/class/ r,
+  owner /sys/kernel/security/apparmor/.replace w,
+
+  ## Procfs access.
+  /proc/ r,
+  /proc/*/fd/ r,
+  /proc/*/{,stat,comm,cmdline} r,
+  /proc/*/task/ r,
+  owner /proc/*/{,environ,sched,mountinfo,mounts,loginuid} r,
+  owner /proc/{,cmdline,modules,swaps,devices} r,
+  owner /proc/sys/kernel/random/boot_id r,
+  owner /proc/sys/kernel/osrelease r,
+
+  ## Tmpfs access.
+  ##
+  ## Read-write access is only given to files it is owner of.
+  owner /tmp/ r,
+  /tmp/** rmix,
+  owner /tmp/** rwmlix,
+
+  ## Config files.
+  ## TODO: Restrict access.
+  /etc/ r,
+  /etc/** rwmlkpix,
+  /usr/local/etc/ r,
+  /usr/local/etc/** rwmlkpix,
+
+  ## Device access.
+  ## TODO: Restrict further.
+  /dev/ r,
+  /dev/console rw,
+  /dev/random rw,
+  /dev/urandom rw,
+  /dev/null rw,
+  /dev/zero rw,
+  /dev/full rw,
+  /dev/core rw,
+  /dev/fd rw,
+  /dev/stdout rw,
+  /dev/tty rw,
+  /dev/tty[0-9]* rw,
+  /dev/pts/ r,
+  /dev/pts/* rw,
+  owner /dev/ptmx rw,
+  owner /dev/sda r,
+  owner /dev/sda[0-9]* r,
+  owner /dev/mapper/control rw,
+
+  ## /var, /run access.
+  ## TODO: Restrict.
+  owner /var/ r,
+  /var/** rwmpixkl,
+  /run/** rwmpixkl,
+
+  ## Write access to /boot and kernel/initrd images are
+  ## needed to update the kernel.
+  ## TODO: Give access to only /boot/vmlinuz* etc.
+  owner /boot/ r,
+  owner /boot/** rwl,
+  owner /vmlinuz{,.old}{,.[0-9]*} rwl,
+  owner /initrd.img{,.old}{,.[0-9]*} rwl,
+
+  ## Needed for base-files.
+  owner /root/.profile rw,
+
+  owner /mnt/shared/ w,
+  owner /srv/ r,
+  owner /home/ r,
+
+  ## Needed for security-misc.
+  ## TODO: Remove.
+  /home/*/ w,
+
+}
