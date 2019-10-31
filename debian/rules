@@ -9,8 +9,8 @@
 	dh $@
 
 override_dh_install:
-	## TODO
-	#dh_apparmor --profile-name='home.tor-browser.firefox'
+	dh_apparmor --profile-name='apt-get'
+	dh_apparmor --profile-name='init-systemd'
 	dh_install
 
 override_dh_installchangelogs:
