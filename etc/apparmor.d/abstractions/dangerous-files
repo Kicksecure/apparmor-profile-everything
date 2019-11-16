@@ -66,3 +66,9 @@
   ## attacker from replacing them with malicious versions.
   audit deny /**/firmware/ w,
   audit deny /**/firmware/** w,
+  
+  ## Deny write access to SSL certificates to prevent an
+  ## attacker from installing a root certificate to launch
+  ## man-in-the-middle attacks on TLS traffic.
+  audit deny /**/ssl/certs/ w,
+  audit deny /**/ssl/certs/** w,
