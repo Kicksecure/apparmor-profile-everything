@@ -64,10 +64,11 @@ profile init-systemd /lib/systemd/** flags=(attach_disconnected) {
   ## TODO: Restrict access.
   dbus,
 
-  ## Allow unmounting and mounting.
+  ## Allow mounting, unmounting and remounting.
   ## TODO: Restrict access.
   mount,
   umount,
+  remount,
   / r,
 
   ## Home directory access.
