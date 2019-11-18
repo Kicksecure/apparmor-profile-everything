@@ -1,3 +1,75 @@
+commit 0c7193b2565c844abf0dbc62ea51f815dbaa4465
+Merge: c4f7fd6 71f321a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Nov 17 11:21:11 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 71f321a5884baf2296cb502963e5ed91aeccaff1
+Merge: c4f7fd6 5c89c5d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Nov 17 16:20:51 2019 +0000
+
+    Merge pull request #5 from madaidan/remounting
+    
+    Allow remounting
+
+commit c4f7fd6c94a210470d931572a5d749c793e7d409
+Merge: 798f071 408e81e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Nov 16 10:00:29 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 408e81e8349e21a7310fc6ab6ef039c6798bfc01
+Merge: 798f071 f03230f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Nov 16 15:00:03 2019 +0000
+
+    Merge pull request #4 from madaidan/ssl-certs
+    
+    Deny write access to SSL certificates
+
+commit 5c89c5df0cf2c9fb6ca5be1fa6264a23f4dacccd
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 16 14:51:38 2019 +0000
+
+    Allow remounting
+
+commit f03230fc0b90ee44b8a7c1f6b7b4e47bf83f2f8e
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 16 14:42:01 2019 +0000
+
+    Deny write access to SSL certificates
+
+commit 798f0714474bacbb5bb087bc79535690d5f99f58
+Merge: 19cb0b3 fe361aa
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Nov 15 02:20:34 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit fe361aa997c7d4de52b622dd3a585c814ef8b11c
+Merge: 19cb0b3 7595f90
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Nov 15 07:20:05 2019 +0000
+
+    Merge pull request #3 from madaidan/master
+    
+    Relax ptrace/signal permissions
+
+commit 7595f9047e3ecc801b9525523630c15b49ac59f8
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Nov 14 19:32:54 2019 +0000
+
+    Relax ptrace/signal permissions
+
+commit 19cb0b3ebb0f887a271447c4f98aea93db06ec4a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 31 16:45:08 2019 +0000
+
+    bumped changelog version
+
 commit fb0fd205748b7b20968c6a05f1e5cb1f016be12b
 Merge: 7ad4b2f 72931b1
 Author: Patrick Schleizer <adrelanos@riseup.net>
