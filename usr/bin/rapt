@@ -44,19 +44,16 @@ do
          continue
          ;;
       remove)
-         remove=true
          command+="$1 "
          shift
          continue
          ;;
       purge)
-         remove=true
          command+="$1 "
          shift
          continue
          ;;
       autoremove)
-         remove=true
          command+="$1 "
          shift
          continue
