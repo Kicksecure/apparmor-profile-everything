@@ -268,6 +268,7 @@ profile init-systemd /lib/systemd/** flags=(attach_disconnected) {
   owner /dev/mapper/control rw,
   owner /dev/dm-0 rw,
   owner /dev/mapper/swapfile w,
+  owner /dev/vport2p1 rw,
 
   ## Removable media.
   owner /media/ r,
