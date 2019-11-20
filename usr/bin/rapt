@@ -2,7 +2,7 @@
 
 set -e
 
-## Wrapper for apt-get meant to be used with apparmor-profile-anondist
+## Wrapper for apt-get meant to be used with apparmor-profile-everything
 ## to prevent an attacker abusing apt's command line arguments and the
 ## extra permissions granted in its AppArmor profile.
 ##
