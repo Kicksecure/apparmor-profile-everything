@@ -1,3 +1,55 @@
+commit 42a61302fee9ed580e4f177e3fff4b05bde870c3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Nov 20 03:09:48 2019 -0500
+
+    rapt: fix apt update
+
+commit b81d82e68152f35b033d7396d7d6edb6063ac85b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Nov 20 02:27:03 2019 -0500
+
+    comment
+
+commit 77a6b5bb2c7360ffb806b69686914ea3328d7ad5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 19 18:28:39 2019 -0500
+
+    not needed
+
+commit 0a34b4800d4c3cc6d663ddb4935782c154a125e2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 19 18:25:23 2019 -0500
+
+    initial implementation of restricted APT (rapt)
+
+commit ed470b4ecde76c0f9ca52bd8fa76b77303e6ace1
+Merge: a87ba4c bf88b9c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 19 17:48:41 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit bf88b9c64474aee5554f2372ef6bcb60b49be69e
+Merge: a87ba4c dc7a4b2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 19 22:48:21 2019 +0000
+
+    Merge pull request #6 from madaidan/kvm
+    
+    KVM fix
+
+commit dc7a4b29e1062b363a68ff12d5a0b4e540506786
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Nov 19 20:14:42 2019 +0000
+
+    KVM fix
+
+commit a87ba4c451eda3c3706cc2042ab7870a58e1b8a2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Nov 18 10:10:53 2019 +0000
+
+    bumped changelog version
+
 commit 0c7193b2565c844abf0dbc62ea51f815dbaa4465
 Merge: c4f7fd6 71f321a
 Author: Patrick Schleizer <adrelanos@riseup.net>
