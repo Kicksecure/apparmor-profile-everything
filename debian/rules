@@ -13,5 +13,9 @@ override_dh_install:
 	dh_apparmor --profile-name='init-systemd'
 	dh_install
 
+override_dh_installman:
+	make manpages
+	dh_installman $(CURDIR)/debian/tmp-man/*
+
 override_dh_installchangelogs:
 	dh_installchangelogs changelog.upstream upstream

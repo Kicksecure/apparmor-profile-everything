@@ -5,7 +5,7 @@ Source: apparmor-profile-everything
 Section: misc
 Priority: optional
 Maintainer: Patrick Schleizer <adrelanos@riseup.net>
-Build-Depends: debhelper (>= 12), genmkfile, dh-apparmor
+Build-Depends: debhelper (>= 12), genmkfile, dh-apparmor, ronn
 Homepage: https://www.whonix.org/wiki/AppArmor
 Vcs-Browser: https://github.com/Whonix/apparmor-profile-everything
 Vcs-Git: https://github.com/Whonix/apparmor-profile-everything.git

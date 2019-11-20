@@ -1,6 +1,9 @@
 ## Copyright (C) 2019 - 2019 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
 ## See the file COPYING for copying conditions.
 
-## No use of dpkg database. Mandatory access control (MAC).
+## Expected.
+apparmor-profile-everything: unusual-interpreter usr/bin/rapt #!-S
+
+## It does not. Apparmor mandatory access control only.
 apparmor-profile-everything: uses-dpkg-database-directly etc/apparmor.d/abstractions/dangerous-files
 apparmor-profile-everything: uses-dpkg-database-directly etc/apparmor.d/init-systemd
