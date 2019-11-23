@@ -2,6 +2,9 @@
 
 Confines all, systemd, init, all systemd units, apt, all applications.
 
+Makes pointer leaks less likely.
+https://forums.whonix.org/t/kernel-hardening/7296/227
+
 Does not confine initramfs.
 
 This package is produced independently of, and carries no guarantee from,
