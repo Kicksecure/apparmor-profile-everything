@@ -141,6 +141,10 @@ profile /usr/bin/apt-get flags=(attach_disconnected) {
   owner /dev/sda r,
   owner /dev/sda[0-9]* r,
   owner /dev/mapper/control rw,
+  owner /dev/xvda r,
+  owner /dev/xvda[0-9]* r,
+  owner /dev/xen/ r,
+  owner /dev/xen/* rw,
 
   ## /var, /run access.
   ## TODO: Restrict.
