@@ -1,3 +1,9 @@
+apparmor-profile-everything (3:0.8-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Sat, 23 Nov 2019 14:06:40 +0000
+
 apparmor-profile-everything (3:0.7-1) unstable; urgency=medium
 
   * New upstream version (local package).
