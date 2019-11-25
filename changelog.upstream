@@ -1,3 +1,31 @@
+commit 1f219d62907baac2c0edfb9dc21e03022ca4ac4e
+Merge: a7a55e2 9d40c32
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Nov 23 15:48:25 2019 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 9d40c325c22f14cd5fff2075456b7c747a2ef9f6
+Merge: a7a55e2 31283d6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Nov 23 15:48:07 2019 +0000
+
+    Merge pull request #7 from madaidan/qubes
+    
+    Qubes fixes
+
+commit 31283d681629fde5a7650be48f9f629dfeaed37a
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 23 15:44:10 2019 +0000
+
+    Qubes fixes
+
+commit a7a55e268e1fc5dfcf8ef664678d5b9e9e79ad20
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Nov 23 14:06:40 2019 +0000
+
+    bumped changelog version
+
 commit 3e2f6fe2bb57392184f869fa5c984f3debd0dd8d
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Nov 23 14:06:23 2019 +0000
