@@ -26,6 +26,7 @@ profile /usr/bin/apt-get flags=(attach_disconnected) {
   capability sys_rawio,
   capability sys_module,
   capability sys_tty_config,
+  capability sys_resource,
 
   ## Network access.
   ##
@@ -46,12 +47,9 @@ profile /usr/bin/apt-get flags=(attach_disconnected) {
   /opt/ r,
   /opt/** rwmix,
   owner /opt/** rwixl,
-  /lib{,32,64}/ r,
-  /lib{,32,64}/** rwmix,
-  owner /lib{,32,64}/** rwixl,
-  /usr/{,local/}lib/ r,
-  /usr/{,local/}lib/** rwmixlk,
-  owner /usr/{,local/}lib/** rwmixlk,
+  /{,usr/,usr/local/}lib{,32,64}/ r,
+  /{,usr/,usr/local/}lib{,32,64}/** rwmixl,
+  owner /{,usr/,usr/local/}lib{,32,64}/** rwmixlk,
   /usr/{,local/}{,share,include}/ r,
   /usr/{,local/}{,share,include}/** rwix,
   owner /usr/{,local/}{,share,include}/** rwixl,
