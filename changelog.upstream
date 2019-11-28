@@ -1,3 +1,31 @@
+commit b5e35d6f263bac2b5c45758a367fe9bb3a09c008
+Merge: 1914c56 7cb7974
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 26 13:02:21 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 7cb79748f1869c5fc98f7fa8fc8c8c713ac4b970
+Merge: 1914c56 0f38aa8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Nov 26 18:01:15 2019 +0000
+
+    Merge pull request #8 from madaidan/apt-fixes
+    
+    Fix apt
+
+commit 0f38aa89228d71fa5480cbcf3ba758463b406ad1
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Nov 26 17:17:48 2019 +0000
+
+    Fix apt
+
+commit 1914c5618331cc678fc13264a8bf04e7c09a1d4e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Nov 25 08:42:46 2019 +0000
+
+    bumped changelog version
+
 commit 1f219d62907baac2c0edfb9dc21e03022ca4ac4e
 Merge: a7a55e2 9d40c32
 Author: Patrick Schleizer <adrelanos@riseup.net>
