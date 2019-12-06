@@ -48,7 +48,7 @@ profile /usr/bin/apt-get flags=(attach_disconnected) {
   /opt/** rwmix,
   owner /opt/** rwixl,
   /{,usr/,usr/local/}lib{,32,64}/ r,
-  /{,usr/,usr/local/}lib{,32,64}/** rwmixl,
+  /{,usr/,usr/local/}lib{,32,64}/** rwmixlk,
   owner /{,usr/,usr/local/}lib{,32,64}/** rwmixlk,
   /usr/{,local/}{,share,include}/ r,
   /usr/{,local/}{,share,include}/** rwix,
