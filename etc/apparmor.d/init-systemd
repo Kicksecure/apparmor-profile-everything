@@ -181,6 +181,9 @@ profile init-systemd /lib/systemd/** flags=(attach_disconnected) {
   /proc/*/net/dev r,
   /proc/{,stat,cpuinfo,filesystems,meminfo,swaps,cmdline,uptime} r,
   /proc/sys/** r,
+  /proc/asound/card[0-9]*/ r,
+  /proc/asound/card[0-9]*/pcm[0-9]*/ r,
+  /proc/asound/card[0-9]*/pcm[0-9]*/sub[0-9]*/status r,
   owner /proc/sys/** rw,
   owner /proc/mtrr rw,
   owner /proc/*/{,setgroups,gid_map,uid_map} w,
@@ -276,8 +279,9 @@ profile init-systemd /lib/systemd/** flags=(attach_disconnected) {
 
   ## /var and /run access.
   /var/ r,
-  /var/{,cache,lib,log}/ r,
+  /var/{,cache,lib,log,spool}/ r,
   /var/cache/** r,
+  /var/cache/man/*/*[0-9]/ rw,
   /var/{,lib,log}/** rw,
   /var/lib/dpkg/info/** rpix,
   owner /var/{,cache,lib,db}/** rwkl,
@@ -288,5 +292,7 @@ profile init-systemd /lib/systemd/** flags=(attach_disconnected) {
   /{,var/}run/shm/** rwl,
   owner /{,var/}run/** rwk,
   owner /var/swapfile rw,
+  owner /var/backups/apt.extended_states w,
 
+  /srv/ r,
 }
