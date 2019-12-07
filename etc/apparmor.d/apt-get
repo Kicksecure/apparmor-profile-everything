@@ -3,7 +3,7 @@
 
 #include <tunables/global>
 
-profile /usr/bin/apt-get flags=(attach_disconnected) {
+profile /usr/bin/rapt flags=(attach_disconnected) {
   #include <abstractions/base>
   ##include <abstractions/dangerous-files>
 
