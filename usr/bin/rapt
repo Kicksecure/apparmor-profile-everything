@@ -98,6 +98,11 @@ do
          shift
          continue
          ;;
+      --fix-broken)
+         command+="$1 "
+         shift
+         continue
+         ;;
       --no-install-recommends)
          command+="$1 "
          shift
