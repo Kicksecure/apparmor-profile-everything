@@ -4,7 +4,6 @@
 #include <tunables/global>
 
 profile /usr/bin/rapt flags=(attach_disconnected) {
-  #include <abstractions/base>
   ##include <abstractions/dangerous-files>
 
   ## TODO: Further restict these. Use extended capability rules.
@@ -97,6 +96,7 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
 
   ## Procfs access.
   /proc/ r,
+  /proc/filesystems r,
   /proc/*/fd/ r,
   /proc/*/{,stat,comm,cmdline} r,
   /proc/*/task/ r,
