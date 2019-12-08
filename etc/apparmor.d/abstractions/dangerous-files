@@ -72,3 +72,8 @@
   ## man-in-the-middle attacks on TLS traffic.
   audit deny /**/ssl/certs/ w,
   audit deny /**/ssl/certs/** w,
+
+  ## The kernel images and System.map files can leak kernel
+  ## pointers which are very useful for kernel exploits.
+  audit deny /**/vmlinu{,z,x}* rw,
+  audit deny /**/System.map* rw,
