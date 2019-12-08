@@ -1,3 +1,49 @@
+commit 86b538f1a4e899adc2655c1ddcda9a01d2b919a9
+Merge: b4ce87e dcbbd42
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 7 11:29:17 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit dcbbd42de735613eaaffde6fbd3432b56d91ac4a
+Merge: b4ce87e 8f45d80
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 7 16:28:09 2019 +0000
+
+    Merge pull request #9 from madaidan/fixes
+    
+    Fixes
+
+commit 8f45d803c1bfab703360d13b141f4d4cc0411c85
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 7 14:00:26 2019 +0000
+
+    Remove base abstraction
+
+commit 6def1d67f7cf7b9bc1af3151f5389a3d2fdde354
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 7 13:56:36 2019 +0000
+
+    Some fixes
+
+commit 3522dd9d550022633d78adfd745d0c392f42fb3a
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 7 13:27:03 2019 +0000
+
+    Confine rapt instead
+
+commit fcc474049e6871f8504e9ceb0d8a34eeb8cb5825
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 7 13:25:29 2019 +0000
+
+    Allow --fix-broken
+
+commit b4ce87e75eeb0358bd122a12b9d4f6b2d6953435
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 6 12:42:16 2019 -0500
+
+    bumped changelog version
+
 commit b872f2c100fc0b09135bd108ec1ba11fdbee4de9
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Dec 6 12:41:48 2019 -0500
