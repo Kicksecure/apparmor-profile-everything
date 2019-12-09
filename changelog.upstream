@@ -1,3 +1,43 @@
+commit 7c8d6a58db9f527e1f8300ee9d6146a3d15a3a3f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 9 08:24:08 2019 -0500
+
+    readme
+
+commit 897ce0f16d034372e5e568cf0aeb4ae08a28e2ce
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 9 04:14:00 2019 -0500
+
+    description, lintian
+
+commit feb12df4ac1961cf641b7087a795831e82b3a385
+Merge: 2b0423b fe5b7ec
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Dec 8 15:37:05 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit fe5b7ec014f4925e9ed2d977893390b357bcd57b
+Merge: 2b0423b ee6c6ba
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Dec 8 20:36:27 2019 +0000
+
+    Merge pull request #10 from madaidan/kernel-image
+    
+    Deny access to kernel images and System.map files
+
+commit ee6c6ba11c43858e8809542c0811ff1a782c73e2
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Dec 8 18:09:56 2019 +0000
+
+    Deny access to kernel images and System.map files
+
+commit 2b0423b7beefaa4eb706858ceb72d7883d309864
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Dec 8 04:04:27 2019 -0500
+
+    bumped changelog version
+
 commit 86b538f1a4e899adc2655c1ddcda9a01d2b919a9
 Merge: b4ce87e dcbbd42
 Author: Patrick Schleizer <adrelanos@riseup.net>
