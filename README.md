@@ -3,7 +3,7 @@
 Confines all, systemd, init, all systemd units, apt, all applications.
 
 Makes pointer leaks less likely.
-https://forums.whonix.org/t/kernel-hardening/7296/227
+https://forums.whonix.org/t/apparmor-for-complete-system-including-init-pid1-systemd-everything-full-system-mac-policy/8339
 
 Does not confine initramfs.
 
