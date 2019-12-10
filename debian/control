@@ -13,7 +13,7 @@ Standards-Version: 4.3.0
 
 Package: apparmor-profile-everything
 Architecture: all
-Depends: ${misc:Depends}, apparmor, apparmor-profile-torbrowser
+Depends: ${misc:Depends}, apparmor, apparmor-profile-torbrowser, libpam-apparmor
 Description: AppArmor profile for whole system
  Confines all, systemd, init, all systemd units, apt, all applications.
  .

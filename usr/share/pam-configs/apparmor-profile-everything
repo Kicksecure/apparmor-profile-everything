@@ -1,0 +1,7 @@
+Name: Per user AppArmor profile (by package apparmor-profile-everything)
+Default: no
+Priority: 0
+Session-Type: Additional
+Session-Interactive-Only: no
+Session:
+	optional	pam_apparmor.so debug
