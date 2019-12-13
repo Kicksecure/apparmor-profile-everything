@@ -1,0 +1,65 @@
+#!/bin/bash
+
+set -x
+
+shopt -s nullglob
+
+## Find out variable GRUB_DISTRIBUTOR.
+for config_file in /etc/default/grub /etc/default/grub.d/*.cfg ; do
+   if test -f "$config_file" ; then
+      source "$config_file"
+   fi
+done
+
+for file_name in /boot/vmlinuz-* ; do
+   ## example file_name:
+   ## /boot/vmlinuz-4.19.0-6-amd64
+   base_name="${file_name##*/}"
+   ## example base_name:
+   ## vmlinuz-4.19.0-6-amd64
+   search="vmlinuz-"
+   replace=""
+   version="$(echo "$base_name" | str_replace "$search" "$replace")"
+   ## example version:
+   ## 4.19.0-6-amd64"
+   ## Stop after first file.
+   unset search
+   unset replace
+   break
+done
+
+if [ "$version" = "" ]; then
+   echo "$0: version is empty."
+   echo "$0: Running 'ls -la /boot/vmlinuz-*'..."
+   ls -la /boot/vmlinuz-*
+   exit 0
+fi
+
+file_replace="/boot/grub/grub.cfg"
+
+if ! test -w "$file_replace" ; then
+   exit 0
+fi
+
+search=" GNU/Linux"
+replace=""
+str_replace "$search" "$replace" "$file_replace" &>/dev/null || echo "$0: failed"
+
+search=", with Linux $version"
+## example search: ', with Linux 4.19.0-6-amd64'
+replace=""
+str_replace "$search" "$replace" "$file_replace" &>/dev/null || echo "$0: failed"
+
+search="menuentry '$GRUB_DISTRIBUTOR'"
+## example search:
+replace="menuentry 'PERSISTENT mode USER (For daily activities.)'"
+
+str_replace "$search" "$replace" "$file_replace" &>/dev/null || echo "$0: failed"
+
+search="menuentry '$GRUB_DISTRIBUTOR (recovery mode)'"
+## example search:
+replace="menuentry 'Recovery PERSISTENT mode SUPERADMIN (Be very cautious!)'"
+
+str_replace "$search" "$replace" "$file_replace" &>/dev/null || echo "$0: failed"
+
+exit 0
