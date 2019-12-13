@@ -35,9 +35,17 @@ if [ "$version" = "" ]; then
    exit 0
 fi
 
-file_replace="/boot/grub/grub.cfg"
+real_grub_cfg="/boot/grub/grub.cfg"
+file_replace="/boot/grub/grub.cfg.temp"
+
+if ! test -w "$real_grub_cfg" ; then
+   exit 0
+fi
+
+cp "$real_grub_cfg" "$file_replace"
 
 if ! test -w "$file_replace" ; then
+   echo "$0: ERROR: $file_replace not writeable"
    exit 0
 fi
 
@@ -61,5 +69,16 @@ search="menuentry '$GRUB_DISTRIBUTOR (recovery mode)'"
 replace="menuentry 'Recovery PERSISTENT mode SUPERADMIN (Be very cautious!)'"
 
 str_replace "$search" "$replace" "$file_replace" &>/dev/null || echo "$0: failed"
+
+if ! test -x /usr/bin/grub-script-check ; then
+   echo "$0: ERROR: /usr/bin/grub-script-check not executable."
+   exit 0
+fi
+
+if /usr/bin/grub-script-check "$file_replace" ; then
+   cp "$file_replace" "$real_grub_cfg"
+else
+   echo "$0: ERROR: $file_replace is invalid."
+fi
 
 exit 0
