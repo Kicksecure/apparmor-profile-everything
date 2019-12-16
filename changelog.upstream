@@ -1,3 +1,31 @@
+commit c2c4db48d8afed01e20fc0683a6949ed4af252d6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 13 13:05:01 2019 -0500
+
+    check if modified grub.cfg is valid
+    
+    https://forums.whonix.org/t/apparmor-for-complete-system-including-init-pid1-systemd-everything-full-system-mac-policy/8339/229
+
+commit b3817cde78f057e8e974961211006bb97cef42a9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 13 12:44:49 2019 -0500
+
+    implement grub default boot menu entries:
+    
+        PERSISTENT mode USER (For daily activities.)
+        LIVE mode USER (For daily activities.)
+        PERSISTENT mode ADMIN (For software installation.)
+        PERSISTENT mode SUPERADMIN (Be very cautious!)
+        Recovery PERSISTENT mode SUPERADMIN (Be very cautious!)
+    
+    https://forums.whonix.org/t/multiple-boot-modes-for-better-security-persistent-root-persistent-noroot-live-root-live-noroot/7708/32
+
+commit 55c9984ec86f82beb8768ff56cfef7b46419d2d1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Dec 10 11:42:08 2019 -0500
+
+    bumped changelog version
+
 commit b8eeed45334e5797c124d2c91c44a87fb2b9a80c
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Dec 10 02:08:38 2019 -0500
