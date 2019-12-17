@@ -81,5 +81,12 @@
   ## An attacker can modify /etc/ld.so.preload to make everything
   ## preload their malicious library which can be used to compromise
   ## apt and replace the kernel images.
-  ## TODO: See if other /etc/ld.so.* files can be abused this way.
   audit deny /etc/ld.so.preload w,
+  ## /etc/ld.so.preload.d drop-in configuration folder support
+  ## https://sourceware.org/bugzilla/show_bug.cgi?id=24913
+  audit deny /etc/ld.so.preload.d/ w,
+  audit deny /etc/ld.so.preload.d/** w,
+  audit deny /etc/ld.so.cache w,
+  audit deny /etc/ld.so.conf w,
+  audit deny /etc/ld.so.conf.d/ w,
+  audit deny /etc/ld.so.conf.d/** w,
