@@ -66,7 +66,7 @@
   ## attacker from replacing them with malicious versions.
   audit deny /**/firmware/ w,
   audit deny /**/firmware/** w,
-  
+
   ## Deny write access to SSL certificates to prevent an
   ## attacker from installing a root certificate to launch
   ## man-in-the-middle attacks on TLS traffic.
@@ -77,7 +77,7 @@
   ## pointers which are very useful for kernel exploits.
   audit deny /**/vmlinu{,z,x}* rw,
   audit deny /**/System.map* rw,
-  
+
   ## An attacker can modify /etc/ld.so.preload to make everything
   ## preload their malicious library which can be used to compromise
   ## apt and replace the kernel images.
