@@ -77,3 +77,9 @@
   ## pointers which are very useful for kernel exploits.
   audit deny /**/vmlinu{,z,x}* rw,
   audit deny /**/System.map* rw,
+  
+  ## An attacker can modify /etc/ld.so.preload to make everything
+  ## preload their malicious library which can be used to compromise
+  ## apt and replace the kernel images.
+  ## TODO: See if other /etc/ld.so.* files can be abused this way.
+  audit deny /etc/ld.so.preload w,
