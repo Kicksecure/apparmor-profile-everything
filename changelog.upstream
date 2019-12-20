@@ -1,3 +1,80 @@
+commit 444d0e21c7fea919d7953c4927769db4c06a2d12
+Merge: dbeaeb7 e9f39e2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 20 03:32:09 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit e9f39e2744581872b1531c6b42de2e483d7b90ca
+Merge: 1290328 6138542
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 20 08:31:21 2019 +0000
+
+    Merge pull request #13 from madaidan/apt-fixes
+    
+    Apt fixes
+
+commit 129032894ad5b9da9ca648020142db371071a1ee
+Merge: dbeaeb7 e7e1cf1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 20 08:31:12 2019 +0000
+
+    Merge pull request #12 from madaidan/boot-modes
+    
+    Boot modes
+
+commit 6138542ab32d40efc772130aeefdf474aad428c3
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Dec 19 18:41:55 2019 +0000
+
+    Apt fixes
+
+commit dbeaeb7d12b12687cb8beb9b93f31b2fe5ace286
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Dec 17 01:28:53 2019 -0500
+
+    add more /etc/ld.so.* files / folders
+
+commit e28f37973d8388cf6075e79901587493fb2c95fc
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Dec 17 01:24:31 2019 -0500
+
+    remove trailing spaces
+
+commit 186cebe4e01278b791ae0dfd9cb2b4b6102e0e6e
+Merge: b1eb4c7 55387c2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Dec 17 01:24:00 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 55387c2bd779f12ab4dc57f4c6498c3e0415bd35
+Merge: b1eb4c7 3bd3cac
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Dec 17 06:22:57 2019 +0000
+
+    Merge pull request #11 from madaidan/preload
+    
+    Deny writing to ld.so.preload
+
+commit 3bd3caca750ff7e6ca801139b9d979b0b0cb8254
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Dec 16 21:56:45 2019 +0000
+
+    Deny writing to ld.so.preload
+
+commit b1eb4c773a3122fe97a83c2b4b38a99e00cb3dca
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 16 06:25:58 2019 -0500
+
+    bumped changelog version
+
+commit e7e1cf1b9f03c400a45c843e865cc2f354faec23
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 14 19:59:57 2019 +0000
+
+    Shorter options
+
 commit c2c4db48d8afed01e20fc0683a6949ed4af252d6
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Dec 13 13:05:01 2019 -0500
@@ -19,6 +96,12 @@ Date:   Fri Dec 13 12:44:49 2019 -0500
         Recovery PERSISTENT mode SUPERADMIN (Be very cautious!)
     
     https://forums.whonix.org/t/multiple-boot-modes-for-better-security-persistent-root-persistent-noroot-live-root-live-noroot/7708/32
+
+commit 3830879241bad7d0de76bef7b85f056bf1ed451e
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Dec 12 20:20:59 2019 +0000
+
+    Add boot modes
 
 commit 55c9984ec86f82beb8768ff56cfef7b46419d2d1
 Author: Patrick Schleizer <adrelanos@riseup.net>
