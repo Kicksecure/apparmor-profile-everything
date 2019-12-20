@@ -18,6 +18,8 @@ header_package="linux-headers-${arch}"
 
 ## TODO
 packages_refuse_removal="apparmor $kernel_package $header_package"
+
+## https://forums.whonix.org/t/disable-grub-output-verbose-by-default/8656
 packages_refuse_install="grub-output-verbose"
 
 while :
