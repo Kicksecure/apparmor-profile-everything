@@ -1,3 +1,31 @@
+commit 28ee0dc01a1b016eccb8df2210272001d3b13b07
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 20 07:44:20 2019 -0500
+
+    update path to fix lintian warning
+
+commit a823b8e19382ffc6a5bcc2e0214fe69800813a49
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 20 07:23:13 2019 -0500
+
+    comment
+
+commit 24f36fb0aa2be15b7a8f5f716840367b9c16c7b9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 20 07:22:16 2019 -0500
+
+    rapt: introduce packages_refuse_install
+    
+    and add grub-output-verbose to it
+    
+    https://forums.whonix.org/t/disable-grub-output-verbose-by-default/8656
+
+commit 4529bbc1f00555990071e4b6ff4ba6923eedd8ae
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 20 07:07:03 2019 -0500
+
+    bumped changelog version
+
 commit 444d0e21c7fea919d7953c4927769db4c06a2d12
 Merge: dbeaeb7 e9f39e2
 Author: Patrick Schleizer <adrelanos@riseup.net>
