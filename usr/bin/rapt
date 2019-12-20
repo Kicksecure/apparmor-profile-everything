@@ -18,6 +18,7 @@ header_package="linux-headers-${arch}"
 
 ## TODO
 packages_refuse_removal="apparmor $kernel_package $header_package"
+packages_refuse_install="grub-output-verbose"
 
 while :
 do
@@ -204,6 +205,16 @@ check_for_packages_on_refused_removal_list() {
 
    ## Output of 'sudo apt-get --simulate --quiet=2 purge apparmor' does not
    ## contain 'apparmor'. Therefore we have to iterate through the list of args.
+
+   for arg in "$@" ; do
+      for package in $packages_refuse_install ; do
+         if [ "$arg" = "$package" ]; then
+            error_output
+            echo "ERROR: forbidden to install package! $package"
+            exit 1
+         fi
+      done
+   done
 
    for arg in "$@" ; do
       for package in $packages_refuse_removal ; do
