@@ -266,7 +266,7 @@
   owner /dev/mapper/control rw,
   owner /dev/dm-0 rw,
   owner /dev/mapper/swapfile w,
-  owner /dev/vport2p1 rw,
+  owner /dev/vport[0-9]* rw,
 
   ## Removable media.
   owner /media/ r,
