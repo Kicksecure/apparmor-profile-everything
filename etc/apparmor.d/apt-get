@@ -92,6 +92,7 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
   owner /sys/block/ r,
   owner /sys/bus/ r,
   owner /sys/class/ r,
+  owner /sys/class/block/ r,
   owner /sys/kernel/security/apparmor/.replace w,
 
   ## Procfs access.
@@ -143,6 +144,8 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
   owner /dev/xvda[0-9]* r,
   owner /dev/xen/ r,
   owner /dev/xen/* rw,
+  owner /dev/vda r,
+  owner /dev/vda[0-9]* r,
 
   ## /var, /run access.
   ## TODO: Restrict.
