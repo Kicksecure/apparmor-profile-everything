@@ -15,7 +15,7 @@ prereqs)
         ;;
 esac
 
-mount -t securityfs none /sys/kernel/security
+mount -t securityfs nosuid,nodev,noexec /sys/kernel/security
 
 if grep "noape" /proc/cmdline; then
   echo "apparmor-profile-everything has been disabled via the boot parameter."
