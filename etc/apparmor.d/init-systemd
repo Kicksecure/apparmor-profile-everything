@@ -7,10 +7,12 @@
 
 profile init-systemd /lib/systemd/** flags=(attach_disconnected) {
   #include <abstractions/init-systemd>
+  #include <abstractions/dangerous-files>
 }
 
 profile init-systemd-debug /lib/systemd/** flags=(attach_disconnected) {
   #include <abstractions/init-systemd>
+  #include <abstractions/dangerous-files>
 }
 
 profile init-systemd-superroot /lib/systemd/** flags=(attach_disconnected) {
