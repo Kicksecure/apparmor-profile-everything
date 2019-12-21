@@ -14,6 +14,9 @@
 /usr/lib/security-misc/remove-system.map flags=(attach_disconnected) {
   #include <abstractions/whonix-shell-script>
 }
+/usr/lib/security-misc/panic-on-oops flags=(attach_disconnected) {
+  #include <abstractions/whonix-shell-script>
+}
 /usr/lib/helper-scripts/first-boot-skel flags=(attach_disconnected) {
   #include <abstractions/whonix-shell-script>
 }
