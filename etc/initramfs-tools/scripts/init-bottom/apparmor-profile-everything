@@ -22,6 +22,7 @@ fi
 
 mount -t securityfs nosuid,nodev,noexec /sys/kernel/security
 
+echo "profile systemd-modules-load /lib/systemd/systemd-modules-load {}" | /sbin/apparmor_parser -a
 echo "profile systemd-sysctl /lib/systemd/systemd-sysctl {}" | /sbin/apparmor_parser -a
 
 if grep "superroot" /proc/cmdline; then

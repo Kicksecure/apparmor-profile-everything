@@ -25,26 +25,26 @@
   audit deny /**/grub/ w,
   audit deny /**/grub/** w,
 
-  ## Disallow any changes to APT to prevent an
+  ## Disallow any changes to APT or dpkg to prevent an
   ## attacker from abusing APT's Invoke options, using
   ## a malicious package from a local repository to replace
   ## the kernel or overwriting APT binaries.
   ##
-  ## This is needed as APT has access to /boot and the kernel/initrd
-  ## images to update the kernel which is a dangerous permission.
-  audit deny /etc/apt/ w,
-  audit deny /etc/apt/** w,
-  audit deny /usr/lib/apt/ w,
-  audit deny /usr/lib/apt/** w,
-  audit deny /usr/bin/apt-get w,
-  audit deny /var/lib/dpkg/info/ w,
-  audit deny /var/lib/dpkg/info/** w,
+  ## This is needed as APT has access to more permissions than
+  ## the main profile which is extremely valuable to an attacker
+  ## if compromised.
+  audit deny /**/apt/ w,
+  audit deny /**/apt/** w,
+  audit deny /**/dpkg/ w,
+  audit deny /**/dpkg/** w,
 
   ## Explicitly deny access to the AppArmor profiles
-  ## to prevent a malicious program from modifying
-  ## them.
+  ## or other AppArmor configuration to prevent a malicious
+  ## program from modifying them.
   #audit deny /etc/apparmor.d/ rw,
   #audit deny /etc/apparmor.d/** rw,
+  audit deny /**/apparmor/ w,
+  audit deny /**/apparmor/** w,
 
   ## /dev/{,k}mem and /dev/port give direct, read-write access to
   ## memory which is extremely dangerous.
