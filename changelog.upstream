@@ -1,3 +1,107 @@
+commit 810bbdc3618a8a9a9127744e677499b7c363d3d8
+Merge: d5c2d28 00654d2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 10:14:56 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 00654d2b245a518ce33bb610a21699de328ad8b7
+Merge: d5c2d28 63a6409
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 15:14:38 2019 +0000
+
+    Merge pull request #21 from madaidan/debugfs
+    
+    Deny access to debugfs
+
+commit 63a64090dcb1ee86b131281bc029d7ce7cedc05d
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 15:12:30 2019 +0000
+
+    Deny access to debugfs
+
+commit a22e4cf2ebf934a6e15aef6a600ae2aa9ff5c81a
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 15:11:43 2019 +0000
+
+    Deny access to debugfs
+
+commit d5c2d2809fa4565e856426be79cad3de6a6192a5
+Merge: 243f936 09cdd1b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 09:34:41 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 09cdd1b8e88bbdd6d81ee5d6776d8028a6c48edc
+Merge: e4608c8 4c5ee3d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 14:31:27 2019 +0000
+
+    Merge pull request #20 from madaidan/module-loading
+    
+    Restrict module loading
+
+commit e4608c8fc24146abb460844d71f9092e61a33c9e
+Merge: fcad423 2401395
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 14:30:48 2019 +0000
+
+    Merge pull request #19 from madaidan/superroot
+    
+    Don't include dangerous-files abstraction for superroot
+
+commit fcad423a7c587030c6cae2df313b4b380b4b5888
+Merge: 243f936 9e27748
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 14:30:23 2019 +0000
+
+    Merge pull request #18 from madaidan/dangerous-files
+    
+    Deny access to all apt/dpkg/apparmor config files
+
+commit 4c5ee3da493767a71f6364897842e2c3ab763e6b
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 13:59:04 2019 +0000
+
+    Confine systemd-modules-load
+
+commit e6ab634399c9e1c9a4c13b0a882641ab72eadbf2
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 13:57:47 2019 +0000
+
+    Deny module loading
+
+commit 32c01ee9a8ff882974ae5563ce2e19d3b0e93998
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 13:57:18 2019 +0000
+
+    Create systemd-modules-load
+
+commit 2401395b659ca7da79290070fde251ce83d3bb86
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 13:40:22 2019 +0000
+
+    Don't include dangerous-files for superroot
+
+commit f16f3f8255e9574f0a2c5ad3071c09def9b02bc5
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 13:39:58 2019 +0000
+
+    Don't include dangerous-files in the init-systemd abstraction
+
+commit 9e2774848077b6a9ae82d3b53211d5905add3aa0
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 13:29:58 2019 +0000
+
+    Deny access to all apt/dpkg/apparmor config files
+
+commit 243f93683daeecbcd4708e2f9e28559d41050abf
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 05:30:49 2019 -0500
+
+    bumped changelog version
+
 commit e08cf6448210e925ddfb9eaf8970f87ac73c573f
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Dec 21 03:58:56 2019 -0500
