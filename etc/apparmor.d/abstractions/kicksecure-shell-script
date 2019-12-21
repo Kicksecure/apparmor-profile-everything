@@ -41,6 +41,7 @@
   
   ## panic-on-oops
   /proc/sys/kernel/panic_on_oops w,
+  /sbin/sysctl mrix,
 
   /etc/nsswitch.conf r,
   /etc/passwd r,
