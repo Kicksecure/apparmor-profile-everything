@@ -90,3 +90,8 @@
   audit deny /etc/ld.so.conf w,
   audit deny /etc/ld.so.conf.d/ w,
   audit deny /etc/ld.so.conf.d/** w,
+  
+  ## Deny changing sysctl values.
+  audit deny /**/sysctl.d/ w,
+  audit deny /**/sysctl.d/** w,
+  audit deny /**/sysctl.conf w,

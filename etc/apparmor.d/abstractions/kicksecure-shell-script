@@ -1,0 +1,58 @@
+  ## Copyright (C) 2012 - 2019 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+  ## See the file COPYING for copying conditions.
+
+  ## Generic profile for Kicksecure shell scripts.
+
+  #include <abstractions/base>
+  #include <abstractions/bash>
+
+  capability chown,
+  capability dac_override,
+  capability dac_read_search,
+  capability fowner,
+  capability fsetid,
+
+  /usr/lib/security-misc/* r,
+  /{,usr/}sbin/pam_tally2 mrix,
+  /{,usr/}bin/bash rix,
+  /{,usr/}bin/chmod mrix,
+  /{,usr/}bin/touch mrix,
+  /usr/bin/basename mrix,
+  /usr/bin/id rix,
+  /usr/bin/cut mrix,
+  /usr/bin/tail mrix,
+  /usr/bin/diff mrix,
+  /bin/echo mrix,
+  /bin/mkdir mrix,
+  /bin/cat mrix,
+  /bin/grep mrix,
+  /bin/rm mrix,
+  /bin/cp mrix,
+  /bin/chown mrix,
+
+  ## permission-lockdown and first-boot-skel
+  /home/** rw,
+  /etc/skel/ r,
+  /etc/skel/** rw,
+
+  ## remove-system.map
+  /boot/ r,
+  /boot/System.map* rw,
+  
+  ## panic-on-oops
+  /proc/sys/kernel/panic_on_oops w,
+  /sbin/sysctl mrix,
+
+  /etc/nsswitch.conf r,
+  /etc/passwd r,
+  /etc/group r,
+
+  owner /var/cache/security-misc/state-files/ rw,
+  owner /var/cache/security-misc/state-files/* rw,
+  owner /var/cache/anon-base-files/ rw,
+  owner /var/cache/anon-base-files/* rw,
+
+  owner /var/log/tallylog rw,
+
+  /dev/tty rw,
+  /dev/pts/[0-9]* rw,

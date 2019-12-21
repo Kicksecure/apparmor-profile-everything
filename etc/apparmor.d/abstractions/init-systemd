@@ -161,7 +161,6 @@
   deny /sys/fs/fuse/connections/ r,
 
   ## Procfs access.
-  ## TODO: Make systemd-sysctl profile and prevent writing to /proc/sys.
   owner /proc/ r,
   owner /proc/*/{,environ,limits,mountinfo,mounts,uid_map,gid_map,setgroups} r,
   owner /proc/*/fdinfo/* r,
@@ -179,7 +178,6 @@
   /proc/asound/card[0-9]*/ r,
   /proc/asound/card[0-9]*/pcm[0-9]*/ r,
   /proc/asound/card[0-9]*/pcm[0-9]*/sub[0-9]*/status r,
-  owner /proc/sys/** rw,
   owner /proc/mtrr rw,
   owner /proc/*/{,setgroups,gid_map,uid_map} w,
   owner /proc/{,kmsg,devices,modules} r,
@@ -266,7 +264,7 @@
   owner /dev/mapper/control rw,
   owner /dev/dm-0 rw,
   owner /dev/mapper/swapfile w,
-  owner /dev/vport2p1 rw,
+  owner /dev/vport[0-9]* rw,
 
   ## Removable media.
   owner /media/ r,
