@@ -1,3 +1,156 @@
+commit e08cf6448210e925ddfb9eaf8970f87ac73c573f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 03:58:56 2019 -0500
+
+    do not do anything if kernel parameter noape is set
+    
+    https://forums.whonix.org/t/apparmor-for-complete-system-including-init-pid1-systemd-everything-full-system-mac-policy/8339/269
+
+commit 34645711fdd32e343f661104be4a8f16a67b0566
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 03:52:37 2019 -0500
+
+    fix, whonix- -> kicksecure-
+
+commit c0be53fbae47cb120f80137316693ef547492fcc
+Merge: 5f50aa7 96a52e0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 03:52:07 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 96a52e052594db0cfce433cf2c31412a64f2dda9
+Merge: f2acd46 6a6685f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 08:50:34 2019 +0000
+
+    Merge pull request #17 from madaidan/sysctl
+    
+    Deny changing sysctl values
+
+commit f2acd4683306ceaaf710b3944758ebd0a908b649
+Merge: a6e8aeb faa9bc2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 08:48:46 2019 +0000
+
+    Merge pull request #16 from madaidan/mount-options
+    
+    Mount /sys/kernel/security with nosuid,nodev,noexec
+
+commit a6e8aeb445f6c389513100effb9c2b4a9df04e4e
+Merge: bae0192 b3b6dd1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 08:48:27 2019 +0000
+
+    Merge pull request #15 from madaidan/kicksecure-shell-script
+    
+    Kicksecure shell script profile
+
+commit bae0192aed70b079e34debc4d83ff3ee219fe35f
+Merge: 5f50aa7 72e6704
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 08:47:31 2019 +0000
+
+    Merge pull request #14 from madaidan/vport
+    
+    Give access to all vport devices
+
+commit b3b6dd1c850108879fc779bff69569c1b519968d
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 00:23:02 2019 +0000
+
+    Allow executing /sbin/sysctl
+
+commit 1466d33fec71a1b17d7b7fd6a722f01d3253498e
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 00:14:47 2019 +0000
+
+    Allow chaning kernel.panic_on_oops sysctl
+
+commit 01c7e6fc78711c92a4b000a4850cf1ebbd7df999
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 00:13:41 2019 +0000
+
+    Add panic-on-oops
+
+commit 6a6685f115ce7f83d8ca991405a3f86dac64825e
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 00:10:25 2019 +0000
+
+    Remove TODO
+
+commit 4561c32a6025f4d2f003bef8761ea63da0b5ee7f
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 00:09:54 2019 +0000
+
+    Run systemd-sysctl confined
+
+commit a0eac6631dc952f233d21aea0dfd0b410ae4c6ad
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 00:09:01 2019 +0000
+
+    Create systemd-sysctl
+
+commit 4146726075cd24f14cb6f66877419f6cb3e58a39
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 00:07:58 2019 +0000
+
+    Allow superroot to change sysctl values
+
+commit 4ed95d3a7d6b1c418618b74b2899529e73aa3b2a
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 00:07:30 2019 +0000
+
+    Deny changing sysctl values
+
+commit 438670ebc12c01bf28b25e69b01bc6ed16a3675a
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 00:06:43 2019 +0000
+
+    Deny changing sysctl values
+
+commit faa9bc25f4154eb9b6ca694954e046064a11cae8
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Fri Dec 20 22:50:17 2019 +0000
+
+    Mount /sys/kernel/security with nosuid,nodev,noexec
+
+commit a25c05d6cb2ed14efd50b9997ec0c6b4dc6686dd
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Fri Dec 20 22:43:13 2019 +0000
+
+    Rename whonix-shell-script to kicksecure-shell-script
+
+commit 0ce157b8c4e081eb1a9a89b4c1359490a1b58ca2
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Fri Dec 20 22:42:57 2019 +0000
+
+    Rename whonix-shell-script to kicksecure-shell-script
+
+commit 1b4d102a047df4c7df64e3c43c25a163d9d66c3b
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Fri Dec 20 22:42:15 2019 +0000
+
+    Create whonix-shell-script
+
+commit a0d718e38f7b6d0b59e7165ec6b192a9b393550a
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Fri Dec 20 22:41:58 2019 +0000
+
+    Create whonix-shell-script
+
+commit 72e6704fc36b7c7b3a296987d613fd20ad16e6e8
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Fri Dec 20 20:06:23 2019 +0000
+
+    Give access to all vport devices
+
+commit 5f50aa7ed533b00272b9afccf479837923adaa3a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 20 07:45:02 2019 -0500
+
+    bumped changelog version
+
 commit 28ee0dc01a1b016eccb8df2210272001d3b13b07
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Dec 20 07:44:20 2019 -0500
