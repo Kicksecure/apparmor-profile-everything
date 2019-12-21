@@ -1,3 +1,15 @@
+commit f91570e2306e595a42653ea8f12e64ac92f6905f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 14:25:15 2019 -0500
+
+    lintian
+
+commit 2e9448e66e8d208c23c08a3c92554475fee864ae
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 14:22:16 2019 -0500
+
+    bumped changelog version
+
 commit 810bbdc3618a8a9a9127744e677499b7c363d3d8
 Merge: d5c2d28 00654d2
 Author: Patrick Schleizer <adrelanos@riseup.net>
