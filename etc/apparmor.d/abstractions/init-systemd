@@ -2,7 +2,6 @@
   ## See the file COPYING for copying conditions.
 
   #include <abstractions/gnome>
-  #include <abstractions/dangerous-files>
 
   ## TODO: Further restict these. Use extended capability rules.
   ## TODO: Create sdwdate AppArmor profile and remove sys_time.
