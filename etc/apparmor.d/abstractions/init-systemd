@@ -104,6 +104,10 @@
   /opt/ r,
   /opt/** rpix,
   owner /opt/** rwmpix,
+  
+  ## Scrub the environment of important binaries.
+  /usr/bin/apt-get rPix,
+  /usr/bin/rapt rPix,
 
   ## Sysfs access.
   /sys/ r,
