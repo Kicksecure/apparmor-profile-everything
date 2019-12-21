@@ -38,6 +38,9 @@
   ## remove-system.map
   /boot/ r,
   /boot/System.map* rw,
+  
+  ## panic-on-oops
+  /proc/sys/kernel/panic_on_oops w,
 
   /etc/nsswitch.conf r,
   /etc/passwd r,
