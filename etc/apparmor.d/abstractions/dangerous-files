@@ -100,3 +100,7 @@
   ## shouldn't be accessible.
   audit deny /sys/kernel/debug/ rw,
   audit deny /sys/kernel/debug/** rw,
+
+  ## Prevent any changes to systemd.
+  audit deny /**/systemd/ w,
+  audit deny /**/systemd/** w,
