@@ -161,7 +161,6 @@
   deny /sys/fs/fuse/connections/ r,
 
   ## Procfs access.
-  ## TODO: Make systemd-sysctl profile and prevent writing to /proc/sys.
   owner /proc/ r,
   owner /proc/*/{,environ,limits,mountinfo,mounts,uid_map,gid_map,setgroups} r,
   owner /proc/*/fdinfo/* r,
