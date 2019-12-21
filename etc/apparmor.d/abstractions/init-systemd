@@ -140,7 +140,6 @@
   /sys/bus/pci/devices/ r,
   owner /sys/bus/*/drivers/*/uevent r,
   /sys/fs/cgroup/** rwm,
-  owner /sys/kernel/debug/ r,
   /sys/kernel/kexec_loaded r,
   owner /sys/module/*/ r,
   owner /sys/module/printk/parameters/time r,
