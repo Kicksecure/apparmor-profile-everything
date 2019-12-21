@@ -15,14 +15,16 @@ prereqs)
         ;;
 esac
 
+if grep "noape" /proc/cmdline; then
+  echo "apparmor-profile-everything has been disabled via the boot parameter."
+  exit
+fi
+
 mount -t securityfs nosuid,nodev,noexec /sys/kernel/security
 
 echo "profile systemd-sysctl /lib/systemd/systemd-sysctl {}" | /sbin/apparmor_parser -a
 
-if grep "noape" /proc/cmdline; then
-  echo "apparmor-profile-everything has been disabled via the boot parameter."
-  exit
-elif grep "superroot" /proc/cmdline; then
+if grep "superroot" /proc/cmdline; then
   echo "profile init-systemd-superroot /lib/systemd/systemd flags=(complain) {}" | /sbin/apparmor_parser -a
 elif grep "aadebug" /proc/cmdline; then
   echo "profile init-systemd-debug /lib/systemd/systemd flags=(complain) {}" | /sbin/apparmor_parser -a
