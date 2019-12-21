@@ -95,3 +95,8 @@
   audit deny /**/sysctl.d/ w,
   audit deny /**/sysctl.d/** w,
   audit deny /**/sysctl.conf w,
+
+  ## Debugfs contains a lot of dangerous debug information which
+  ## shouldn't be accessible.
+  audit deny /sys/kernel/debug/ rw,
+  audit deny /sys/kernel/debug/** rw,
