@@ -5,7 +5,6 @@
 
   ## TODO: Further restict these. Use extended capability rules.
   ## TODO: Create sdwdate AppArmor profile and remove sys_time.
-  ## TODO: Create systemd-modules-load profile and remove sys_module.
   ## TODO: Create whonix-firewall profile and remove net_admin.
   ## TODO: Create auditd(/journald?) profile and remove audit_*.
   ## TODO: Create journald profile and remove syslog.
@@ -29,7 +28,6 @@
   capability sys_admin,
   capability sys_boot,
   capability sys_chroot,
-  capability sys_module,
   capability sys_nice,
   capability sys_ptrace,
   capability sys_resource,
