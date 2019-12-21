@@ -5,5 +5,4 @@
 apparmor-profile-everything: unusual-interpreter usr/bin/rapt #!-S
 
 ## It does not. Apparmor mandatory access control only.
-apparmor-profile-everything: uses-dpkg-database-directly etc/apparmor.d/abstractions/dangerous-files
 apparmor-profile-everything: uses-dpkg-database-directly etc/apparmor.d/abstractions/init-systemd
