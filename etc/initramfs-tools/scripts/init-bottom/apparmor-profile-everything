@@ -17,6 +17,8 @@ esac
 
 mount -t securityfs nosuid,nodev,noexec /sys/kernel/security
 
+echo "profile systemd-sysctl /lib/systemd/systemd-sysctl {}" | /sbin/apparmor_parser -a
+
 if grep "noape" /proc/cmdline; then
   echo "apparmor-profile-everything has been disabled via the boot parameter."
   exit

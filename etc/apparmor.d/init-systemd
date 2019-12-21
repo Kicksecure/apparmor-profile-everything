@@ -15,4 +15,6 @@ profile init-systemd-debug /lib/systemd/** flags=(attach_disconnected) {
 
 profile init-systemd-superroot /lib/systemd/** flags=(attach_disconnected) {
   #include <abstractions/init-systemd>
+  
+  owner /proc/sys/** rw,
 }
