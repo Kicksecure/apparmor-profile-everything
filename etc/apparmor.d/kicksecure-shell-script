@@ -6,17 +6,17 @@
 ## Generic profile for Kicksecure shell scripts.
 
 /usr/lib/security-misc/pam_tally2-info flags=(attach_disconnected) {
-  #include <abstractions/whonix-shell-script>
+  #include <abstractions/kicksecure-shell-script>
 }
 /usr/lib/security-misc/permission-lockdown flags=(attach_disconnected) {
-  #include <abstractions/whonix-shell-script>
+  #include <abstractions/kicksecure-shell-script>
 }
 /usr/lib/security-misc/remove-system.map flags=(attach_disconnected) {
-  #include <abstractions/whonix-shell-script>
+  #include <abstractions/kicksecure-shell-script>
 }
 /usr/lib/security-misc/panic-on-oops flags=(attach_disconnected) {
-  #include <abstractions/whonix-shell-script>
+  #include <abstractions/kicksecure-shell-script>
 }
 /usr/lib/helper-scripts/first-boot-skel flags=(attach_disconnected) {
-  #include <abstractions/whonix-shell-script>
+  #include <abstractions/kicksecure-shell-script>
 }
