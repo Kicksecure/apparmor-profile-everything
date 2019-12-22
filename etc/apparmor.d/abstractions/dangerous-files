@@ -104,3 +104,8 @@
   ## Prevent any changes to systemd.
   audit deny /**/systemd/ w,
   audit deny /**/systemd/** w,
+  
+  ## Deny changes to /etc/kernel.d/ to prevent an attacker from creating
+  ## malicious hooks to backdoor the kernel.
+  audit deny /etc/kernel.d/ w,
+  audit deny /etc/kernel.d/** w,
