@@ -20,7 +20,6 @@
   capability ipc_lock,
   capability kill,
   capability mknod,
-  capability net_admin,
   capability setgid,
   capability setpcap,
   capability setuid,
