@@ -5,7 +5,6 @@
 
   ## TODO: Further restict these. Use extended capability rules.
   ## TODO: Create sdwdate AppArmor profile and remove sys_time.
-  ## TODO: Create whonix-firewall profile and remove net_admin.
   ## TODO: Create auditd(/journald?) profile and remove audit_*.
   ## TODO: Create journald profile and remove syslog.
   ## TODO: Create logind profile and remove sys_tty_config.
