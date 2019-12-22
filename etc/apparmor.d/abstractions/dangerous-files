@@ -104,7 +104,9 @@
   ## Prevent any changes to systemd.
   audit deny /**/systemd/ w,
   audit deny /**/systemd/** w,
-  
+  audit deny /**/init.d/ w,
+  audit deny /**/init.d/** w,
+
   ## Prevent an attacker from loading unnecessary modules at boot or
   ## removing any module blacklists to add attack surface.
   ##
