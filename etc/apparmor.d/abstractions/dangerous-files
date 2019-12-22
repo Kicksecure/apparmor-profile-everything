@@ -109,3 +109,17 @@
   ## malicious hooks to backdoor the kernel.
   audit deny /etc/kernel.d/ w,
   audit deny /etc/kernel.d/** w,
+
+  audit deny /**/init.d/ w,
+  audit deny /**/init.d/** w,
+
+  ## Prevent an attacker from loading unnecessary modules at boot or
+  ## removing any module blacklists to add attack surface.
+  ##
+  ## Otherwise, an attacker could add a file to modules-load.d to load every
+  ## module at next boot which adds tons of attack surface or they could remove
+  ## the module blacklists to load insecure kernel modules like dccp.
+  audit deny /**/modules-load.d/ w,
+  audit deny /**/modules-load.d/** w,
+  audit deny /**/modprobe.d/ w,
+  audit deny /**/modprobe.d/** w,
