@@ -29,6 +29,7 @@
   /bin/rm mrix,
   /bin/cp mrix,
   /bin/chown mrix,
+  /bin/mktemp mrix,
 
   ## permission-lockdown and first-boot-skel
   /home/** rw,
@@ -46,6 +47,7 @@
   /etc/nsswitch.conf r,
   /etc/passwd r,
   /etc/group r,
+  /etc/pam.d/* r,
 
   owner /var/cache/security-misc/state-files/ rw,
   owner /var/cache/security-misc/state-files/* rw,
@@ -53,6 +55,9 @@
   owner /var/cache/anon-base-files/* rw,
 
   owner /var/log/tallylog rw,
-
+  
+  owner /tmp/** rw,
+  owner /proc/sys/kernel/osrelease r,
+  
   /dev/tty rw,
   /dev/pts/[0-9]* rw,
