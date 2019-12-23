@@ -1,14 +1,123 @@
+commit 9ebb83ba8c4606f871f95651586adde3c0447dbf
+Merge: 46101c8 fd1d94d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Dec 22 10:34:05 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit fd1d94df00859d5df05eb6559958bb79524c0275
+Merge: 48f9f26 9491a39
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Dec 22 15:32:53 2019 +0000
+
+    Merge pull request #28 from madaidan/kernel
+    
+    Deny changes to /etc/kernel.d/
+
+commit 9491a395e06e79e230e39f2ee84855c5cb58b6ad
+Merge: 43225a5 48f9f26
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Dec 22 15:32:46 2019 +0000
+
+    Merge branch 'master' into kernel
+
+commit 48f9f26354d70257964c8081e433a97e5e1472be
+Merge: 520d067 879b2b7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Dec 22 15:31:54 2019 +0000
+
+    Merge pull request #27 from madaidan/init.d
+    
+    Deny access to init.d
+
+commit 879b2b7b061a1ae02468bfe31af8cf5b8c71f367
+Merge: 58c7621 520d067
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Dec 22 15:31:45 2019 +0000
+
+    Merge branch 'master' into init.d
+
+commit 520d0678cb22a39a4a5b5073067df2c05a4234b1
+Merge: 46101c8 b4237c8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Dec 22 15:28:20 2019 +0000
+
+    Merge pull request #24 from madaidan/modprobe
+    
+    Prevent attackers from loading more modules
+
+commit 43225a53868f5664a4333289e3241d683f312dcf
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Dec 22 15:12:33 2019 +0000
+
+    Deny changes to /etc/kernel.d/
+
+commit 58c7621671b4cba6ef5da1834b95325c13e840d1
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Dec 22 14:53:20 2019 +0000
+
+    Deny access to init.d
+
+commit b4237c8eade0989e9be9e0112c684a05bbeaf4b8
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Dec 22 14:00:50 2019 +0000
+
+    Prevent attackers from loading more modules
+
+commit 46101c866e8a93f78dcb6b48f833dc7fd8b64718
+Merge: 56c2cfe 49ad3ff
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 15:17:03 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 49ad3ff2e52a118f8832c762afdcbaf490ea9dd3
+Merge: 31d9cf0 b01e303
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 20:16:28 2019 +0000
+
+    Merge pull request #23 from madaidan/systemd
+    
+    Prevent any changes to systemd
+
+commit b01e303751ebced69956103b550577870116cabf
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 20:12:03 2019 +0000
+
+    Prevent any changes to systemd
+
+commit 56c2cfe32845966b71f75047580f73c956c9d177
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 14:53:12 2019 -0500
+
+    bumped changelog version
+
 commit f91570e2306e595a42653ea8f12e64ac92f6905f
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Dec 21 14:25:15 2019 -0500
 
     lintian
 
+commit 31d9cf0e9367436dc9f12aa336cacba274d86d8d
+Merge: 2e9448e f28c777
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 21 19:24:14 2019 +0000
+
+    Merge pull request #22 from madaidan/env-scrubbing
+    
+    Scrub the environment of apt
+
 commit 2e9448e66e8d208c23c08a3c92554475fee864ae
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Dec 21 14:22:16 2019 -0500
 
     bumped changelog version
+
+commit f28c777a507c32e6941dfab140efc0f416bffb48
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Dec 21 18:18:09 2019 +0000
+
+    Scrub the environment of apt
 
 commit 810bbdc3618a8a9a9127744e677499b7c363d3d8
 Merge: d5c2d28 00654d2
