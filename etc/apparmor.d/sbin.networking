@@ -3,7 +3,7 @@
 
 #include <tunables/global>
 
-/sbin/networking flags=(attach_disconnected) {
+/sbin/networking-aae flags=(attach_disconnected) {
   #include <abstractions/base>
   #include <abstractions/bash>
 
