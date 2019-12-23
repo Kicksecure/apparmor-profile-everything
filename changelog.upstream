@@ -1,3 +1,40 @@
+commit 797e96fa2e57a412d2582edd369ca9a3df4c80d6
+Merge: 5a229be 90a795b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 23 02:11:19 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 5a229be9b60a4716890dbf221d951489df2e1a81
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 23 02:10:09 2019 -0500
+
+    bumped changelog version
+
+commit 90a795bc1996df7f974661a67df1ea30da0092f8
+Merge: 25eb17b bc3cc5c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Dec 22 18:28:51 2019 +0000
+
+    Merge pull request #29 from madaidan/gnome
+    
+    Remove gnome abstraction
+
+commit 25eb17b429fced55f9fa50f0fbf433c726ce40b6
+Merge: 9ebb83b a66dc38
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Dec 22 18:28:18 2019 +0000
+
+    Merge pull request #26 from madaidan/sys_time
+    
+    Remove CAP_SYS_TIME capability
+
+commit bc3cc5c18aabde50486eba26933bf2170272b728
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Dec 22 16:15:10 2019 +0000
+
+    Remove gnome abstraction
+
 commit 9ebb83ba8c4606f871f95651586adde3c0447dbf
 Merge: 46101c8 fd1d94d
 Author: Patrick Schleizer <adrelanos@riseup.net>
@@ -57,6 +94,12 @@ Author: madaidan <50278627+madaidan@users.noreply.github.com>
 Date:   Sun Dec 22 14:53:20 2019 +0000
 
     Deny access to init.d
+
+commit a66dc381bd13decec60f742857db867a389a93a0
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Dec 22 14:35:43 2019 +0000
+
+    Remove CAP_SYS_TIME capability
 
 commit b4237c8eade0989e9be9e0112c684a05bbeaf4b8
 Author: madaidan <50278627+madaidan@users.noreply.github.com>
