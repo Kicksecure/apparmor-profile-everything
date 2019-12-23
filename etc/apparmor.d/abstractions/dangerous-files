@@ -104,7 +104,3 @@
   ## Prevent any changes to systemd.
   audit deny /**/systemd/ w,
   audit deny /**/systemd/** w,
-  
-  ## Prevent attackers from messing with kernel modules.
-  audit deny /lib/modules/ rw,
-  audit deny /lib/modules/** rw,
