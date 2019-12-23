@@ -182,6 +182,7 @@
   owner /proc/*/{,setgroups,gid_map,uid_map} w,
   owner /proc/{,kmsg,devices,modules} r,
   owner /proc/tty/drivers r,
+  owner /proc/sysvipc/{,shm,sem,msg} r,
 
   ## Tmpfs access.
   ##
@@ -265,6 +266,8 @@
   owner /dev/dm-0 rw,
   owner /dev/mapper/swapfile w,
   owner /dev/vport[0-9]* rw,
+  owner /dev/vda[0-9]* r,
+  owner /dev/dri/card[0-9]* rw,
 
   ## Removable media.
   owner /media/ r,
@@ -278,7 +281,7 @@
   /var/{,lib,log}/** rw,
   /var/lib/dpkg/info/** rpix,
   owner /var/{,cache,lib,db}/** rwkl,
-  owner /var/log/wtmp rwk,
+  owner /var/log/{,wtmp,lastlog} rwk,
   owner /var/spool/cron/crontabs/ r,
   /{,var/}run/ r,
   /{,var/}run/** rw,
