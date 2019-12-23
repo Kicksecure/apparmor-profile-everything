@@ -1,10 +1,7 @@
   ## Copyright (C) 2012 - 2019 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
   ## See the file COPYING for copying conditions.
 
-  #include <abstractions/gnome>
-
   ## TODO: Further restict these. Use extended capability rules.
-  ## TODO: Create sdwdate AppArmor profile and remove sys_time.
   ## TODO: Create auditd(/journald?) profile and remove audit_*.
   ## TODO: Create journald profile and remove syslog.
   ## TODO: Create logind profile and remove sys_tty_config.
@@ -29,7 +26,6 @@
   capability sys_nice,
   capability sys_ptrace,
   capability sys_resource,
-  capability sys_time,
   capability sys_tty_config,
   capability syslog,
 
