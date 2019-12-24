@@ -1,3 +1,37 @@
+commit ea797fab4e774265ec5b74c2c3ad711604b209ae
+Merge: 73dc4f4 93aab89
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Dec 24 05:48:25 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 93aab89a4570884177a319ab6ce9979529def848
+Merge: 73dc4f4 dee6665
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Dec 24 10:47:06 2019 +0000
+
+    Merge pull request #30 from madaidan/fixes
+    
+    Fixes
+
+commit dee666599c6aca3cd09cfb20176b09f830fe0628
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Dec 23 18:31:51 2019 +0000
+
+    Fixes
+
+commit d24c6d35e50e007156c4983f79a346c568e0e6a8
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Dec 23 18:31:50 2019 +0000
+
+    Fixes
+
+commit 73dc4f46501f004a249f208810838a334a96ef3b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 23 02:41:08 2019 -0500
+
+    bumped changelog version
+
 commit 797e96fa2e57a412d2582edd369ca9a3df4c80d6
 Merge: 5a229be 90a795b
 Author: Patrick Schleizer <adrelanos@riseup.net>
