@@ -123,3 +123,5 @@
   audit deny /**/modules-load.d/** w,
   audit deny /**/modprobe.d/ w,
   audit deny /**/modprobe.d/** w,
+  audit deny /lib/modules/ rw,
+  audit deny /lib/modules/** rw,
