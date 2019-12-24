@@ -1,3 +1,25 @@
+commit 4d0334a5d19726ecf0b62ee134a248ef243769d7
+Merge: bdd902c 7d64b2a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Dec 24 08:07:37 2019 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit bdd902cda245300fca766f1fa9c47e7ce1919b46
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Dec 24 07:26:13 2019 -0500
+
+    bumped changelog version
+
+commit 7d64b2a74c237c74d9dd4a0b1eae05f824fcf91b
+Merge: ea797fa f288c0c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Dec 24 11:02:34 2019 +0000
+
+    Merge pull request #31 from madaidan/modules
+    
+    Prevent attackers from messing with kernel modules
+
 commit ea797fab4e774265ec5b74c2c3ad711604b209ae
 Merge: 73dc4f4 93aab89
 Author: Patrick Schleizer <adrelanos@riseup.net>
@@ -13,6 +35,33 @@ Date:   Tue Dec 24 10:47:06 2019 +0000
     Merge pull request #30 from madaidan/fixes
     
     Fixes
+
+commit f288c0cc73d3757ddbd28973178ea2132de6b688
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Dec 23 20:25:56 2019 +0000
+
+     Prevent attackers from messing with kernel modules
+
+commit d4caf9bed918ac0750fec6918c42b77c13056191
+Merge: b965e86 73dc4f4
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Dec 23 20:24:54 2019 +0000
+
+    Merge pull request #1 from Whonix/master
+    
+    .
+
+commit b965e86bafcbb7ef0b886d914235e552c048e015
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Dec 23 20:24:45 2019 +0000
+
+    Update dangerous-files
+
+commit ea23159f2b6e45cae50263d56f3ab53591ec262c
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Dec 23 20:20:48 2019 +0000
+
+    Prevent attackers from messing with kernel modules
 
 commit dee666599c6aca3cd09cfb20176b09f830fe0628
 Author: madaidan <50278627+madaidan@users.noreply.github.com>
