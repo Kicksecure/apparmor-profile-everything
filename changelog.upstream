@@ -1,3 +1,25 @@
+commit 8c1c929d63beb99c1975fd7bee5e6e989b27f60d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 1 14:35:59 2020 -0500
+
+    Revert "Revert "/usr/lib/security-misc/pam_only_if_login flags=(attach_disconnected) {""
+    
+    This reverts commit c7b66b03e7efd1373b992b217d01ebbeaf763f8e.
+
+commit c7b66b03e7efd1373b992b217d01ebbeaf763f8e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 1 14:35:09 2020 -0500
+
+    Revert "/usr/lib/security-misc/pam_only_if_login flags=(attach_disconnected) {"
+    
+    This reverts commit 5170d8e929430205c92641a73d39ab1cbef8aa12.
+
+commit 10d933fd589550340a5b3f14a139b532de11db66
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 1 09:35:11 2020 -0500
+
+    bumped changelog version
+
 commit 5170d8e929430205c92641a73d39ab1cbef8aa12
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Jan 1 07:56:39 2020 -0500
