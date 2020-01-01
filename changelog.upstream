@@ -1,3 +1,27 @@
+commit 5170d8e929430205c92641a73d39ab1cbef8aa12
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 1 07:56:39 2020 -0500
+
+    /usr/lib/security-misc/pam_only_if_login flags=(attach_disconnected) {
+      #include <abstractions/kicksecure-shell-script>
+    }
+    
+    /usr/lib/security-misc/pam-abort-on-locked-password flags=(attach_disconnected) {
+      #include <abstractions/kicksecure-shell-script>
+    }
+
+commit dad14db22a091bccde983723859438795fff748f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 1 07:54:07 2020 -0500
+
+    refactoring
+
+commit 3768923982eb5d2b89042ebc876504d46dc4ae82
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Dec 24 18:26:38 2019 -0500
+
+    bumped changelog version
+
 commit 4d0334a5d19726ecf0b62ee134a248ef243769d7
 Merge: bdd902c 7d64b2a
 Author: Patrick Schleizer <adrelanos@riseup.net>
