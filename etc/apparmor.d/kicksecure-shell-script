@@ -9,14 +9,6 @@
   #include <abstractions/kicksecure-shell-script>
 }
 
-/usr/lib/security-misc/pam_only_if_login flags=(attach_disconnected) {
-  #include <abstractions/kicksecure-shell-script>
-}
-
-/usr/lib/security-misc/pam-abort-on-locked-password flags=(attach_disconnected) {
-  #include <abstractions/kicksecure-shell-script>
-}
-
 /usr/lib/security-misc/permission-lockdown flags=(attach_disconnected) {
   #include <abstractions/kicksecure-shell-script>
 }
