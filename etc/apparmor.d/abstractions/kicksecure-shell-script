@@ -18,6 +18,7 @@
   /{,usr/}bin/chmod mrix,
   /{,usr/}bin/touch mrix,
   /usr/bin/basename mrix,
+  /usr/bin/passwd mrix,
   /usr/bin/id rix,
   /usr/bin/cut mrix,
   /usr/bin/tail mrix,
@@ -43,6 +44,9 @@
   ## panic-on-oops
   /proc/sys/kernel/panic_on_oops w,
   /sbin/sysctl mrix,
+  
+  ## pam-abort-on-locked-password
+  owner /etc/shadow r,
 
   /etc/nsswitch.conf r,
   /etc/passwd r,
@@ -58,6 +62,8 @@
   
   owner /tmp/** rw,
   owner /proc/sys/kernel/osrelease r,
+  owner /proc/filesystems r,
+  owner /proc/*/loginuid r,
   
   /dev/tty rw,
   /dev/pts/[0-9]* rw,
