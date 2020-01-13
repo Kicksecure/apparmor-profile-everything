@@ -113,6 +113,7 @@
   /sys/devices/pci[0-9]*/**/ r,
   /sys/devices/pci[0-9]*/**/{,resource,boot_vga,class,vendor,device,irq,revision,subsystem_vendor,port_no} r,
   owner /sys/devices/pci[0-9]*/**/{,subsystem_device,removable,size,rotational,ro} r,
+  owner /sys/devices/pci[0-9]*/**/usb[0-9]*/{,busnum,devnum,speed,descriptors} r,
   owner /sys/devices/pci[0-9]*/**/sas_port/*/num_phys r,
   owner /sys/devices/pci[0-9]*/**/block/sda/dev r,
   owner /sys/devices/pci[0-9]*/**/block/sda/sda[0-9]*/{,partition,start} r,
@@ -131,6 +132,7 @@
   owner /sys/devices/virtual/bdi/[0-9]*:[0-9]*/read_ahead_kb r,
   /sys/devices/system/node/node[0-9]*/meminfo r,
   /sys/devices/system/cpu/present r,
+  /sys/devices/system/cpu/online r,
   /sys/devices/system/cpu/cpu[0-9]*/cache/index2/size r,
   owner /sys/devices/platform/rtc_cmos/rtc/rtc[0-9]*/hctosys r,
   /sys/class/ r,
@@ -138,6 +140,7 @@
   owner /sys/class/{,leds,power_supply,block}/ r,
   /sys/bus/ r,
   /sys/bus/pci/devices/ r,
+  owner /sys/bus/usb/devices/ r,
   owner /sys/bus/*/drivers/*/uevent r,
   /sys/fs/cgroup/** rwm,
   /sys/kernel/kexec_loaded r,
@@ -263,7 +266,8 @@
   owner /dev/mapper/swapfile w,
   owner /dev/vport[0-9]* rw,
   owner /dev/vda[0-9]* r,
-  owner /dev/dri/card[0-9]* rw,
+  /dev/dri/card[0-9]* rww,
+  owner /dev/bus/usb/ r,
 
   ## Removable media.
   owner /media/ r,
