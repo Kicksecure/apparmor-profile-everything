@@ -102,8 +102,8 @@
   audit deny /sys/kernel/debug/** rw,
 
   ## Prevent any changes to systemd.
-  audit deny /**/systemd/ w,
-  audit deny /**/systemd/** w,
+  #audit deny /**/systemd/ w,
+  #audit deny /**/systemd/** w,
   audit deny /**/init.d/ w,
   audit deny /**/init.d/** w,
   
