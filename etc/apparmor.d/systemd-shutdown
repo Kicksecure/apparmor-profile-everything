@@ -1,0 +1,28 @@
+## Copyright (C) 2012 - 2019 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+#include <tunables/global>
+
+profile systemd-shutdown /lib/systemd/systemd-shutdown flags=(attach_disconnected) {
+  #include <abstractions/base>
+
+  capability kill,
+  capability sys_boot,
+  capability sys_resource,
+
+  ptrace read,
+
+  signal send set=cont,
+  signal send set=stop,
+  signal send set=term,
+
+  /lib/systemd/systemd-shutdown mr,
+
+  /proc/ r,
+  /proc/cmdline r,
+  /proc/sys/kernel/core_pattern w,
+  /proc/*/{,cgroup,stat,cmdline} r,
+  /proc/*/fd/ r,
+
+  /dev/kmsg w,
+}
