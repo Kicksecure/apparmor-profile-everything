@@ -102,16 +102,15 @@
   audit deny /sys/kernel/debug/** rw,
 
   ## Prevent any changes to systemd.
-  audit deny /**/systemd/ w,
-  audit deny /**/systemd/** w,
+  #audit deny /**/systemd/ w,
+  #audit deny /**/systemd/** w,
+  audit deny /**/init.d/ w,
+  audit deny /**/init.d/** w,
   
   ## Deny changes to /etc/kernel.d/ to prevent an attacker from creating
   ## malicious hooks to backdoor the kernel.
   audit deny /etc/kernel.d/ w,
   audit deny /etc/kernel.d/** w,
-
-  audit deny /**/init.d/ w,
-  audit deny /**/init.d/** w,
 
   ## Prevent an attacker from loading unnecessary modules at boot or
   ## removing any module blacklists to add attack surface.
@@ -125,3 +124,9 @@
   audit deny /**/modprobe.d/** w,
   audit deny /lib/modules/ rw,
   audit deny /lib/modules/** rw,
+
+  ## Deny access to /boot and /usr/src to hide them from the logs.
+  audit deny /boot/ rw,
+  audit deny /boot/** rw,
+  audit deny /usr/src/ rw,
+  audit deny /usr/src/** rw,
