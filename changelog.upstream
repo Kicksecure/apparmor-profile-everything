@@ -1,3 +1,61 @@
+commit 45dddf1a76c5747d5da5d72184bd382923ac0d23
+Merge: ffbe487 67776b0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jan 14 08:48:33 2020 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 67776b0e399fd5f88bb07448fd6c6a04e8699343
+Merge: ffbe487 118307c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jan 14 13:43:00 2020 +0000
+
+    Merge pull request #32 from madaidan/fixes
+    
+    Fixes
+
+commit 118307cec2081d8e635ce352d9215f1b09570d88
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Jan 13 20:01:43 2020 +0000
+
+    Deny access to /boot and /usr/src
+
+commit 815273fb8e86acb438c32e5818bb9f2fef1645e2
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Jan 13 19:59:26 2020 +0000
+
+    Typo
+
+commit 7e49f4569b821518fa0e7153a6298c2abdf6e79f
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Jan 13 19:58:50 2020 +0000
+
+    Various fixes
+
+commit c8a516da3a68317dfc2c62b0ad3bcb58e2970402
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Jan 13 19:44:19 2020 +0000
+
+    Allow writing to /**/systemd/ for now
+
+commit c71e44c3fbb7a1b86dc09c2490885bed443be79f
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Jan 13 19:35:17 2020 +0000
+
+    Fix ordering
+
+commit c287d09662a3d8610a311fc930c91b53c336c4e4
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Jan 13 19:34:23 2020 +0000
+
+    pam-abort-on-locked-password fixes
+
+commit ffbe4873836b7bc364f3bfee1fef56ba8fd9b0be
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 1 15:09:10 2020 -0500
+
+    bumped changelog version
+
 commit 8c1c929d63beb99c1975fd7bee5e6e989b27f60d
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Jan 1 14:35:59 2020 -0500
