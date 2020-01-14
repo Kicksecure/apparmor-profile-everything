@@ -38,8 +38,17 @@
   /etc/skel/** rw,
 
   ## remove-system.map
-  /boot/ r,
-  /boot/System.map* rw,
+  owner / r,
+  owner /System.map* rw,
+  owner /boot/ r,
+  owner /boot/System.map* rw,
+  owner /usr/src/ r,
+  owner /usr/src/*/ r,
+  owner /usr/src/*/System.map* rw,
+  owner /lib/modules/ r,
+  owner /lib/modules/*/ r,
+  owner /lib/modules/*/*/ r,
+  owner /lib/modules/*/*/System.map* rw,
   
   ## panic-on-oops
   /proc/sys/kernel/panic_on_oops w,
