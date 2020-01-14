@@ -124,9 +124,3 @@
   audit deny /**/modprobe.d/** w,
   audit deny /lib/modules/ rw,
   audit deny /lib/modules/** rw,
-
-  ## Deny access to /boot and /usr/src to hide them from the logs.
-  audit deny /boot/ rw,
-  audit deny /boot/** rw,
-  audit deny /usr/src/ rw,
-  audit deny /usr/src/** rw,
