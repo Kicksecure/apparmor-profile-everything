@@ -23,7 +23,6 @@
   capability setpcap,
   capability setuid,
   capability sys_admin,
-  capability sys_boot,
   capability sys_chroot,
   capability sys_nice,
   capability sys_ptrace,
