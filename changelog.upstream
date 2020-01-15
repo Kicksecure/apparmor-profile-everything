@@ -1,3 +1,55 @@
+commit bff79d15058fa5047729843ea845b9267c23100a
+Merge: 4ee3ffc 4afa23b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 15 11:03:26 2020 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 4ee3ffc05f5df1bca2879689e6b5629a00d8ad28
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 15 10:11:30 2020 -0500
+
+    bumped changelog version
+
+commit 4afa23b3bc6c2aa76a9f38e91418149a6172eee9
+Merge: d1897fd 4dbb112
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 15 07:53:58 2020 +0000
+
+    Merge pull request #34 from madaidan/systemd-shutdown
+    
+    Create systemd-shutdown profile and remove CAP_SYS_BOOT
+
+commit 4dbb112e312e75a249372b48d5e0551ba27a5ea3
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Jan 14 20:23:34 2020 +0000
+
+    Update systemd-shutdown
+
+commit 08081d46f683f8f290df86258b0b2adf3f959ae1
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Jan 14 20:21:09 2020 +0000
+
+    Fixes
+
+commit 3fb3b3afe4b1a0f9a589c9a7d626b51610258790
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Jan 14 20:19:10 2020 +0000
+
+    Remove CAP_SYS_BOOT
+
+commit 27078e79bcab6f05ee2dfe5f4c1726c2dce96321
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Jan 14 20:17:27 2020 +0000
+
+    Confine systemd-shutdown
+
+commit b0948f5cdfb8e6a1e1b0e062f812f996bf57277a
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Jan 14 20:15:56 2020 +0000
+
+    Create systemd-shutdown
+
 commit e9de7ec9cf7468b7cf06bdd28f4b477c020d5abb
 Merge: c6b8f49 d1897fd
 Author: Patrick Schleizer <adrelanos@riseup.net>
