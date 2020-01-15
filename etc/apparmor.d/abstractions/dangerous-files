@@ -124,3 +124,11 @@
   audit deny /**/modprobe.d/** w,
   audit deny /lib/modules/ rw,
   audit deny /lib/modules/** rw,
+  audit deny /**/dkms/ rw,
+  audit deny /**/dkms/** rw,
+  
+  ## Don't allow any changes to hardened-kernel.
+  audit deny /var/lib/hardened-kernel/ rw,
+  audit deny /var/lib/hardened-kernel/** rw,
+  audit deny /usr/share/hardened-kernel/ rw,
+  audit deny /usr/share/hardened-kernel/** rw,
