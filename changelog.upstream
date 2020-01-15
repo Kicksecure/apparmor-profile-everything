@@ -1,3 +1,37 @@
+commit e9de7ec9cf7468b7cf06bdd28f4b477c020d5abb
+Merge: c6b8f49 d1897fd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jan 14 14:20:27 2020 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit d1897fd604585d049d7b00482e89846124a58a07
+Merge: c6b8f49 b34ec4a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jan 14 19:19:56 2020 +0000
+
+    Merge pull request #33 from madaidan/remove-system.map
+    
+    Fix remove-system.map
+
+commit b34ec4a3548e2677aba67772ec9b55d700c76793
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Jan 14 19:14:43 2020 +0000
+
+    Remove /boot and /usr/src deny rules
+
+commit 306a0ae9a995687eec2aeed48d99b7383650f894
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Jan 14 19:13:08 2020 +0000
+
+    Account for other System.map locations
+
+commit c6b8f490a7b1b088d379ede126cd652937b5f621
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jan 14 09:18:43 2020 -0500
+
+    bumped changelog version
+
 commit 45dddf1a76c5747d5da5d72184bd382923ac0d23
 Merge: ffbe487 67776b0
 Author: Patrick Schleizer <adrelanos@riseup.net>
