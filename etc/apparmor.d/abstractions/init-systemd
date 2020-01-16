@@ -2,7 +2,6 @@
   ## See the file COPYING for copying conditions.
 
   ## TODO: Further restict these. Use extended capability rules.
-  ## TODO: Create whonix-firewall profile and remove net_admin.
   ## TODO: Create auditd(/journald?) profile and remove audit_*.
   ## TODO: Create journald profile and remove syslog.
   ## TODO: Create logind profile and remove sys_tty_config.
@@ -18,7 +17,6 @@
   capability ipc_lock,
   capability kill,
   capability mknod,
-  capability net_admin,
   capability setgid,
   capability setpcap,
   capability setuid,

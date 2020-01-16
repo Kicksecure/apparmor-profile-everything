@@ -1,0 +1,29 @@
+## Copyright (C) 2012 - 2019 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+#include <tunables/global>
+
+/sbin/networking-aae flags=(attach_disconnected) {
+  #include <abstractions/base>
+  #include <abstractions/bash>
+
+  capability dac_read_search,
+  capability net_admin,
+
+  /dev/pts/[0-9]* rw,
+
+  /bin/dash mrix,
+  /bin/ip mrix,
+  /bin/run-parts mrix,
+  /sbin/ifdown mrix,
+  /sbin/ifup mrix,
+  /sbin/networking r,
+
+  /etc/default/networking r,
+  /etc/network/** mrix,
+  owner /etc/nsswitch.conf r,
+  owner /etc/passwd r,
+
+  owner /proc/filesystems r,
+  owner /run/network/* rwk,
+}
