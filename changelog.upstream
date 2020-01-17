@@ -1,3 +1,31 @@
+commit b4dfa2a6df12b1c3e6c8f4be2e4dd855388c51d4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 17 03:44:13 2020 -0500
+
+    man page
+
+commit 613a4ef7a4a8d4dd1166159c83175fcc3ac5f40d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 17 03:38:03 2020 -0500
+
+    actually better to keep for manual run without systemd
+    
+    Revert "`. /etc/default/networking` is not required."
+    
+    This reverts commit 4224cd9df854d505824611982d72d4e3b5e2c8ed.
+
+commit 7e7098b30ebcfb7256886a293e1bbe4318876bb3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 17 03:36:31 2020 -0500
+
+    chmod +x sbin/networking-aae
+
+commit 0396fc17693429533ef84e0da613da5ba271c875
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 17 03:17:17 2020 -0500
+
+    bumped changelog version
+
 commit 4224cd9df854d505824611982d72d4e3b5e2c8ed
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Jan 16 06:59:33 2020 -0500
