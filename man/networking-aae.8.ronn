@@ -1,0 +1,37 @@
+networking-aae(8) -- ifup and ifdown wrapper for apparmor-profile-everything
+=============================================
+
+<span class="comment">
+# Copyright (C) 2019 - 2019 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+# See the file COPYING for copying conditions.
+</span>
+
+## SYNOPSIS
+`networking-aae [up|down]`
+
+## DESCRIPTION
+`networking.service` calls
+
+`ExecStart=/sbin/ifup -a --read-environment`
+
+`ExecStop=/sbin/ifdown -a --read-environment --exclude=lo`
+
+`networking.service.d/30_apparmor_profile_everything.conf`
+overwrites this and runs
+
+`ExecStart=/sbin/networking-aae up`
+
+`ExecStop=/sbin/networking-aae down`
+
+instead.
+
+## EXAMPLES
+sudo networking-aae up
+
+sudo networking-aae down
+
+## WWW
+https://github.com/Whonix/apparmor-profile-everything
+
+## AUTHOR
+This man page has been written by Patrick Schleizer (adrelanos@riseup.net).
