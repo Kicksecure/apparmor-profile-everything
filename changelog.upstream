@@ -1,3 +1,86 @@
+commit 4224cd9df854d505824611982d72d4e3b5e2c8ed
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jan 16 06:59:33 2020 -0500
+
+    `. /etc/default/networking` is not required.
+    
+    `/lib/systemd/system/networking.service` already does `EnvironmentFile=-/etc/default/networking`.
+
+commit 5c1db0689034ad7ed14505dae8f5dd4c1b29a177
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jan 16 06:58:05 2020 -0500
+
+    renamed:    etc/apparmor.d/sbin.networking -> etc/apparmor.d/sbin.networking-aae
+    
+    for consistency
+    
+    https://forums.whonix.org/t/apparmor-for-complete-system-including-init-pid1-systemd-everything-full-system-mac-policy/8339/350
+
+commit 73b40cd6ac4d37f154fb6ea1d07c9c66d8efd437
+Merge: 67f6e7d 945e03e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jan 16 06:57:14 2020 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 945e03ec97c9b0369ae9a9bb3a6357b07f288861
+Merge: 3e613bf babe8f7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jan 16 11:55:48 2020 +0000
+
+    Merge pull request #25 from madaidan/net_admin
+    
+     Remove CAP_NET_ADMIN capability
+
+commit 3e613bf73de7d00e4c30f66596c42ee6623b75fe
+Merge: 67f6e7d cd9329f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jan 16 11:48:24 2020 +0000
+
+    Merge pull request #36 from madaidan/remove-system.map
+    
+    Put remove-system.map permissions in its own profile
+
+commit cd9329fc12abd8c03bdc8855e4d122761234b6dd
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Jan 15 21:06:10 2020 +0000
+
+    Add remove-system.map permissions
+
+commit b87facfe5061a0df5f63089ed5e6f2871515adb0
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Jan 15 21:04:55 2020 +0000
+
+    Remove remove-system.map permissions from abstraction
+
+commit 67f6e7d7c24385499753db5b58964eb4d492dca5
+Merge: 97a05dd cf46c1e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 15 15:56:41 2020 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit cf46c1ec8cf794afca7107cb61fe88725640b680
+Merge: 97a05dd 05baf7c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 15 20:56:03 2020 +0000
+
+    Merge pull request #35 from madaidan/dkms
+    
+    Don't allow any changes to dkms or hardened-kernel
+
+commit 05baf7ce1b15f4956ccdbb8e9022da2af5b04243
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Jan 15 20:39:58 2020 +0000
+
+    Don't allow any changes to dkms or hardened-kernel
+
+commit 97a05ddd602929eae48b977690856e9e0b35a267
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 15 11:35:58 2020 -0500
+
+    bumped changelog version
+
 commit bff79d15058fa5047729843ea845b9267c23100a
 Merge: 4ee3ffc 4afa23b
 Author: Patrick Schleizer <adrelanos@riseup.net>
@@ -284,6 +367,55 @@ Date:   Mon Dec 23 02:10:09 2019 -0500
 
     bumped changelog version
 
+commit babe8f74f98cd3da6ca3b82a1812238154fc6c59
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 23 05:23:04 2019 +0000
+
+    networking-aae
+
+commit 05189d07c3ab2e193c9364b8b643cf908508d2af
+Merge: 4d65753 90a795b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 23 05:21:48 2019 +0000
+
+    Merge branch 'master' into net_admin
+
+commit 4d65753f7ddac98a3984d30e7d5435740df4fceb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 23 05:21:00 2019 +0000
+
+    networking-aae
+
+commit 44f7160a03a6bd11409419d29c2aa21e2e9ed08d
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Dec 22 19:05:17 2019 +0000
+
+    Update 30_apparmor_profile_everything.conf
+
+commit 72396340804798b00cd9187114201e2ff0707a2a
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Dec 22 18:55:37 2019 +0000
+
+    Create 30_apparmor_profile_everything.conf
+
+commit 43dc34b7990f36c465d2cf3531ced8a06a08314d
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Dec 22 18:55:02 2019 +0000
+
+    Delete networking.service
+
+commit 96ec4311662d25d512a8e76f9152b2f3fc36114c
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Dec 22 18:54:24 2019 +0000
+
+    Rename networking to networking-aae
+
+commit 6f79d7ed243d20cc06242c949652617922d74165
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Dec 22 18:54:05 2019 +0000
+
+    Licensing
+
 commit 90a795bc1996df7f974661a67df1ea30da0092f8
 Merge: 25eb17b bc3cc5c
 Author: Patrick Schleizer <adrelanos@riseup.net>
@@ -373,6 +505,36 @@ Author: madaidan <50278627+madaidan@users.noreply.github.com>
 Date:   Sun Dec 22 14:35:43 2019 +0000
 
     Remove CAP_SYS_TIME capability
+
+commit 23367cd5f1fd94a8a8a7f1c6ddb2c85ab4aff6e5
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Dec 22 14:07:29 2019 +0000
+
+    Remove CAP_NET_ADMIN capability
+
+commit a9db0189e05f783537d06cbb2a524f69ce785346
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Dec 22 14:06:23 2019 +0000
+
+    Create networking.service
+
+commit 5e9690a2270b0632de378198dfba3fa2f25e5cc2
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Dec 22 14:05:20 2019 +0000
+
+    Create sbin.networking
+
+commit 334cd6c6bc333aef741aca1780b0e418f2fccbd8
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Dec 22 14:04:21 2019 +0000
+
+    Create networking
+
+commit 3a11dc7398c20f609d077b52aabd211cf1e466ec
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Dec 22 14:03:43 2019 +0000
+
+    Remove CAP_NET_ADMIN capability
 
 commit b4237c8eade0989e9be9e0112c684a05bbeaf4b8
 Author: madaidan <50278627+madaidan@users.noreply.github.com>
