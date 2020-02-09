@@ -132,3 +132,7 @@
   audit deny /var/lib/hardened-kernel/** rw,
   audit deny /usr/share/hardened-kernel/ rw,
   audit deny /usr/share/hardened-kernel/** rw,
+
+  ## Deny write access to hard drives. Otherwise, an attacker can write to
+  ## e.g. /dev/sda to bypass restrictions.
+  audit deny /dev/sd* rw,
