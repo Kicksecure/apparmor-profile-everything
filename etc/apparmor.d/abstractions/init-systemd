@@ -228,7 +228,7 @@
   /dev/kvm rw,
   owner /dev/sr0 rwk,
   /dev/log rw,
-  owner /dev/sd* rwmk,
+  owner /dev/sd* r,
   owner /dev/kmsg rw,
   owner /dev/fb0 rw,
   owner /dev/vga_arbiter rw,
