@@ -17,7 +17,7 @@
   /bin/run-parts mrix,
   /sbin/ifdown mrix,
   /sbin/ifup mrix,
-  /sbin/networking r,
+  /sbin/networking-aae r,
 
   /etc/default/networking r,
   /etc/network/** mrix,
