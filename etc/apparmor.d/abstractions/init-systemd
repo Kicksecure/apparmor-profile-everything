@@ -262,7 +262,6 @@
   owner /dev/dm-0 rw,
   owner /dev/mapper/swapfile w,
   owner /dev/vport[0-9]* rw,
-  owner /dev/vda[0-9]* r,
   /dev/dri/card[0-9]* rw,
   owner /dev/bus/usb/ r,
 
