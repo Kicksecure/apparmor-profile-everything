@@ -137,3 +137,7 @@
   ## e.g. /dev/sda to bypass restrictions.
   audit deny /dev/sd* rw,
   audit deny /dev/vd* rw,
+  audit deny /dev/disk/ rw,
+  audit deny /dev/disk/** rw,
+  audit deny /dev/block/ rw,
+  audit deny /dev/block/* rw,
