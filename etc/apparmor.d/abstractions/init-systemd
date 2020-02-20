@@ -212,7 +212,6 @@
   /dev/null rw,
   /dev/zero rw,
   /dev/full rw,
-  /dev/core r,
   /dev/stdin rw,
   /dev/stdout r,
   /dev/stderr rw,
