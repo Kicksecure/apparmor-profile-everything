@@ -1,3 +1,59 @@
+commit e276abba28a1a45fc71025cedbde2cc05e5a7b56
+Merge: 011b9b5 4aa5add
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 12 03:10:21 2020 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 4aa5add01eb3d340d0cb6087b0c0194568b8e770
+Merge: 011b9b5 d728ae5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 12 08:08:51 2020 +0000
+
+    Merge pull request #38 from madaidan/networking-aae
+    
+    Rename networking to networking-aae
+
+commit d728ae5f7405bec7c2fb5af6623113f55a699605
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Feb 11 20:06:04 2020 +0000
+
+    Rename networking to networking-aae
+
+commit 011b9b55affa4c80f723f9a55ed7f21513b74c4e
+Merge: 63fdd03 8a23d27
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Feb 9 01:21:51 2020 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 8a23d279d1b8dc802bf26ddd98a7e706b1fb1477
+Merge: 63fdd03 46a6e90
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Feb 9 06:21:27 2020 +0000
+
+    Merge pull request #37 from madaidan/drives
+    
+    Deny write access to hard drives
+
+commit 46a6e909de7fac0283109b0f9e7ca25f6c09f0bf
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Feb 9 00:28:38 2020 +0000
+
+    Deny write access to hard drives
+
+commit b50469294e1c90d210e8f1f8a8ede2de38b99027
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Feb 9 00:27:05 2020 +0000
+
+    Deny write access to hard drives
+
+commit 63fdd0312a81f878d266ae9197803ccbd6bc18df
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 17 03:44:43 2020 -0500
+
+    bumped changelog version
+
 commit b4dfa2a6df12b1c3e6c8f4be2e4dd855388c51d4
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Jan 17 03:44:13 2020 -0500

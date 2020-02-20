@@ -133,6 +133,16 @@
   audit deny /usr/share/hardened-kernel/ rw,
   audit deny /usr/share/hardened-kernel/** rw,
 
-  ## Deny write access to hard drives. Otherwise, an attacker can write to
+  ## Deny all access to hard drives. Otherwise, an attacker can write to
   ## e.g. /dev/sda to bypass restrictions.
   audit deny /dev/sd* rw,
+  audit deny /dev/vd* rw,
+  audit deny /dev/disk/ rw,
+  audit deny /dev/disk/** rw,
+  audit deny /dev/block/ rw,
+  audit deny /dev/block/* rw,
+
+  ## Deny access to /proc/kcore and /dev/core. /proc/kcore represents all
+  ## physical memory of the system and /dev/core is a symlink to it.
+  audit deny /proc/kcore rw,
+  audit deny /dev/core rw,
