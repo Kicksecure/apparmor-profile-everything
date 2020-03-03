@@ -1,3 +1,92 @@
+commit 83b984dcac5fe89ac1234a0872332c15d0a03250
+Merge: e276abb 59a7a4d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 20 00:48:42 2020 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 59a7a4daef5027cd1af3a919ccde2ac9faf6850a
+Merge: c2a2890 879c6a3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 20 05:47:33 2020 +0000
+
+    Merge pull request #40 from madaidan/drives
+    
+    Deny all access to virtual hard drives
+
+commit 879c6a3e2543cdae1a6ffc3f68c27456cc049a5e
+Merge: 725b360 c2a2890
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 20 05:47:24 2020 +0000
+
+    Merge branch 'master' into drives
+
+commit c2a2890e523d50e265485f55c1091defef77e2d9
+Merge: 7442d3b 8e8508c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 20 05:46:32 2020 +0000
+
+    Merge pull request #39 from madaidan/kcore
+    
+    Deny access to /proc/kcore and /dev/core
+
+commit 7442d3be277b8b3e913221a0931c1e59bbfdc6c7
+Merge: 8654d18 7f842e8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 20 05:46:15 2020 +0000
+
+    Merge pull request #41 from madaidan/tty
+    
+    Only allow access to the current user's terminals
+
+commit 7f842e843080a8553ba34bc72fbef9e98b08472f
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Feb 19 21:15:36 2020 +0000
+
+    Only allow access to the current user's terminals
+
+commit 725b3604edfcded651713f6ac379716cd5dcbefc
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Feb 19 21:09:40 2020 +0000
+
+    Deny access to hard drive symlinks
+
+commit 907f3265bf588bd9c226d336da8046deca1c79b7
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Feb 19 21:09:21 2020 +0000
+
+    Deny access to hard drive symlinks
+
+commit 773e901ac99be5a4dd92c0eea98773b2384d0dd3
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Feb 19 21:00:02 2020 +0000
+
+    Deny access to virtual hard drives
+
+commit 5b3810489bca8c6dfad00cb0076ed78f295fe01a
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Feb 19 20:59:28 2020 +0000
+
+    Deny access to virtual hard drives
+
+commit 8e8508c0fd260054aa626b4df69681137d486eb3
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Feb 19 20:48:58 2020 +0000
+
+    Deny access to /proc/kcore and /dev/core
+
+commit 81beb70e0a1d02bfce470fdd317a0112a70a8dbc
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Feb 19 20:44:29 2020 +0000
+
+    Deny access to /dev/core
+
+commit 8654d18e6694a5806b60a63079ac75d83dff20bc
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 13 14:11:06 2020 +0000
+
+    bumped changelog version
+
 commit e276abba28a1a45fc71025cedbde2cc05e5a7b56
 Merge: 011b9b5 4aa5add
 Author: Patrick Schleizer <adrelanos@riseup.net>
