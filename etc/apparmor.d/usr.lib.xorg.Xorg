@@ -1,0 +1,72 @@
+## Copyright (C) 2012 - 2020 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+#include <tunables/global>
+
+/usr/lib/xorg/Xorg flags=(attach_disconnected) {
+  #include <abstractions/base>
+
+  ## CAP_SYS_RAWIO allows a lot of ways to modify kernel code (e.g. iopl())
+  ## and we don't want to grant something with as large attack surface as
+  ## Xorg this capability.
+  deny capability sys_rawio,
+
+  capability dac_override,
+  capability ipc_owner,
+  capability setgid,
+  capability setuid,
+  capability sys_admin,
+
+  signal receive set=cont peer=init-systemd,
+  signal receive set=term peer=init-systemd,
+  signal send set=usr1 peer=init-systemd,
+
+  /bin/dash mrix,
+  /usr/bin/xkbcomp mrix,
+  /usr/lib/xorg/Xorg mr,
+
+  owner /etc/glvnd/egl_vendor.d/ r,
+  owner /etc/nsswitch.conf r,
+  owner /etc/passwd r,
+
+  owner /usr/share/X11/** r,
+  owner /usr/share/drirc.d/ r,
+  owner /usr/share/drirc.d/*.conf r,
+  owner /usr/share/glvnd/egl_vendor.d/ r,
+  owner /usr/share/glvnd/egl_vendor.d/*.json r,
+  owner /usr/share/libinput/ r,
+  owner /usr/share/libinput/*.quirks r,
+
+  /proc/*/cmdline r,
+  owner /proc/cmdline r,
+  owner /proc/mtrr w,
+
+  owner /sys/bus/ r,
+  owner /sys/bus/pci/devices/ r,
+  owner /sys/class/ r,
+  owner /sys/class/drm/ r,
+  owner /sys/class/input/ r,
+  owner /sys/class/tty/ r,
+  owner /sys/devices/**/{,uevent,name} r,
+  owner /sys/devices/pci[0-9]*/**/{,device,revision,subsystem_device,subsystem_vendor,class,vendor,boot_vga,config,resource} r,
+
+  owner /dev/dri/ r,
+  owner /dev/dri/card[0-9]* rw,
+  owner /dev/fb[0-9]* rw,
+  owner /dev/input/event[0-9]* rw,
+  owner /dev/shm/#* rw,
+  owner /dev/tty[0-9]* rw,
+  owner /dev/vga_arbiter rw,
+
+  owner /run/lightdm/root/* r,
+  owner /run/udev/data/* r,
+
+  owner /tmp/.X*-lock wl,
+  owner /tmp/.X11-unix/* w,
+  owner /tmp/.tX*-lock w,
+
+  owner /var/lib/xkb/server-*.xkm rw,
+  owner /var/log/Xorg.*.log{,.old} rw,
+  owner /var/log/lightdm/x-*.log w,
+
+}

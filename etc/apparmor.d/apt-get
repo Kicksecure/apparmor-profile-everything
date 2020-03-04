@@ -27,6 +27,10 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
   capability sys_tty_config,
   capability sys_resource,
 
+  ## Allow rapt to send itself SIGINT signals.
+  signal send set=int peer=/usr/bin/rapt,
+  signal receive set=int peer=/usr/bin/rapt,
+
   ## Network access.
   ##
   ## Only IPv4 TCP traffic is allowed as Whonix
@@ -104,7 +108,7 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
   owner /proc/*/{,environ,sched,mountinfo,mounts,loginuid} r,
   owner /proc/{,cmdline,modules,swaps,devices} r,
   owner /proc/sys/kernel/random/boot_id r,
-  owner /proc/sys/kernel/osrelease r,
+  owner /proc/sys/kernel/{,osrelease,ngroups_max} r,
 
   ## Tmpfs access.
   ##
