@@ -176,7 +176,7 @@
   /proc/asound/card[0-9]*/pcm[0-9]*/sub[0-9]*/status r,
   owner /proc/mtrr rw,
   owner /proc/*/{,setgroups,gid_map,uid_map} w,
-  owner /proc/{,kmsg,devices,modules} r,
+  owner /proc/{,kmsg,devices} r,
   owner /proc/tty/drivers r,
   owner /proc/sysvipc/{,shm,sem,msg} r,
 
