@@ -141,8 +141,13 @@
   audit deny /dev/disk/** rw,
   audit deny /dev/block/ rw,
   audit deny /dev/block/* rw,
+  audit deny /sys/devices/pci**/block/vda/dev rw,
 
   ## Deny access to /proc/kcore and /dev/core. /proc/kcore represents all
   ## physical memory of the system and /dev/core is a symlink to it.
   audit deny /proc/kcore rw,
   audit deny /dev/core rw,
+
+  ## CAP_NET_ADMIN allows modifying the firewall which we don't want as it
+  ## allows root on the gateway to leak the user's IP.
+  audit deny capability net_admin,
