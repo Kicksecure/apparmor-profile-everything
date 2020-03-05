@@ -13,10 +13,12 @@ profile init-systemd /lib/systemd/** flags=(attach_disconnected) {
 profile init-systemd-debug /lib/systemd/** flags=(attach_disconnected) {
   #include <abstractions/init-systemd>
   #include <abstractions/dangerous-files>
+  #include <abstractions/aadebug>
 }
 
 profile init-systemd-superroot /lib/systemd/** flags=(attach_disconnected) {
   #include <abstractions/init-systemd>
-  
+  #include <abstractions/aadebug>
+
   owner /proc/sys/** rw,
 }
