@@ -1,3 +1,31 @@
+commit fce7592cd654de15f2c0abacb1d3501d0b7f5f8c
+Merge: b037372 0a6f190
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Mar 7 03:50:49 2020 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 0a6f19066ed0bb9a0482351e75046512cfe3bb38
+Merge: b037372 8189287
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Mar 7 08:42:03 2020 +0000
+
+    Merge pull request #46 from madaidan/modules_2
+    
+    Only allow access to module info in debug mode
+
+commit 8189287b24f3a5b872ce24a58f2be5fb34cc7b12
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Fri Mar 6 20:09:13 2020 +0000
+
+    Only allow access to module info in debug mode
+
+commit b037372a957cba09daa265123fe65ba64bc90283
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Mar 5 08:34:45 2020 -0500
+
+    bumped changelog version
+
 commit c7d3d1460376ea1148c5531dbe9d26a50d940e84
 Merge: 1f67c26 aca0155
 Author: Patrick Schleizer <adrelanos@riseup.net>
