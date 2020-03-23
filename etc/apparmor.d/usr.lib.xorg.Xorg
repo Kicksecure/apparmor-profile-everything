@@ -17,8 +17,7 @@
   capability setuid,
   capability sys_admin,
 
-  signal receive set=cont peer=init-systemd,
-  signal receive set=term peer=init-systemd,
+  signal receive set=(cont, term) peer=init-systemd,
   signal send set=usr1 peer=init-systemd,
 
   /bin/dash mrix,
