@@ -1,3 +1,88 @@
+commit 4c6ceb5230b2867c2eb861f865e882bda0df0621
+Merge: b36054e 13ba39b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Mar 24 03:10:13 2020 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 13ba39bb86514f6a7ebf76cfc37684695e0f8bda
+Merge: 7629cc5 65afa0e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Mar 24 07:07:42 2020 +0000
+
+    Merge pull request #48 from madaidan/cleanup
+    
+    Cleanup
+
+commit 7629cc5e4ab15fc1615c44a35f87054f85a3ce95
+Merge: b36054e b418623
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Mar 24 07:06:13 2020 +0000
+
+    Merge pull request #47 from madaidan/commas
+    
+    Remove unneeded commas
+
+commit b41862308d16577a240d2d9f9fa0fe055700bc5f
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Mar 23 19:43:39 2020 +0000
+
+    Remove unneeded commas
+
+commit 65afa0ea9a9a1b332a630fa5892e6db927389af9
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Mar 23 19:40:00 2020 +0000
+
+    Cleanu[
+
+commit f7cab122bf682c8ca9f78e11fdd161c25c137f78
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Mar 23 19:37:16 2020 +0000
+
+    Cleanup
+
+commit d6cf60b967271d303b23fc8f670424c425716757
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Mar 23 19:35:31 2020 +0000
+
+    Cleanup
+
+commit 6d748b47c357102f233a83caedfc63432f4d7775
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Mar 23 19:34:47 2020 +0000
+
+    Cleanup
+
+commit 6eeaa27563c2574ef5febb0865a154bad9ad98bd
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Mar 23 19:33:30 2020 +0000
+
+    Cleanup
+
+commit 52ca494052f7b6549eb7e4bea77a45e6e2ccc43a
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Mar 23 19:29:31 2020 +0000
+
+    Remove unneeded commas
+
+commit f3d4add54926edc43f51fa2d472cca43992bc4a4
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Mar 23 19:29:19 2020 +0000
+
+    Remove unneeded commas
+
+commit e09cee4ba55291c0296ef6f052a2eccbe326abd8
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Mar 23 19:28:47 2020 +0000
+
+    Remove unneeded commas
+
+commit b36054ec8e3df16fabe4a31d5138b00ad1448ab0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Mar 8 09:42:20 2020 -0400
+
+    bumped changelog version
+
 commit fce7592cd654de15f2c0abacb1d3501d0b7f5f8c
 Merge: b037372 0a6f190
 Author: Patrick Schleizer <adrelanos@riseup.net>
