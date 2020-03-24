@@ -12,17 +12,13 @@ profile systemd-modules-load /lib/systemd/systemd-modules-load flags=(attach_dis
 
   /dev/pts/[0-9]* rw,
   
-  owner /**/modprobe.d/ r,
-  owner /**/modprobe.d/*.conf r,
-  owner /**/modules-load.d/ r,
-  owner /**/modules-load.d/*.conf r,
+  owner /**/{modprobe,modules-load}.d/ r,
+  owner /**/{modprobe,modules-load}.d/*.conf r,
   
   owner /etc/modules r,
   
-  owner /proc/*/environ r,
-  owner /proc/*/sched r,
-  owner /proc/*/stat r,
   owner /proc/cmdline r,
+  owner /proc/*/{environ,sched,stat} r,
   
   owner /sys/module/** r,
 }

@@ -28,8 +28,7 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
   capability sys_resource,
 
   ## Allow rapt to send itself SIGINT signals.
-  signal send set=int peer=/usr/bin/rapt,
-  signal receive set=int peer=/usr/bin/rapt,
+  signal (receive, send) set=int peer=/usr/bin/rapt,
 
   ## Network access.
   ##
@@ -69,7 +68,7 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
   ## Sysfs access.
   ## TODO: Restrict /sys/devices/ access.
   owner /sys/module/*/ r,
-  owner /sys/module/*/{,refcnt,coresize,uevent,initstate} r,
+  owner /sys/module/*/{refcnt,coresize,uevent,initstate} r,
   owner /sys/module/*/holders/ r,
   owner /sys/kernel/security/apparmor/ r,
   owner /sys/devices/ r,
@@ -79,19 +78,19 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
   owner /sys/devices/pci[0-9]*/** r,
   owner /sys/devices/*/ r,
   owner /sys/devices/**/modalias r,
-  owner /sys/devices/**/{,power,input}/ r,
-  owner /sys/devices/platform/*/{,tty,serio[0-9],rtc,regulator,cmos_nvram0}/ r,
+  owner /sys/devices/**/{power,input}/ r,
+  owner /sys/devices/platform/*/{tty,serio[0-9],rtc,regulator,cmos_nvram0}/ r,
   owner /sys/devices/pnp0/[0-9][0-9]:[0-9][0-9]/ r,
-  owner /sys/devices/platform/{,reg-dummy,rtc_cmos,vesa-framebuffer.0,alarmtimer,serial8250,i8042,pcspkr}/ r,
-  owner /sys/devices/{,uprobe,kprobe,msr}/format/ r,
+  owner /sys/devices/platform/{reg-dummy,rtc_cmos,vesa-framebuffer.0,alarmtimer,serial8250,i8042,pcspkr}/ r,
+  owner /sys/devices/{uprobe,kprobe,msr}/format/ r,
   owner /sys/devices/msr/events/ r,
   owner /sys/devices/system/cpu/{,cpu[0-9]*/}*/ r,
   owner /sys/devices/system/cpu/modalias r,
-  owner /sys/devices/system/{,machinecheck,edac,edac/mc,container,clockevents,clocksource,node,memory}/ r,
+  owner /sys/devices/system/{machinecheck,edac,edac/mc,container,clockevents,clocksource,node,memory}/ r,
   owner /sys/devices/system/machinecheck/machinecheck[0-9]*/ r,
-  owner /sys/devices/system/clock{,source,events}/clock{,source,event}[0-9]*/ r,
+  owner /sys/devices/system/clock{source,events}/clock{source,event}[0-9]*/ r,
   owner /sys/devices/system/clockevents/broadcast/ r,
-  owner /sys/devices/system/{,memory,node}/{,memory,node}[0-9]*/ r,
+  owner /sys/devices/system/{memory,node}/{memory,node}[0-9]*/ r,
   owner /sys/devices/virtual/** r,
   owner /sys/block/ r,
   owner /sys/bus/ r,
@@ -103,12 +102,11 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
   /proc/ r,
   /proc/filesystems r,
   /proc/*/fd/ r,
-  /proc/*/{,stat,comm,cmdline} r,
+  /proc/*/{stat,comm,cmdline} r,
   /proc/*/task/ r,
-  owner /proc/*/{,environ,sched,mountinfo,mounts,loginuid} r,
-  owner /proc/{,cmdline,modules,swaps,devices} r,
-  owner /proc/sys/kernel/random/boot_id r,
-  owner /proc/sys/kernel/{,osrelease,ngroups_max} r,
+  owner /proc/*/{environ,sched,mountinfo,mounts,loginuid} r,
+  owner /proc/{cmdline,modules,swaps,devices} r,
+  owner /proc/sys/kernel/{osrelease,ngroups_max,random/boot_id} r,
 
   ## Tmpfs access.
   ##

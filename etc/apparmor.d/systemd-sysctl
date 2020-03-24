@@ -15,9 +15,7 @@ profile systemd-sysctl /lib/systemd/systemd-sysctl flags=(attach_disconnected) {
   owner /etc/sysctl.d/ r,
   owner /etc/sysctl.d/** r,
   
-  owner /proc/*/environ r,
-  owner /proc/*/sched r,
-  owner /proc/*/stat r,
+  owner /proc/*/{environ,sched,stat} r,
   owner /proc/cmdline r,
   owner /proc/sys/** w,
 

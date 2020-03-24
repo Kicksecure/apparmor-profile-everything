@@ -12,18 +12,16 @@ profile systemd-shutdown /lib/systemd/systemd-shutdown flags=(attach_disconnecte
 
   ptrace read,
 
-  signal send set=cont,
-  signal send set=stop,
-  signal send set=term,
+  signal send set=(cont, stop, term),
 
   /lib/systemd/systemd-shutdown mr,
 
   /proc/ r,
   /proc/cmdline r,
   /proc/sys/kernel/core_pattern w,
-  /proc/*/{,cgroup,stat,cmdline} r,
+  /proc/*/{cgroup,stat,cmdline} r,
   /proc/*/fd/ r,
-  owner /proc/*/{,environ,sched} r,
+  owner /proc/*/{environ,sched} r,
 
   /dev/kmsg w,
   /dev/pts/[0-9]* rw,
