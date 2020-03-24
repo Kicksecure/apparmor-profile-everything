@@ -47,8 +47,8 @@
   owner /sys/class/drm/ r,
   owner /sys/class/input/ r,
   owner /sys/class/tty/ r,
-  owner /sys/devices/**/{,uevent,name} r,
-  owner /sys/devices/pci[0-9]*/**/{,device,revision,subsystem_device,subsystem_vendor,class,vendor,boot_vga,config,resource} r,
+  owner /sys/devices/**/{uevent,name} r,
+  owner /sys/devices/pci[0-9]*/**/{device,revision,subsystem_device,subsystem_vendor,class,vendor,boot_vga,config,resource} r,
 
   owner /dev/dri/ r,
   owner /dev/dri/card[0-9]* rw,
