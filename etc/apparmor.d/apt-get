@@ -28,8 +28,7 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
   capability sys_resource,
 
   ## Allow rapt to send itself SIGINT signals.
-  signal send set=int peer=/usr/bin/rapt,
-  signal receive set=int peer=/usr/bin/rapt,
+  signal (receive, send) set=int peer=/usr/bin/rapt,
 
   ## Network access.
   ##
