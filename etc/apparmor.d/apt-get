@@ -44,26 +44,19 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
   ## Programs and libraries.
   ## TODO: Allow execution of only needed binaries.
   /{,usr/,usr/local/}{,s}bin/ r,
-  /{,usr/,usr/local/}{,s}bin/** rwmix,
-  owner /{,usr/,usr/local/}{,s}bin/** rwixl,
-  /opt/ r,
-  /opt/** rwmix,
-  owner /opt/** rwixl,
+  /{,usr/,usr/local/}{,s}bin/** rwmixl,
   /{,usr/,usr/local/}lib{,32,64}/ r,
   /{,usr/,usr/local/}lib{,32,64}/** rwmixlk,
-  owner /{,usr/,usr/local/}lib{,32,64}/** rwmixlk,
-  /usr/{,local/}{,share,include}/ r,
-  /usr/{,local/}{,share,include}/** rwix,
-  owner /usr/{,local/}{,share,include}/** rwixl,
+  /usr/{,local/}{share,include}/ r,
+  /usr/{,local/}{share,include}/** rwixl,
   /usr/{,local/}games/ r,
-  /usr/{,local/}games/** rw,
-  owner /usr/{,local/}games/** rwl,
+  /usr/{,local/}games/** rwl,
+  /opt/ r,
+  /opt/** rwmixl,
 
-  ## Contains kernel module source files.
-  ## TODO: Make sure this cannot be abused.
+  ## Source files.
   /usr/src/ r,
-  /usr/src/** rw,
-  owner /usr/src/** rwixl,
+  /usr/src/** rwixl,
 
   ## Sysfs access.
   ## TODO: Restrict /sys/devices/ access.
@@ -77,14 +70,13 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
   owner /sys/devices/*:[0-9][0-9]/*:[0-9][0-9]/*:[0-9][0-9]/ r,
   owner /sys/devices/pci[0-9]*/** r,
   owner /sys/devices/*/ r,
-  owner /sys/devices/**/modalias r,
-  owner /sys/devices/**/{power,input}/ r,
+  owner /sys/devices/**/{modalias,power/,input/} r,
   owner /sys/devices/platform/*/{tty,serio[0-9],rtc,regulator,cmos_nvram0}/ r,
   owner /sys/devices/pnp0/[0-9][0-9]:[0-9][0-9]/ r,
   owner /sys/devices/platform/{reg-dummy,rtc_cmos,vesa-framebuffer.0,alarmtimer,serial8250,i8042,pcspkr}/ r,
   owner /sys/devices/{uprobe,kprobe,msr}/format/ r,
   owner /sys/devices/msr/events/ r,
-  owner /sys/devices/system/cpu/{,cpu[0-9]*/}*/ r,
+  owner /sys/devices/system/cpu/{cpu[0-9]*/}*/ r,
   owner /sys/devices/system/cpu/modalias r,
   owner /sys/devices/system/{machinecheck,edac,edac/mc,container,clockevents,clocksource,node,memory}/ r,
   owner /sys/devices/system/machinecheck/machinecheck[0-9]*/ r,
@@ -101,9 +93,7 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
   ## Procfs access.
   /proc/ r,
   /proc/filesystems r,
-  /proc/*/fd/ r,
-  /proc/*/{stat,comm,cmdline} r,
-  /proc/*/task/ r,
+  /proc/*/{stat,comm,cmdline,fd/,task/} r,
   owner /proc/*/{environ,sched,mountinfo,mounts,loginuid} r,
   owner /proc/{cmdline,modules,swaps,devices} r,
   owner /proc/sys/kernel/{osrelease,ngroups_max,random/boot_id} r,
@@ -117,10 +107,8 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
 
   ## Config files.
   ## TODO: Restrict access.
-  /etc/ r,
-  /etc/** rwmlkpix,
-  /usr/local/etc/ r,
-  /usr/local/etc/** rwmlkpix,
+  /{,usr/local/}etc/ r,
+  /{,usr/local/}etc/** rwmlkpix,
 
   ## Device access.
   ## TODO: Restrict further.
@@ -151,7 +139,7 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
 
   ## /var, /run access.
   ## TODO: Restrict.
-  owner /var/ r,
+  /var/ r,
   /var/** rwmpixkl,
   /run/** rwmpixkl,
 
