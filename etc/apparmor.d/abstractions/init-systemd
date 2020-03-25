@@ -88,7 +88,7 @@
   ## Something in /lib breaks with environment scrubbing so we need to exclude it for now.
   /{usr/,usr/local/}lib{,32,64}/** rmPix,
   /lib/** rmpix,
-  /lib{32,64/** rmPix,
+  /lib{32,64}/** rmPix,
   /usr/{,local/}{share,include,games}/ r,
   /usr/{,local/}{share,include,games}/** rPix,
   owner /usr/lib/python3/dist-packages/*/__pycache__/ rwm,
