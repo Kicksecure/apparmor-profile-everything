@@ -1,3 +1,49 @@
+commit fcdc330dbf4a8693b6cc060dcf423fbe56847dbb
+Merge: 844ce63 403ebbf
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Mar 25 02:40:41 2020 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 403ebbf6fc3fdb910fee7f0a95de7ff9cddb6602
+Merge: 844ce63 f66836f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Mar 25 02:57:19 2020 +0000
+
+    Merge pull request #49 from madaidan/cleanup
+    
+    Cleanup
+
+commit f66836f00bcaed0d814a1fdb763603cd347f9bd6
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Mar 24 21:45:58 2020 +0000
+
+    Cleanup
+
+commit 03b739c4e3de055a6b2ba72cbd8e1ffe6515379c
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Mar 24 21:40:56 2020 +0000
+
+    Cleanup
+
+commit fc73718a3561f43f924308bcf553fe7dcfc2b301
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Mar 24 21:39:29 2020 +0000
+
+    Cleanup
+
+commit ce030e344f9d6aaa10897706953100294ec16867
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Mar 24 21:37:53 2020 +0000
+
+    Cleanup
+
+commit 844ce639498be311b465788b3e6c4a1c8cb06675
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Mar 24 03:52:33 2020 -0400
+
+    bumped changelog version
+
 commit 4c6ceb5230b2867c2eb861f865e882bda0df0621
 Merge: b36054e 13ba39b
 Author: Patrick Schleizer <adrelanos@riseup.net>
