@@ -65,7 +65,7 @@
 
   ## Only "start-tor-browser" and "firefox" is executable as the
   ## Tor Browser AppArmor profile will handle the rest.
-  owner /home/*/.tb/tor-browser/Browser/{start-tor-browser,firefox} rpix,
+  owner /home/*/.tb/tor-browser/Browser/{start-tor-browser,firefox} rPix,
 
   ## Prevents any malicious modifications to the Tor Browser.
   ## Updates will be handled by the Tor Browser's profile.
@@ -83,20 +83,19 @@
   ## programs in there.
   /usr/ r,
   /{,usr/,usr/local/}{,s}bin/ r,
-  /{,usr/,usr/local/}{,s}bin/** rpix,
+  /{,usr/,usr/local/}{,s}bin/** rPix,
   /{,usr/,usr/local/}lib{,32,64}/ r,
-  /{,usr/,usr/local/}lib{,32,64}/** rmpix,
+  ## Something in /lib breaks with environment scrubbing so we need to exclude it for now.
+  /{usr/,usr/local/}lib{,32,64}/** rmPix,
+  /lib/** rmpix,
+  /lib{32,64}/** rmPix,
   /usr/{,local/}{share,include,games}/ r,
-  /usr/{,local/}{share,include,games}/** rpix,
+  /usr/{,local/}{share,include,games}/** rPix,
   owner /usr/lib/python3/dist-packages/*/__pycache__/ rwm,
   owner /usr/lib/python3/dist-packages/*/__pycache__/** rwm,
   /opt/ r,
-  /opt/** rpix,
-  owner /opt/** rwmpix,
-  
-  ## Scrub the environment of important binaries.
-  /usr/bin/apt-get rPix,
-  /usr/bin/rapt rPix,
+  /opt/** rPix,
+  owner /opt/** rwmPix,
 
   ## Sysfs access.
   /sys/ r,
@@ -170,9 +169,9 @@
   ## Read-only access is given to files the user is not an owner of
   ## and read-write access is given to files the user is owner of.
   /{,var/}tmp/ r,
-  /{,var/}tmp/** rpix,
+  /{,var/}tmp/** rPix,
   owner /{,var/}tmp/ rw,
-  owner /{,var/}tmp/** rwmpixl,
+  owner /{,var/}tmp/** rwmPixl,
 
   ## Systemd's PrivateTmp option requires rw access to tmp directories
   ## they aren't owner of. Rather than giving rw access to all of /tmp,
@@ -183,8 +182,8 @@
   ## Config files.
   ## TODO: Restrict access.
   /{,usr/local/}etc/ r,
-  /{,usr/local/}etc/** rpix,
-  owner /{,usr/local/}etc/** rwmlkpix,
+  /{,usr/local/}etc/** rPix,
+  owner /{,usr/local/}etc/** rwmlkPix,
 
   ## Device access.
   ## TODO: autofs can automount filesystems which might be dangerous.
@@ -253,7 +252,7 @@
   /var/cache/** r,
   /var/cache/man/*/*[0-9]/ rw,
   /var/{lib,log}/** rw,
-  /var/lib/dpkg/info/** rpix,
+  /var/lib/dpkg/info/** rPix,
   owner /var/{cache,lib,db}/** rwkl,
   owner /var/log/{wtmp,lastlog} rwk,
   owner /var/spool/cron/crontabs/ r,
