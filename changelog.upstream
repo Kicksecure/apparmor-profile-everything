@@ -1,3 +1,59 @@
+commit b26a0018ef670c6ba3bf3db1945921d0af312446
+Merge: 4b07587 a55d3cb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Mar 27 04:14:23 2020 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit a55d3cba9ba6b015397556c7433b3528c05436d2
+Merge: adb0f6c c0867b4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Mar 27 08:13:48 2020 +0000
+
+    Merge pull request #50 from madaidan/env-scrubbing
+    
+    Use environment scrubbing everywhere except /lib
+
+commit 4b07587a2e059c1dc40adc8330b6f9fe44ef0efb
+Merge: ea66130 adb0f6c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Mar 27 02:18:52 2020 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit adb0f6c0006b6f0c0576000a5dc72c4e49c2373b
+Merge: ea66130 72d9010
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Mar 27 06:18:33 2020 +0000
+
+    Merge pull request #51 from madaidan/securityfs
+    
+    Fix securityfs mount
+
+commit 72d9010a0b853665d5f8d2ad6c41c4bfa438709e
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Mar 26 20:46:30 2020 +0000
+
+    Fix securityfs mount
+
+commit ea661306094868cbe13bd8440f9f67ea0654a7bb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Mar 26 08:13:07 2020 -0400
+
+    bumped changelog version
+
+commit c0867b4be2405f8f79d4792c9f77933121238656
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Mar 25 18:18:19 2020 +0000
+
+    Missing }
+
+commit 6ecb358446fc65dfc9adc416c0c13201ec6cc94e
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Mar 25 17:50:25 2020 +0000
+
+    Use environment scrubbing everywhere except /lib
+
 commit fcdc330dbf4a8693b6cc060dcf423fbe56847dbb
 Merge: 844ce63 403ebbf
 Author: Patrick Schleizer <adrelanos@riseup.net>
