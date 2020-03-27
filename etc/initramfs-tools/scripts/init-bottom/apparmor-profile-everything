@@ -20,7 +20,7 @@ if grep "noape" /proc/cmdline; then
   exit
 fi
 
-mount -t securityfs nosuid,nodev,noexec /sys/kernel/security
+mount securityfs -t securityfs -o nosuid,nodev,noexec /sys/kernel/security
 
 echo "profile systemd-shutdown /lib/systemd/systemd-shutdown {}" | /sbin/apparmor_parser -a
 echo "profile systemd-modules-load /lib/systemd/systemd-modules-load {}" | /sbin/apparmor_parser -a
