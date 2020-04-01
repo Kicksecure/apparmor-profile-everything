@@ -1,3 +1,21 @@
+commit 30514e363b323c36e598b2e1ad98ccfac45e1cf5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 1 09:15:14 2020 -0400
+
+    copyright
+
+commit 557e418cf9565f6da663302a38fb25ee77a04b15
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 1 08:49:52 2020 -0400
+
+    update copyright year
+
+commit 14fc113fa1cfe504428b942e510780fea4d2bd57
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Mar 27 07:32:43 2020 -0400
+
+    bumped changelog version
+
 commit b26a0018ef670c6ba3bf3db1945921d0af312446
 Merge: 4b07587 a55d3cb
 Author: Patrick Schleizer <adrelanos@riseup.net>
