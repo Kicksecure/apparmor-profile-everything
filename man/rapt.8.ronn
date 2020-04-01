@@ -2,7 +2,7 @@ rapt(8) -- Restricted APT
 =============================================
 
 <span class="comment">
-# Copyright (C) 2019 - 2019 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+# Copyright (C) 2019 - 2020 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
 # See the file COPYING for copying conditions.
 </span>
 
