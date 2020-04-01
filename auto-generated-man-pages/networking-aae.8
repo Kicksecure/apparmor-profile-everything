@@ -1,0 +1,30 @@
+.\" generated with Ronn-NG/v0.8.0
+.\" http://github.com/apjanke/ronn-ng/tree/0.8.0
+.TH "NETWORKING\-AAE" "8" "April 2020" "apparmor-profile-everything" "apparmor-profile-everything Manual"
+.SH "NAME"
+\fBnetworking\-aae\fR \- ifup and ifdown wrapper for apparmor\-profile\-everything
+.P
+.SH "SYNOPSIS"
+\fBnetworking\-aae [up|down]\fR
+.SH "DESCRIPTION"
+\fBnetworking\.service\fR calls
+.P
+\fBExecStart=/sbin/ifup \-a \-\-read\-environment\fR
+.P
+\fBExecStop=/sbin/ifdown \-a \-\-read\-environment \-\-exclude=lo\fR
+.P
+\fBnetworking\.service\.d/30_apparmor_profile_everything\.conf\fR overwrites this and runs
+.P
+\fBExecStart=/sbin/networking\-aae up\fR
+.P
+\fBExecStop=/sbin/networking\-aae down\fR
+.P
+instead\.
+.SH "EXAMPLES"
+sudo networking\-aae up
+.P
+sudo networking\-aae down
+.SH "WWW"
+https://github\.com/Whonix/apparmor\-profile\-everything
+.SH "AUTHOR"
+This man page has been written by Patrick Schleizer (adrelanos@riseup\.net)\.
