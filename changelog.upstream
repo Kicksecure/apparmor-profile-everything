@@ -1,3 +1,89 @@
+commit 1e06a8890b7ae68152ba651008bca7940d6259db
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 2 07:22:18 2020 -0400
+
+    readme
+
+commit d57418a41db9ad1aaf3daf3a593f5dd305bf171f
+Merge: 6b07561 1235eb8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 2 06:16:09 2020 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 1235eb89d352fc74c1b0ce5e89ad09ae0217021e
+Merge: f966487 7414d98
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 2 10:12:49 2020 +0000
+
+    Merge pull request #53 from madaidan/dbus-daemon
+    
+    dbus-daemon apparmor profile
+
+commit f966487e4fd29450380280d2015c2a5520f7cb07
+Merge: 6b07561 34cccc9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 2 10:12:22 2020 +0000
+
+    Merge pull request #52 from madaidan/fix
+    
+    Fixes
+
+commit 6b07561e3ccb2a5e24e82c32e3fe9cdda5b3899e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 1 17:34:57 2020 -0400
+
+    remove 'Build-Depends: ronn' since no longer required
+
+commit be4052f0cfdff360f30778f18f4a3e38c7816a44
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 1 16:57:27 2020 -0400
+
+    remove genmkfile
+
+commit eb47bfa7a7f596521cdeee50c6f2948ad8eff7eb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 1 16:30:06 2020 -0400
+
+    add debian install file
+
+commit c42a0e7d54c80e4b080259f5fcbaf3c85c5ab15b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 1 15:56:46 2020 -0400
+
+    add man pages (generated using "genmkfile manpages")
+
+commit 1df00b6dd04586e07b2606083de4b1b0f58659b4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 1 15:48:22 2020 -0400
+
+    no longer create man pages during build process
+    use pre-created man pages
+
+commit 4a8d825f6df68a23e8050d61d2126c6acd420f83
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 1 15:42:06 2020 -0400
+
+    change path to auto generated man pages
+
+commit 7414d985cd5161d3b0a077a501b05e35bab75f20
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Apr 1 18:48:41 2020 +0000
+
+    dbus-daemon apparmor profile
+
+commit 34cccc9e880304991a1c57070a4a81d58a700db7
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Apr 1 18:13:03 2020 +0000
+
+    Fixes
+
+commit c426b0ed065c44518b955e31ee2c73aebbe654cd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 1 10:26:24 2020 -0400
+
+    bumped changelog version
+
 commit 30514e363b323c36e598b2e1ad98ccfac45e1cf5
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 1 09:15:14 2020 -0400
