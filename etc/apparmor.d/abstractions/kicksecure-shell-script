@@ -36,11 +36,11 @@
   /home/** rw,
   /etc/skel/ r,
   /etc/skel/** rw,
-  
+
   ## panic-on-oops
   /proc/sys/kernel/panic_on_oops w,
   /sbin/sysctl mrix,
-  
+
   ## pam-abort-on-locked-password
   owner /etc/shadow r,
 
@@ -55,11 +55,11 @@
   owner /var/cache/anon-base-files/* rw,
 
   owner /var/log/tallylog rw,
-  
+
   owner /tmp/** rw,
   owner /proc/sys/kernel/osrelease r,
   owner /proc/filesystems r,
   owner /proc/*/loginuid r,
-  
+
   /dev/tty rw,
   /dev/pts/[0-9]* rw,
