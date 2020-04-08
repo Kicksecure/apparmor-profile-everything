@@ -1,3 +1,15 @@
+commit 741c4d1f55eee33657af86949981eedc22a7e63d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 12:03:49 2020 +0000
+
+    remove trailing spaces
+
+commit 73c2a1aa232f71e24e24ee68cc276dd1d8f1b615
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 2 07:34:37 2020 -0400
+
+    bumped changelog version
+
 commit 1e06a8890b7ae68152ba651008bca7940d6259db
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 2 07:22:18 2020 -0400
