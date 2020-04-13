@@ -9,9 +9,7 @@
   capability setgid,
   capability setuid,
 
-  ptrace read peer=/usr/bin/dbus-daemon//null-/usr/lib/mate-notification-daemon/mate-notification-daemon,
-  ptrace read peer=/usr/bin/dbus-daemon//null-/usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd,
-  ptrace read peer=init-systemd,
+  ptrace read,
 
   /etc/group r,
   /etc/nsswitch.conf r,
