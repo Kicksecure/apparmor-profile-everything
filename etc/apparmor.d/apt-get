@@ -76,7 +76,7 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
   owner /sys/devices/platform/{reg-dummy,rtc_cmos,vesa-framebuffer.0,alarmtimer,serial8250,i8042,pcspkr}/ r,
   owner /sys/devices/{uprobe,kprobe,msr}/format/ r,
   owner /sys/devices/msr/events/ r,
-  owner /sys/devices/system/cpu/{cpu[0-9]*/}*/ r,
+  owner /sys/devices/system/cpu/cpu[0-9]*/ r,
   owner /sys/devices/system/cpu/modalias r,
   owner /sys/devices/system/{machinecheck,edac,edac/mc,container,clockevents,clocksource,node,memory}/ r,
   owner /sys/devices/system/machinecheck/machinecheck[0-9]*/ r,

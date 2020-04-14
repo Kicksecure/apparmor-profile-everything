@@ -29,6 +29,7 @@
   owner /etc/passwd r,
 
   owner /usr/share/X11/** r,
+  owner /usr/share/fonts/X11/** r,
   owner /usr/share/drirc.d/ r,
   owner /usr/share/drirc.d/*.conf r,
   owner /usr/share/glvnd/egl_vendor.d/ r,
