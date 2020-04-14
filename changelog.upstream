@@ -1,3 +1,49 @@
+commit 7ea8ba87d6e5f27131073c1919a87f6931e808d8
+Merge: ad325ca 3d0215c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Apr 14 08:13:13 2020 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 3d0215c00b70787d554cbea2c07e40e7e6e47d15
+Merge: ad325ca c156ac0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Apr 14 12:12:30 2020 +0000
+
+    Merge pull request #54 from madaidan/fixes
+    
+    Fixes
+
+commit c156ac07391557fc7064fdcbc3b013cf9d683605
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Apr 13 23:51:57 2020 +0000
+
+    Fix
+
+commit dd6a1baef784331a9d5403aac6cfad5218594088
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Apr 13 23:33:23 2020 +0000
+
+    Fix
+
+commit a6075c0b23c6ed9ebe03f7ff08182f56041e44da
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Apr 13 23:19:52 2020 +0000
+
+    Fixes
+
+commit 674241467c2251d7e41f1c7e4fd4ce4ff4d958ea
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Apr 13 23:18:08 2020 +0000
+
+    Relax ptrace restrictions
+
+commit ad325caa99e3008230e9713817439c2b6c7fd093
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 8 12:40:54 2020 +0000
+
+    bumped changelog version
+
 commit 741c4d1f55eee33657af86949981eedc22a7e63d
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 8 12:03:49 2020 +0000
