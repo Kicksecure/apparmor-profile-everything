@@ -15,6 +15,9 @@
   owner /home/*/.Xauthority r,
   owner /home/*/.xsession-errors a,
 
+  # Site-specific additions and overrides. See local/README for details.
+  #include <local/usr.bin.spice-vdagent>
+
 }
 /usr/sbin/spice-vdagentd flags=(attach_disconnected) {
   #include <abstractions/base>
@@ -29,5 +32,8 @@
 
   owner /dev/uinput rw,
   owner /dev/vport[0-9]*p[0-9]* rw,
+
+  # Site-specific additions and overrides. See local/README for details.
+  #include <local/usr.sbin.spice-vdagentd>
 
 }
