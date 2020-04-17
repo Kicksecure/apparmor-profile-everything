@@ -1,0 +1,39 @@
+## Copyright (C) 2012 - 2020 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+#include <tunables/global>
+
+/usr/bin/spice-vdagent flags=(attach_disconnected) {
+  #include <abstractions/base>
+
+  /usr/bin/spice-vdagent mr,
+
+  /usr/share/drirc.d/ r,
+  /usr/share/drirc.d/*.conf r,
+  /usr/share/themes/** r,
+
+  owner /home/*/.Xauthority r,
+  owner /home/*/.xsession-errors a,
+
+  # Site-specific additions and overrides. See local/README for details.
+  #include <local/usr.bin.spice-vdagent>
+
+}
+/usr/sbin/spice-vdagentd flags=(attach_disconnected) {
+  #include <abstractions/base>
+
+  /usr/sbin/spice-vdagentd mr,
+
+  /proc/*/cgroup r,
+
+  owner /run/spice-vdagentd/spice-vdagentd.pid w,
+  owner /run/systemd/seats/seat[0-9]* r,
+  owner /run/systemd/sessions/[0-9]* r,
+
+  owner /dev/uinput rw,
+  owner /dev/vport[0-9]*p[0-9]* rw,
+
+  # Site-specific additions and overrides. See local/README for details.
+  #include <local/usr.sbin.spice-vdagentd>
+
+}

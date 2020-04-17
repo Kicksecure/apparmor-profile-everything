@@ -24,4 +24,8 @@ profile systemd-shutdown /lib/systemd/systemd-shutdown flags=(attach_disconnecte
 
   /dev/kmsg w,
   /dev/pts/[0-9]* rw,
+
+  # Site-specific additions and overrides. See local/README for details.
+  #include <local/systemd-shutdown>
+
 }

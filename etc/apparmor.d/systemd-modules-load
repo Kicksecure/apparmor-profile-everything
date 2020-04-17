@@ -21,4 +21,8 @@ profile systemd-modules-load /lib/systemd/systemd-modules-load flags=(attach_dis
   owner /proc/*/{environ,sched,stat} r,
   
   owner /sys/module/** r,
+
+  # Site-specific additions and overrides. See local/README for details.
+  #include <local/systemd-modules-load>
+
 }

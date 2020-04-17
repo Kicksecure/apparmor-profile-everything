@@ -9,6 +9,14 @@
 	dh $@
 
 override_dh_install:
+	dh_apparmor --profile-name='kicksecure-shell-script'
+	dh_apparmor --profile-name='sbin.networking-aae'
+	dh_apparmor --profile-name='spice-vdagent'
+	dh_apparmor --profile-name='systemd-modules-load'
+	dh_apparmor --profile-name='systemd-shutdown'
+	dh_apparmor --profile-name='systemd-sysctl'
+	dh_apparmor --profile-name='usr.bin.dbus-daemon'
+	dh_apparmor --profile-name='usr.lib.xorg.Xorg'
 	dh_apparmor --profile-name='apt-get'
 	dh_apparmor --profile-name='init-systemd'
 	dh_install
