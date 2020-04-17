@@ -1,3 +1,43 @@
+commit 72f39a84d11fbc3fb1479975c2d37c1b53d372a9
+Merge: fd760d7 0207a21
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 17 06:45:38 2020 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 0207a211656753e0627ce93d7a2e47b5fdaa1270
+Merge: fd760d7 f24f451
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 17 10:25:43 2020 +0000
+
+    Merge pull request #55 from madaidan/spice-vdagent
+    
+    Add spice-vdagent profile
+
+commit f24f451d32d287b70ec143bff6e2e3eaf19530ff
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Apr 16 22:41:13 2020 +0000
+
+    Debian packaging
+
+commit 5e7667a247ecfc2138b3568bdb11b45b3404751e
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Apr 16 23:33:23 2020 +0000
+
+    Include local files
+
+commit b880a89bc319f9a8b997ccafa805d0d05b14107a
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Apr 16 18:03:01 2020 +0000
+
+    Add spice-vdagent profile
+
+commit fd760d7062b4632d168b019f7e76b4c8796df7d2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 16 08:23:44 2020 -0400
+
+    bumped changelog version
+
 commit e7724c713054ece1794894eab0b8a63c09ff23c8
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 15 14:05:28 2020 -0400
