@@ -19,4 +19,7 @@ profile systemd-sysctl /lib/systemd/systemd-sysctl flags=(attach_disconnected) {
   owner /proc/cmdline r,
   owner /proc/sys/** w,
 
+  # Site-specific additions and overrides. See local/README for details.
+  #include <local/systemd-sysctl>
+
 }
