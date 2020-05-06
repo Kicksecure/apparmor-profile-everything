@@ -1,3 +1,31 @@
+commit fd8b591f7c75f9fda298cb808f8f2744c9ef55f1
+Merge: 94c87b9 dad816b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed May 6 14:45:29 2020 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit dad816b88d75511c06213360a48d8bb995213efc
+Merge: 94c87b9 cb2b280
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed May 6 18:44:46 2020 +0000
+
+    Merge pull request #56 from komachi/fix-xorg
+    
+    Fix xorg apparmor profile
+
+commit cb2b280427a6c6cc928c8fe31cc78808a69175b2
+Author: Anton Nesterov <anton@nesterov.cc>
+Date:   Wed May 6 17:09:48 2020 +0000
+
+    Fix xorg apparmor profile, now it works
+
+commit 94c87b9c030111a0d72dbc1d968930c5bbd41161
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Apr 17 10:03:57 2020 -0400
+
+    bumped changelog version
+
 commit 72f39a84d11fbc3fb1479975c2d37c1b53d372a9
 Merge: fd760d7 0207a21
 Author: Patrick Schleizer <adrelanos@riseup.net>
