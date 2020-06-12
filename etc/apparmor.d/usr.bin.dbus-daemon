@@ -3,7 +3,7 @@
 
 #include <tunables/global>
 
-/usr/bin/dbus-daemon flags=(attach_disconnected) {
+profile dbus-daemon /{,usr/}bin/dbus-daemon flags=(attach_disconnected) {
   #include <abstractions/base>
 
   capability setgid,
@@ -16,20 +16,20 @@
   /etc/passwd r,
   /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/*.xml r,
 
-  /usr/bin/dbus-daemon mr,
+  /{,usr/}bin/dbus-daemon mr,
   /usr/lib/mate-notification-daemon/mate-notification-daemon mrix,
   /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd mrix,
 
   /{usr/share,etc}/dbus-1/** r,
-  /usr/share/glib-2.0/schemas/gschemas.compiled r,
+  @{system_share_dirs}/glib-2.0/schemas/gschemas.compiled r,
 
-  owner /home/*/.Xauthority r,
-  owner /home/*/.config/dconf/user r,
-  owner /home/*/.config/xfce4/xfconf/xfce-perchannel-xml/*.xml{,.new} rw,
+  owner @{HOME}/.Xauthority r,
+  owner @{HOME}/.config/dconf/user r,
+  owner @{HOME}/.config/xfce4/xfconf/xfce-perchannel-xml/*.xml{,.new} rw,
 
-  /proc/filesystems r,
-  owner /proc/*/{cmdline,mounts} r,
-  owner /proc/*/oom_score_adj w,
+  @{PROC}/filesystems r,
+  owner @{PROC}/@{pid}/{cmdline,mounts} r,
+  owner @{PROC}/@{pid}/oom_score_adj w,
 
   /run/systemd/{inhibit,sessions}/1.ref w,
   /run/systemd/users/[0-9]* r,
@@ -39,6 +39,6 @@
   owner /run/user/[0-9]*/dconf/user rw,
 
   # Site-specific additions and overrides. See local/README for details.
-  #include <local/usr.bin.dbus-daemon>
+  #include if exists <local/usr.bin.dbus-daemon>
 
 }

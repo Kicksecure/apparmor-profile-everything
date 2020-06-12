@@ -3,7 +3,7 @@
 
 #include <tunables/global>
 
-profile /usr/bin/rapt flags=(attach_disconnected) {
+profile rapt /{,usr/}bin/rapt flags=(attach_disconnected) {
   ##include <abstractions/dangerous-files>
 
   ## TODO: Further restict these. Use extended capability rules.
@@ -28,7 +28,7 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
   capability sys_resource,
 
   ## Allow rapt to send itself SIGINT signals.
-  signal (receive, send) set=int peer=/usr/bin/rapt,
+  signal (receive, send) set=int peer=/{,usr/}bin/rapt,
 
   ## Network access.
   ##
@@ -60,43 +60,43 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
 
   ## Sysfs access.
   ## TODO: Restrict /sys/devices/ access.
-  owner /sys/module/*/ r,
-  owner /sys/module/*/{refcnt,coresize,uevent,initstate} r,
-  owner /sys/module/*/holders/ r,
-  owner /sys/kernel/security/apparmor/ r,
-  owner /sys/devices/ r,
-  owner /sys/devices/** r,
-  owner /sys/devices/*:[0-9][0-9]/*:[0-9][0-9]/ r,
-  owner /sys/devices/*:[0-9][0-9]/*:[0-9][0-9]/*:[0-9][0-9]/ r,
-  owner /sys/devices/pci[0-9]*/** r,
-  owner /sys/devices/*/ r,
-  owner /sys/devices/**/{modalias,power/,input/} r,
-  owner /sys/devices/platform/*/{tty,serio[0-9],rtc,regulator,cmos_nvram0}/ r,
-  owner /sys/devices/pnp0/[0-9][0-9]:[0-9][0-9]/ r,
-  owner /sys/devices/platform/{reg-dummy,rtc_cmos,vesa-framebuffer.0,alarmtimer,serial8250,i8042,pcspkr}/ r,
-  owner /sys/devices/{uprobe,kprobe,msr}/format/ r,
-  owner /sys/devices/msr/events/ r,
-  owner /sys/devices/system/cpu/cpu[0-9]*/ r,
-  owner /sys/devices/system/cpu/modalias r,
-  owner /sys/devices/system/{machinecheck,edac,edac/mc,container,clockevents,clocksource,node,memory}/ r,
-  owner /sys/devices/system/machinecheck/machinecheck[0-9]*/ r,
-  owner /sys/devices/system/clock{source,events}/clock{source,event}[0-9]*/ r,
-  owner /sys/devices/system/clockevents/broadcast/ r,
-  owner /sys/devices/system/{memory,node}/{memory,node}[0-9]*/ r,
-  owner /sys/devices/virtual/** r,
-  owner /sys/block/ r,
-  owner /sys/bus/ r,
-  owner /sys/class/ r,
-  owner /sys/class/block/ r,
-  owner /sys/kernel/security/apparmor/.replace w,
+  owner @{sys}/module/*/ r,
+  owner @{sys}/module/*/{refcnt,coresize,uevent,initstate} r,
+  owner @{sys}/module/*/holders/ r,
+  owner @{sys}/kernel/security/apparmor/ r,
+  owner @{sys}/devices/ r,
+  owner @{sys}/devices/** r,
+  owner @{sys}/devices/*:[0-9][0-9]/*:[0-9][0-9]/ r,
+  owner @{sys}/devices/*:[0-9][0-9]/*:[0-9][0-9]/*:[0-9][0-9]/ r,
+  owner @{sys}/devices/pci[0-9]*/** r,
+  owner @{sys}/devices/*/ r,
+  owner @{sys}/devices/**/{modalias,power/,input/} r,
+  owner @{sys}/devices/platform/*/{tty,serio[0-9],rtc,regulator,cmos_nvram0}/ r,
+  owner @{sys}/devices/pnp0/[0-9][0-9]:[0-9][0-9]/ r,
+  owner @{sys}/devices/platform/{reg-dummy,rtc_cmos,vesa-framebuffer.0,alarmtimer,serial8250,i8042,pcspkr}/ r,
+  owner @{sys}/devices/{uprobe,kprobe,msr}/format/ r,
+  owner @{sys}/devices/msr/events/ r,
+  owner @{sys}/devices/system/cpu/cpu[0-9]*/ r,
+  owner @{sys}/devices/system/cpu/modalias r,
+  owner @{sys}/devices/system/{machinecheck,edac,edac/mc,container,clockevents,clocksource,node,memory}/ r,
+  owner @{sys}/devices/system/machinecheck/machinecheck[0-9]*/ r,
+  owner @{sys}/devices/system/clock{source,events}/clock{source,event}[0-9]*/ r,
+  owner @{sys}/devices/system/clockevents/broadcast/ r,
+  owner @{sys}/devices/system/{memory,node}/{memory,node}[0-9]*/ r,
+  owner @{sys}/devices/virtual/** r,
+  owner @{sys}/block/ r,
+  owner @{sys}/bus/ r,
+  owner @{sys}/class/ r,
+  owner @{sys}/class/block/ r,
+  owner @{sys}/kernel/security/apparmor/.replace w,
 
   ## Procfs access.
-  /proc/ r,
-  /proc/filesystems r,
-  /proc/*/{stat,comm,cmdline,fd/,task/} r,
-  owner /proc/*/{environ,sched,mountinfo,mounts,loginuid} r,
-  owner /proc/{cmdline,modules,swaps,devices} r,
-  owner /proc/sys/kernel/{osrelease,ngroups_max,random/boot_id} r,
+  @{PROC}/ r,
+  @{PROC}/filesystems r,
+  @{PROC}/@{pid}/{stat,comm,cmdline,fd/,task/} r,
+  owner @{PROC}/@{pid}/{environ,sched,mountinfo,mounts,loginuid} r,
+  owner @{PROC}/{cmdline,modules,swaps,devices} r,
+  owner @{PROC}/sys/kernel/{osrelease,ngroups_max,random/boot_id} r,
 
   ## Tmpfs access.
   ##
@@ -163,6 +163,6 @@ profile /usr/bin/rapt flags=(attach_disconnected) {
   /home/*/ w,
 
   # Site-specific additions and overrides. See local/README for details.
-  #include <local/apt-get>
+  #include if exists <local/apt-get>
 
 }
