@@ -17,20 +17,20 @@
   /{,usr/}bin/bash rix,
   /{,usr/}bin/chmod mrix,
   /{,usr/}bin/touch mrix,
-  /usr/bin/basename mrix,
-  /usr/bin/passwd mrix,
-  /usr/bin/id rix,
-  /usr/bin/cut mrix,
-  /usr/bin/tail mrix,
-  /usr/bin/diff mrix,
-  /bin/echo mrix,
-  /bin/mkdir mrix,
-  /bin/cat mrix,
-  /bin/grep mrix,
-  /bin/rm mrix,
-  /bin/cp mrix,
-  /bin/chown mrix,
-  /bin/mktemp mrix,
+  /{,usr/}bin/basename mrix,
+  /{,usr/}bin/passwd mrix,
+  /{,usr/}bin/id rix,
+  /{,usr/}bin/cut mrix,
+  /{,usr/}bin/tail mrix,
+  /{,usr/}bin/diff mrix,
+  /{,usr/}bin/echo mrix,
+  /{,usr/}bin/mkdir mrix,
+  /{,usr/}bin/cat mrix,
+  /{,usr/}bin/grep mrix,
+  /{,usr/}bin/rm mrix,
+  /{,usr/}bin/cp mrix,
+  /{,usr/}bin/chown mrix,
+  /{,usr/}bin/mktemp mrix,
 
   ## permission-lockdown and first-boot-skel
   /home/** rw,
@@ -38,8 +38,8 @@
   /etc/skel/** rw,
 
   ## panic-on-oops
-  /proc/sys/kernel/panic_on_oops w,
-  /sbin/sysctl mrix,
+  @{PROC}/sys/kernel/panic_on_oops w,
+  /{,usr/}sbin/sysctl mrix,
 
   ## pam-abort-on-locked-password
   owner /etc/shadow r,
@@ -57,9 +57,9 @@
   owner /var/log/tallylog rw,
 
   owner /tmp/** rw,
-  owner /proc/sys/kernel/osrelease r,
-  owner /proc/filesystems r,
-  owner /proc/*/loginuid r,
+  owner @{PROC}/sys/kernel/osrelease r,
+  owner @{PROC}/filesystems r,
+  owner @{PROC}/@{pid}/loginuid r,
 
   /dev/tty rw,
   /dev/pts/[0-9]* rw,

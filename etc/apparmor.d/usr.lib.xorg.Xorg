@@ -3,13 +3,17 @@
 
 #include <tunables/global>
 
-/usr/lib/xorg/Xorg flags=(attach_disconnected) {
+profile Xorg /usr/lib/xorg/Xorg flags=(attach_disconnected) {
   #include <abstractions/base>
+  #include <abstractions/mesa>
 
   ## CAP_SYS_RAWIO allows a lot of ways to modify kernel code (e.g. iopl())
   ## and we don't want to grant something with as large attack surface as
   ## Xorg this capability.
   deny capability sys_rawio,
+
+  # Potentially dangerous and xorg tries it a lot
+  deny ptrace read,
 
   capability dac_override,
   capability ipc_owner,
@@ -20,41 +24,35 @@
   signal receive set=(cont, term) peer=init-systemd,
   signal send set=usr1 peer=init-systemd,
 
-  /usr/bin/dash mrix,
-  /bin/dash mrix,
-  /usr/bin/xkbcomp mrix,
+  /{,usr/}bin/dash mrix,
+  /{,usr/}bin/xkbcomp mrix,
   /usr/lib/xorg/Xorg mr,
 
   /etc/glvnd/egl_vendor.d/ r,
   /etc/nsswitch.conf r,
   /etc/passwd r,
 
-  /etc/X11/xorg.conf.d/ r,
-  /etc/X11/xorg.conf.d/** r,
+  /etc/X11/xorg.conf.d/{**,} r,
   /etc/X11/xinit/xinirc r,
   /etc/X11/xinit/xserverrc r,
 
-  /usr/share/X11/** r,
-  /usr/share/fonts/X11/** r,
-  /usr/share/drirc.d/ r,
-  /usr/share/drirc.d/*.conf r,
-  /usr/share/glvnd/egl_vendor.d/ r,
-  /usr/share/glvnd/egl_vendor.d/*.json r,
-  /usr/share/libinput/ r,
-  /usr/share/libinput/*.quirks r,
+  @{system_share_dirs}/X11/** r,
+  @{system_share_dirs}/fonts/X11/** r,
+  @{system_share_dirs}/drirc.d/{,*.conf} r,
+  @{system_share_dirs}/glvnd/egl_vendor.d/{,*.json} r,
+  @{system_share_dirs}/libinput/{,*.quirks} r,
 
-  /proc/*/cmdline r,
-  /proc/cmdline r,
-  /proc/mtrr w,
+  @{PROC}/@{pid}/cmdline r,
+  @{PROC}/cmdline r,
+  @{PROC}/mtrr w,
 
-  /sys/bus/ r,
-  /sys/bus/pci/devices/ r,
-  /sys/class/ r,
-  /sys/class/{drm,input,tty}/ r,
-  /sys/devices/**/{uevent,name} r,
-  /sys/devices/pci*/**/{device,revision,subsystem_device,subsystem_vendor,class,vendor,boot_vga,config,resource} r,
+  @{sys}/bus/ r,
+  @{sys}/bus/pci/devices/ r,
+  @{sys}/class/ r,
+  @{sys}/class/{drm,input,tty}/ r,
+  @{sys}/devices/**/{uevent,name} r,
+  @{sys}/devices/pci*/**/{device,revision,subsystem_device,subsystem_vendor,class,vendor,boot_vga,config,resource} r,
 
-  /dev/dri/ r,
   /dev/dri/card* rw,
   /dev/fb* rw,
   /dev/input/event* rw,
@@ -68,7 +66,7 @@
   owner /tmp/.X*-lock wl,
   owner /tmp/.X11-unix/* w,
   owner /tmp/.tX*-lock w,
-  owner /tmp/.serverauth.* w,
+  owner /tmp/.serverauth.* rw,
   owner /tmp/server-*.xkm rw,
 
   owner /var/lib/xkb/server-*.xkm rw,
@@ -78,12 +76,9 @@
   # allow to run xorg rootless
   owner @{HOME}/.xinitrc r,
   owner @{HOME}/.xserverrc r,
-  owner @{HOME}/.local/share/xorg/ rw,
-  owner @{HOME}/.local/share/xorg/** rw,
-  owner @{HOME}/.cache/mesa_shader_cache/ rw,
-  owner @{HOME}/.cache/mesa_shader_cache/** rw,
+  owner @{HOME}/.local/share/xorg/{**,} rw,
 
   # Site-specific additions and overrides. See local/README for details.
-  #include <local/usr.lib.xorg.Xorg>
+  #include if exists <local/usr.lib.xorg.Xorg>
 
 }
