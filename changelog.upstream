@@ -1,3 +1,65 @@
+commit e3f637049a2999e7f321e53bd4e234e2337b22cf
+Merge: f967f7a b37d8a5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jun 13 09:35:01 2020 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit b37d8a5934d3d45e62ed2d25008e5f80cfac1476
+Merge: 1ba9717 f959c36
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jun 13 13:27:16 2020 +0000
+
+    Merge pull request #60 from madaidan/haveged
+    
+    Fix the haveged systemd service
+
+commit 1ba97178dec6d07f88e3b6ef68beab4ebbc2aff9
+Merge: 58978ba 177c8a2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jun 13 13:26:54 2020 +0000
+
+    Merge pull request #59 from madaidan/dangerous-files
+    
+    Clean up dangerous-files
+
+commit 58978ba43e13dab234c3fdea60187581efa61f5c
+Merge: f967f7a c431d6e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jun 13 13:24:24 2020 +0000
+
+    Merge pull request #58 from komachi/beatify-and-fix
+    
+    Beatify apparmor profiles
+
+commit f959c367ec7e53eb49a9a9b6a066f3dd8613e9e1
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Jun 13 01:24:05 2020 +0000
+
+    Fix the haveged systemd service
+
+commit 177c8a2dcb703d701487c9767984786ad21f191f
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Jun 13 00:47:44 2020 +0000
+
+    Clean up dangerous-files
+
+commit c431d6e6c785bc5e4745e6269862d3dfb06c5a76
+Author: Anton Nesterov <anton@nesterov.cc>
+Date:   Fri Jun 12 18:27:28 2020 +0000
+
+    Beatify apparmor profiles
+    - use /{,usr/}bin everywhere, some denials on debian stable caused by that
+    - use apparmor vars where possible
+    - #include if exists
+    - fix xorg spamming the log with ptrace
+
+commit f967f7a97d2b88eaff24e26e64e5d06eed41682a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun May 10 04:55:58 2020 -0400
+
+    bumped changelog version
+
 commit d26cd219e1215d771327713cc6e510a18fbbe1ba
 Merge: 9e2a861 3fabfcf
 Author: Patrick Schleizer <adrelanos@riseup.net>
