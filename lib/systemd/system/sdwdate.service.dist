@@ -5,6 +5,7 @@
 Description=Secure Distributed Web Date
 Documentation=https://www.whonix.org/wiki/sdwdate
 ConditionPathExists=!/run/qubes/this-is-templatevm
+ConditionPathExists=/usr/bin/sdwdate
 
 ## systemd-nspawn does not allow clock to be changed inside the container.
 ## Quote https://www.freedesktop.org/software/systemd/man/systemd-nspawn.html
@@ -33,29 +34,30 @@ WatchdogSec=200m
 Restart=always
 
 # Hardening.
-AmbientCapabilities=CAP_SYS_TIME
-CapabilityBoundingSet=CAP_SYS_TIME
+# no_new_privs blocks transitions to haveged's AppArmor profile.
+#AmbientCapabilities=CAP_SYS_TIME
+#CapabilityBoundingSet=CAP_SYS_TIME
 ProtectSystem=strict
 ReadWriteDirectories=/run/sdwdate/
 ProtectHome=true
-ProtectKernelTunables=true
-ProtectKernelModules=true
+#ProtectKernelTunables=true
+#ProtectKernelModules=true
 ProtectControlGroups=true
 PrivateTmp=true
 PrivateMounts=true
-PrivateDevices=true
-MemoryDenyWriteExecute=true
-NoNewPrivileges=true
-RestrictRealtime=true
-SystemCallArchitectures=native
-RestrictNamespaces=true
-RestrictAddressFamilies=AF_UNIX AF_INET
+#PrivateDevices=true
+#MemoryDenyWriteExecute=true
+#NoNewPrivileges=true
+#RestrictRealtime=true
+#SystemCallArchitectures=native
+#RestrictNamespaces=true
+#RestrictAddressFamilies=AF_UNIX AF_INET
 
 # Broken. Need list of syscalls. Alternative below.
 #SystemCallFilter=@clock @ipc @signal
 
 # Blacklist certain syscalls. A whitelist would be stronger.
-SystemCallFilter=~@mount @cpu-emulation @debug @keyring @module @obsolete @raw-io
+#SystemCallFilter=~@mount @cpu-emulation @debug @keyring @module @obsolete @raw-io
 
 [Install]
 WantedBy=multi-user.target
