@@ -3,28 +3,29 @@
 
 #include <tunables/global>
 
-/usr/bin/spice-vdagent flags=(attach_disconnected) {
+profile spice-vdagent /{,usr/}bin/spice-vdagent flags=(attach_disconnected) {
   #include <abstractions/base>
 
-  /usr/bin/spice-vdagent mr,
+  /{,usr/}bin/spice-vdagent mr,
 
-  /usr/share/drirc.d/ r,
-  /usr/share/drirc.d/*.conf r,
-  /usr/share/themes/** r,
+  @{system_share_dirs}/drirc.d/ r,
+  @{system_share_dirs}/drirc.d/*.conf r,
+  @{system_share_dirs}/themes/** r,
 
-  owner /home/*/.Xauthority r,
-  owner /home/*/.xsession-errors a,
+  owner @{HOME}/.Xauthority r,
+  owner @{HOME}/.xsession-errors a,
 
   # Site-specific additions and overrides. See local/README for details.
-  #include <local/spice-vdagent>
+  #include if exists <local/spice-vdagent>
 
 }
-/usr/sbin/spice-vdagentd flags=(attach_disconnected) {
+
+profile spice-vdagentd /{,usr/}sbin/spice-vdagentd flags=(attach_disconnected) {
   #include <abstractions/base>
 
-  /usr/sbin/spice-vdagentd mr,
+  /{,usr/}sbin/spice-vdagentd mr,
 
-  /proc/*/cgroup r,
+  @{PROC}/@{pid}/cgroup r,
 
   owner /run/spice-vdagentd/spice-vdagentd.pid w,
   owner /run/systemd/seats/seat[0-9]* r,
@@ -34,6 +35,6 @@
   owner /dev/vport[0-9]*p[0-9]* rw,
 
   # Site-specific additions and overrides. See local/README for details.
-  #include <local/spice-vdagent>
+  #include if exists <local/spice-vdagent>
 
 }

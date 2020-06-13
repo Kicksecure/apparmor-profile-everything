@@ -5,20 +5,29 @@
 
 ## Experimental full system AppArmor policy for Whonix.
 
-profile init-systemd /lib/systemd/** flags=(attach_disconnected) {
+profile init-systemd /{,usr/}lib/systemd/** flags=(attach_disconnected) {
   #include <abstractions/init-systemd>
   #include <abstractions/dangerous-files>
+
+  #include if exists <local/init-systemd>
+
 }
 
-profile init-systemd-debug /lib/systemd/** flags=(attach_disconnected) {
+profile init-systemd-debug /{,usr/}lib/systemd/** flags=(attach_disconnected) {
   #include <abstractions/init-systemd>
   #include <abstractions/dangerous-files>
   #include <abstractions/aadebug>
+
+  #include if exists <local/init-systemd-debug>
+
 }
 
-profile init-systemd-superroot /lib/systemd/** flags=(attach_disconnected) {
+profile init-systemd-superroot /{,usr/}lib/systemd/** flags=(attach_disconnected) {
   #include <abstractions/init-systemd>
   #include <abstractions/aadebug>
 
-  owner /proc/sys/** rw,
+  owner @{PROC}/sys/** rw,
+
+  #include if exists <local/init-systemd-superroot>
+
 }

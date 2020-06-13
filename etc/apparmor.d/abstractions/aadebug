@@ -2,4 +2,4 @@
   ## See the file COPYING for copying conditions.
 
   ## Allow access to kernel module information.
-  /proc/modules r,
+  @{PROC}/modules r,

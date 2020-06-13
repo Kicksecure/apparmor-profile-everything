@@ -3,7 +3,7 @@
 
 #include <tunables/global>
 
-/sbin/networking-aae flags=(attach_disconnected) {
+profile networking-aae /{,usr/}sbin/networking-aae flags=(attach_disconnected) {
   #include <abstractions/base>
   #include <abstractions/bash>
 
@@ -12,22 +12,21 @@
 
   /dev/pts/[0-9]* rw,
 
-  /bin/dash mrix,
-  /bin/ip mrix,
-  /bin/run-parts mrix,
-  /sbin/ifdown mrix,
-  /sbin/ifup mrix,
-  /sbin/networking-aae r,
+  /{,usr/}bin/dash mrix,
+  /{,usr/}bin/ip mrix,
+  /{,usr/}bin/run-parts mrix,
+  /{,usr/}sbin/ifdown mrix,
+  /{,usr/}sbin/ifup mrix,
+  /{,usr/}sbin/networking-aae r,
 
   /etc/default/networking r,
   /etc/network/** mrix,
   owner /etc/nsswitch.conf r,
   owner /etc/passwd r,
 
-  owner /proc/filesystems r,
+  owner @{PROC}/filesystems r,
   owner /run/network/* rwk,
 
   # Site-specific additions and overrides. See local/README for details.
-  #include <local/sbin.networking-aae>
-
+  #include if exists <local/sbin.networking-aae>
 }
