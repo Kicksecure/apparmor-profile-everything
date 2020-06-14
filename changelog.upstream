@@ -1,3 +1,61 @@
+commit ac6da7c83eecadccd593ae230cb10a88dfbdd1c8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 14 11:32:44 2020 -0400
+
+    fix lintian warning
+
+commit 3640245a6450f24ca14d172d64ef85dcf03662fb
+Merge: 82b469f a91b8c2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 14 10:44:37 2020 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit a91b8c269da954e41a79c2ec2172a64a0b21572c
+Merge: 82b469f 77d3939
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 14 14:43:39 2020 +0000
+
+    Merge pull request #61 from madaidan/systemd
+    
+    Disable sdwdate systemd sandboxing and onion-grater apparmor profile
+
+commit 77d393953f91c6646b1487bb65e254cf44807a9b
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sun Jun 14 00:43:58 2020 +0000
+
+    This isn't haveged
+
+commit 6758bf7892943a80171d90a1f00cb0314a5a23f0
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Jun 13 20:02:40 2020 +0000
+
+    Displace sdwdate service
+
+commit d32f021bb7519badd986864dcfff4fee647013eb
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Jun 13 19:59:35 2020 +0000
+
+    Hide onion-grater apparmor profile
+
+commit 2bada562d4eaa1d61ae36549f3e0ee340f884933
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Jun 13 19:56:47 2020 +0000
+
+    Disable sdwdate sandboxing
+
+commit c7a641fbae07de390c9f67c1116dd63c07cba306
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Jun 13 19:54:26 2020 +0000
+
+    Add sdwdate systemd service
+
+commit 82b469f6b3631c5202eefae286966e56f01397b0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jun 13 09:45:30 2020 -0400
+
+    bumped changelog version
+
 commit e3f637049a2999e7f321e53bd4e234e2337b22cf
 Merge: f967f7a b37d8a5
 Author: Patrick Schleizer <adrelanos@riseup.net>
