@@ -34,7 +34,7 @@ WatchdogSec=200m
 Restart=always
 
 # Hardening.
-# no_new_privs blocks transitions to haveged's AppArmor profile.
+# no_new_privs blocks transitions to sdwdate's AppArmor profile.
 #AmbientCapabilities=CAP_SYS_TIME
 #CapabilityBoundingSet=CAP_SYS_TIME
 ProtectSystem=strict
