@@ -1,0 +1,4 @@
+## Copyright (C) 2020 - 2020 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+/etc/apparmor.d/usr.lib.onion-grater
