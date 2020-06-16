@@ -1,0 +1,29 @@
+#include <tunables/global>
+
+profile rsyslogd /{,usr/}sbin/rsyslogd flags=(attach_disconnected) {
+  #include <abstractions/base>
+
+  capability sys_nice,
+  capability syslog,
+
+  signal receive set=(cont, term) peer=init-systemd,
+
+  /{,usr/}sbin/rsyslogd mr,
+
+  owner /etc/group r,
+  owner /etc/host.conf r,
+  owner /etc/hosts.anondist r,
+  owner /etc/nsswitch.conf r,
+  owner /etc/passwd r,
+  owner /etc/resolv.conf.whonix r,
+  owner /etc/rsyslog.conf r,
+  owner /etc/rsyslog.d/{,*.conf} r,
+
+  owner /proc/kmsg r,
+
+  owner /var/log/** w,
+
+  # Site-specific additions and overrides. See local/README for details.
+  #include if exists <local/usr.sbin.rsyslogd>
+
+}
