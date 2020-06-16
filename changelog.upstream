@@ -1,3 +1,31 @@
+commit 1ed03a2e88c4ca6d484b298c41c6d9621bb4312f
+Merge: 3a81d8e 0972c3b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jun 16 08:51:47 2020 -0400
+
+    Merge remote-tracking branch 'github/master'
+
+commit 0972c3b98e478abddb768e377a4beb758cfb779f
+Merge: 3a81d8e 7301540
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jun 16 12:50:40 2020 +0000
+
+    Merge pull request #62 from madaidan/rsyslogd
+    
+    Add rsyslogd profile
+
+commit 730154093bc8d694703f757c5070c83ad0ae53f1
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Jun 16 01:49:48 2020 +0000
+
+    Add rsyslogd profile
+
+commit 3a81d8ec4faaaae05f8997d9c0cae9bb700c9a30
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 14 12:54:20 2020 -0400
+
+    bumped changelog version
+
 commit ac6da7c83eecadccd593ae230cb10a88dfbdd1c8
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jun 14 11:32:44 2020 -0400
