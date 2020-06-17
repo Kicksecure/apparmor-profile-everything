@@ -1,3 +1,31 @@
+commit 86fde952a58fdd8c27f72b6a0c8916ad3235af06
+Merge: c8090dd 0c55e6b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jun 17 03:15:15 2020 -0400
+
+    Merge remote-tracking branch 'github/master'
+
+commit 0c55e6b81e08570c1cbbfac064938b4b29f4959f
+Merge: c8090dd 099a09f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jun 17 07:13:51 2020 +0000
+
+    Merge pull request #63 from madaidan/sdwdate
+    
+    Don't displace sdwdate.service
+
+commit 099a09f07e0d32e01c75020697f42136e3ec55ab
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Jun 16 19:43:01 2020 +0000
+
+    Don't displace sdwdate.service
+
+commit c8090dda2c20867fa7d62fee9ee627b842d57327
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jun 16 09:31:47 2020 -0400
+
+    bumped changelog version
+
 commit 1ed03a2e88c4ca6d484b298c41c6d9621bb4312f
 Merge: 3a81d8e 0972c3b
 Author: Patrick Schleizer <adrelanos@riseup.net>
