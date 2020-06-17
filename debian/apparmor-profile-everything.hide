@@ -2,3 +2,4 @@
 ## See the file COPYING for copying conditions.
 
 /etc/apparmor.d/usr.lib.onion-grater
+/lib/systemd/system/sdwdate.service
