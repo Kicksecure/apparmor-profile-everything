@@ -1,3 +1,23 @@
+commit 0cfe179842d0a01a9273a82d2148a939c984b406
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Sep 29 08:29:14 2020 -0400
+
+    readme
+
+commit 22ffb3a70eb2c656ea3e393fa20716cfd7b179b5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Sep 29 08:28:56 2020 -0400
+
+    fix lintian warning
+    
+    W: apparmor-profile-everything: spelling-error-in-description allows to allows one to
+
+commit 3551df6f35c5859f69a501c43dd4d14ed3ad7bdb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Sep 29 08:26:14 2020 -0400
+
+    bumped changelog version
+
 commit 0d016266e6e1fbd1f53a32970279e895083f04c7
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Sep 29 08:26:14 2020 -0400
