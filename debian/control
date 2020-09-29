@@ -33,6 +33,15 @@ Description: Full system AppArmor policy
  This is expected to be used in combination with other security technologies such as
  a hardened kernel, strong sandboxing architecture, verified boot and so on.
  .
+ apparmor-profile-everything supports different boot modes: aadebug and superroot.
+ aadebug allows certain permissions necessary for advanced debugging and superroot
+ relaxes the policy substantially, even making bypasses possible. It is highly
+ recommended to stick to the default boot mode.
+ .
+ It also contains a wrapper to restrict apt as apt requires permissions that may
+ be abused to circumvent the policy. When updating or installing applications, you
+ must use the `rapt` command.
+ .
  This is still in development and breakage is likely. This should only be used by
  developers for now.
  .
