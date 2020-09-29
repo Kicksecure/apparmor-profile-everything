@@ -1,7 +1,7 @@
 # Full system AppArmor policy #
 
 This is an AppArmor policy to confine all user space processes on the system which
-allows to enforce a strong security model and follow principle of least privilege.
+allows one to enforce a strong security model and follow principle of least privilege.
 An AppArmor policy for the init, systemd is loaded in the initramfs which then
 applies to all other processes. Specific policies for many system services/applications
 are also enforced.
