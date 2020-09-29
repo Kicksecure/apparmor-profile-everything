@@ -1,3 +1,63 @@
+commit 0d016266e6e1fbd1f53a32970279e895083f04c7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Sep 29 08:26:14 2020 -0400
+
+    readme
+
+commit 0075b1014d5beaf74cdc0251afd666c53af2139f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Sep 29 08:25:33 2020 -0400
+
+    Don't displace sdwdate.service
+    
+    since we already config-package-dev hide it
+
+commit f1251fd1a87debae8dd92c63a176a5f6ceeb5f67
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Sep 29 08:20:01 2020 -0400
+
+    fix lintian warning apparmor-profile-everything: using-first-person-in-description line 2: us
+
+commit ff5bf82139ba62678d6cf30811d62ab373970a1a
+Merge: 37648b5 5106056
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Sep 29 08:17:46 2020 -0400
+
+    Merge remote-tracking branch 'github/master'
+
+commit 5106056d3431c060dd324a27bb8eb1e8cd285dfc
+Merge: 37648b5 f5bd3fe
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Sep 29 12:16:41 2020 +0000
+
+    Merge pull request #64 from madaidan/desc
+    
+    Expand description
+
+commit f5bd3febad14d9f81707bf41fbe1ca6fcbb6fbd9
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Sep 29 11:52:30 2020 +0000
+
+    Mention boot modes and rapt
+
+commit 8808ea0686da8448ed694cec4541e8f14904bda3
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Sep 29 11:36:44 2020 +0000
+
+    Update control
+
+commit 54f8bd80cb751bcf147ec69964a4dc0d09a63702
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Tue Sep 29 11:36:03 2020 +0000
+
+    Expand description
+
+commit 37648b576868f02bc0616dac468209e4cb33d943
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Sep 5 04:05:58 2020 -0400
+
+    bumped changelog version
+
 commit 656457c3fa5dff7664df0267188c17ed7b665e79
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Sep 5 04:05:57 2020 -0400
