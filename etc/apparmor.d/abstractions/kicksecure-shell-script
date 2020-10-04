@@ -31,6 +31,7 @@
   /{,usr/}bin/cp mrix,
   /{,usr/}bin/chown mrix,
   /{,usr/}bin/mktemp mrix,
+  /{,usr/}bin/shred mrix,
 
   ## permission-lockdown and first-boot-skel
   /home/** rw,
