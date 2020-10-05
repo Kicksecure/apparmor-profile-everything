@@ -1,3 +1,37 @@
+commit e34e0306045c2e4ebd3e0bb5be1e70387072f248
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 5 07:01:21 2020 -0400
+
+    readme
+
+commit 5789b5fd27204c3e549454112dbd23f454d6299e
+Merge: 9da8ce6 4f7058c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 5 06:22:07 2020 -0400
+
+    Merge remote-tracking branch 'github/master'
+
+commit 4f7058c7a1d7743608f87171488279348c02912f
+Merge: 9da8ce6 9c90eb9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 5 10:13:47 2020 +0000
+
+    Merge pull request #65 from komachi/kicksecure-shred
+    
+    Add shred to kicksecure-shell-script abstraction
+
+commit 9c90eb95e4368dc35a9a35bcb21cbca1d914b6f8
+Author: Anton Nesterov <anton@nesterov.cc>
+Date:   Sun Oct 4 22:15:53 2020 +0000
+
+    add shred to kicksecure-shell-script abstraction
+
+commit 9da8ce6c270132b48748ed33723b2e0a0900f882
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Sep 29 08:29:15 2020 -0400
+
+    bumped changelog version
+
 commit 0cfe179842d0a01a9273a82d2148a939c984b406
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Sep 29 08:29:14 2020 -0400
