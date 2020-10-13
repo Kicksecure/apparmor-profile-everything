@@ -1,3 +1,31 @@
+commit 650843adeecc2b237643c4350ec63f48f709d945
+Merge: 02a3db8 366230d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Oct 13 12:30:23 2020 -0400
+
+    Merge remote-tracking branch 'github/master'
+
+commit 366230d84a3cb585e2763fd1076b12a0b2fa296a
+Merge: 02a3db8 5be0b01
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Oct 13 16:30:04 2020 +0000
+
+    Merge pull request #66 from madaidan/shared
+    
+    Permit access to shared folders
+
+commit 5be0b010b031a5e2ca4e1c5e958b2f5329a351f1
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Mon Oct 12 22:21:09 2020 +0000
+
+    Permit access to shared folders
+
+commit 02a3db8a76178547b38959c377857fae30170f5f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 5 07:01:22 2020 -0400
+
+    bumped changelog version
+
 commit e34e0306045c2e4ebd3e0bb5be1e70387072f248
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Oct 5 07:01:21 2020 -0400
