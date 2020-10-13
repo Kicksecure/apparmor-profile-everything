@@ -266,3 +266,6 @@
   owner /var/backups/apt.extended_states w,
 
   /srv/ r,
+  
+  ## Shared folders.
+  /mnt/shared/{,**} rw,
