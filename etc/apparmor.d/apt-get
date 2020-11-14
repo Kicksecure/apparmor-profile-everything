@@ -4,8 +4,6 @@
 #include <tunables/global>
 
 profile rapt /{,usr/}bin/rapt flags=(attach_disconnected) {
-  ##include <abstractions/dangerous-files>
-
   ## TODO: Further restict these. Use extended capability rules.
   ## TODO: Review if all of these are needed, especially sys_admin,
   ## sys_module and sys_rawio.
