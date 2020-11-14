@@ -28,7 +28,8 @@ profile dbus-daemon /{,usr/}bin/dbus-daemon flags=(attach_disconnected) {
   owner @{HOME}/.config/xfce4/xfconf/xfce-perchannel-xml/*.xml{,.new} rw,
 
   @{PROC}/filesystems r,
-  owner @{PROC}/@{pid}/{cmdline,mounts} r,
+  @{PROC}/@{pid}/cmdline r,
+  owner @{PROC}/@{pid}/mounts r,
   owner @{PROC}/@{pid}/oom_score_adj w,
 
   /run/systemd/{inhibit,sessions}/1.ref w,

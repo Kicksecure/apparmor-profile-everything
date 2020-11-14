@@ -8,8 +8,7 @@ profile spice-vdagent /{,usr/}bin/spice-vdagent flags=(attach_disconnected) {
 
   /{,usr/}bin/spice-vdagent mr,
 
-  @{system_share_dirs}/drirc.d/ r,
-  @{system_share_dirs}/drirc.d/*.conf r,
+  @{system_share_dirs}/drirc.d/{,*.conf} r,
   @{system_share_dirs}/themes/** r,
 
   owner @{HOME}/.Xauthority r,
