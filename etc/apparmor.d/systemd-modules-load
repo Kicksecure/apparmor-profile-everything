@@ -12,15 +12,14 @@ profile systemd-modules-load /lib/systemd/systemd-modules-load flags=(attach_dis
 
   /dev/pts/[0-9]* rw,
   
-  owner /**/{modprobe,modules-load}.d/ r,
-  owner /**/{modprobe,modules-load}.d/*.conf r,
+  owner /**/{modprobe,modules-load}.d/{,*.conf} r,
   
   owner /etc/modules r,
   
-  owner /proc/cmdline r,
-  owner /proc/*/{environ,sched,stat} r,
+  owner @{PROC}/cmdline r,
+  owner @{PROC}/*/{environ,sched,stat} r,
   
-  owner /sys/module/** r,
+  owner @{sys}/module/** r,
 
   # Site-specific additions and overrides. See local/README for details.
   #include if exists <local/systemd-modules-load>

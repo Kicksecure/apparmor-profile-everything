@@ -19,7 +19,7 @@ profile rsyslogd /{,usr/}sbin/rsyslogd flags=(attach_disconnected) {
   owner /etc/rsyslog.conf r,
   owner /etc/rsyslog.d/{,*.conf} r,
 
-  owner /proc/kmsg r,
+  owner @{PROC}/kmsg r,
 
   owner /var/log/** w,
 
