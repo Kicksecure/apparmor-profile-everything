@@ -1,0 +1,37 @@
+## Copyright (C) 2012 - 2020 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+#include <tunables/global>
+
+profile apt.systemd.daily /usr/lib/apt/apt.systemd.daily flags=(attach_disconnected) {
+  #include <abstractions/base>
+
+  capability setgid,
+
+  /etc/apt/apt.conf.d/{,*} r,
+  /etc/dpkg/dpkg.cfg{,.d/}{,*} r,
+
+  /usr/share/dpkg/{cpu,tuple}table r,
+
+  /usr/lib/apt/apt.systemd.daily mrix,
+  /{,usr/}bin/dash mrix,
+  /{,usr/}bin/which mrix,
+  /{,usr/}bin/touch mrix,
+  /{,usr/}bin/cp mrix,
+  /{,usr/}bin/date mrix,
+  /{,usr/}bin/apt-config mrix,
+  /{,usr/}bin/dpkg mrix,
+  /{,usr/}bin/flock mrix,
+  /{,usr/}bin/cmp mrix,
+  /{,usr/}usr/bin/savelog mrix,
+
+  /var/lib/apt/lists/ r,
+  /var/lib/apt/extended_states r,
+  /var/lib/apt/daily_lock wk,
+  /var/backups/apt.extended_states{,.[0-9]*} rw,
+
+  @{PROC}/@{pid}/fd/ r,
+
+  # Site-specific additions and overrides. See local/README for details.
+  #include if exists <local/apt.systemd.daily>
+}

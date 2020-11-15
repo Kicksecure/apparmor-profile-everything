@@ -243,7 +243,6 @@
   /{,var/}run/shm/** rwl,
   owner /{,var/}run/** rwk,
   owner /var/swapfile rw,
-  owner /var/backups/apt.extended_states w,
 
   /srv/ r,
   
