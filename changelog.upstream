@@ -1,3 +1,81 @@
+commit 066c1093331ac51ac01d2afecdfead2b10d485d8
+Merge: fdfd45c 15813b7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Nov 14 16:00:55 2020 -0500
+
+    Merge remote-tracking branch 'github/master'
+
+commit 15813b74a1ce284540261e94a29e10cbe0393aa0
+Merge: fdfd45c 3f04477
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Nov 14 20:58:24 2020 +0000
+
+    Merge pull request #67 from madaidan/cleanup
+    
+    Cleanup and fix a few things
+
+commit 3f044774ac2331da6e52a3667463708212b5700d
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 14 20:25:45 2020 +0000
+
+    dbus-daemon needs to read cmdline files it doesn't own
+
+commit d5e264269fedd3e01071181fb059216032246be0
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 14 20:22:43 2020 +0000
+
+    Remove dangerous-files abstraction
+    
+    This abstraction is inherently antithetical to apt's duties. It will likely never be enabled so remove the useless line.
+
+commit ddb3e605b9fc442696896aa6890a996f040600f5
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 14 20:18:01 2020 +0000
+
+    Use tunable
+
+commit f1a614af1dbdc971233289adf84f2465593f40c1
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 14 20:16:37 2020 +0000
+
+    Cleanup
+
+commit 7fbb87dde5f2bc71952080a343de13e04fed1d0b
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 14 20:15:45 2020 +0000
+
+    Cleanup
+
+commit 5a513f6a102b6b351755dbb66e8008650b779845
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 14 20:14:12 2020 +0000
+
+    Cleanup
+
+commit 1cb914f2cc12fd4bc32d5ad8ae07d56ca9c889ea
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 14 20:10:48 2020 +0000
+
+    Cleanup
+
+commit 1560b68e0935e56bbec0edb4c46999f9b9a9c476
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 14 20:07:59 2020 +0000
+
+    Cleanup
+
+commit 4e6d7b24403193b3cbda6d89554e3022d7fffc28
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 14 20:06:37 2020 +0000
+
+    Cleanup
+
+commit fdfd45c69681d1dfa3eff7cdd6d0a0ebbd3a182e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Oct 13 12:30:33 2020 -0400
+
+    bumped changelog version
+
 commit 650843adeecc2b237643c4350ec63f48f709d945
 Merge: 02a3db8 366230d
 Author: Patrick Schleizer <adrelanos@riseup.net>

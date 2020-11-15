@@ -50,10 +50,8 @@
   /etc/group r,
   /etc/pam.d/* r,
 
-  owner /var/cache/security-misc/state-files/ rw,
-  owner /var/cache/security-misc/state-files/* rw,
-  owner /var/cache/anon-base-files/ rw,
-  owner /var/cache/anon-base-files/* rw,
+  owner /var/cache/security-misc/state-files/{,*} rw,
+  owner /var/cache/anon-base-files/{,*} rw,
 
   owner /var/log/tallylog rw,
 

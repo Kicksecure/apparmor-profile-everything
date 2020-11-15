@@ -10,6 +10,7 @@
 
 override_dh_install:
 	dh_apparmor --profile-name='apt.systemd.daily'
+	dh_apparmor --profile-name='bin.lsblk'
 	dh_apparmor --profile-name='usr.sbin.rsyslogd'
 	dh_apparmor --profile-name='kicksecure-shell-script'
 	dh_apparmor --profile-name='sbin.networking-aae'
