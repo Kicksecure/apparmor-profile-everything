@@ -1,3 +1,77 @@
+commit fa2e0116ade97c8fb770728d10d00d5077c37cb3
+Merge: e176137 f2af21b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Nov 15 03:37:20 2020 -0500
+
+    Merge remote-tracking branch 'github/master'
+
+commit f2af21b3314e19a23bda06e17b9cb4e53a0fa987
+Merge: b244274 aa1ebba
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Nov 15 08:36:19 2020 +0000
+
+    Merge pull request #69 from madaidan/apt-systemd-daily
+    
+    Create apt.systemd.daily AppArmor profile
+
+commit aa1ebba7cb1f12202ebc7f9039b9750013dba63e
+Merge: 25f7fee b244274
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Nov 15 08:35:57 2020 +0000
+
+    Merge branch 'master' into apt-systemd-daily
+
+commit b244274476027bb8241885b0a119d4dc86c56dc7
+Merge: e176137 f771efb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Nov 15 08:30:01 2020 +0000
+
+    Merge pull request #68 from madaidan/lsblk
+    
+    Create lsblk AppArmor profile
+
+commit f771efbf6b19b153c868175c7deb055303b28bb5
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 14 23:45:41 2020 +0000
+
+    Include file
+
+commit 25f7fee08f7b571dc6be214f15a1e9c34e04da3a
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 14 23:44:04 2020 +0000
+
+    Remove unnecessary permission
+
+commit 6ae2b726fd9d63d89e3e1a458640247381c52076
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 14 23:43:37 2020 +0000
+
+    Add apt.systemd.daily profile
+
+commit c1c5fd39d2833d0d73031c06a825c4f9f036741d
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 14 23:42:51 2020 +0000
+
+    Create apt.systemd.daily profile
+
+commit 2e0eeadfdf89c261c8c06ca6f9c7779ac6840af0
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 14 22:46:34 2020 +0000
+
+    Add lsblk profile
+
+commit 7be7adea8451839d57e66866f1cb1856b8dd977e
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Sat Nov 14 22:45:50 2020 +0000
+
+    Create lsblk profile
+
+commit e1761370b6116b6889b5493ade318b98c03120d1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Nov 14 16:41:16 2020 -0500
+
+    bumped changelog version
+
 commit 066c1093331ac51ac01d2afecdfead2b10d485d8
 Merge: fdfd45c 15813b7
 Author: Patrick Schleizer <adrelanos@riseup.net>
