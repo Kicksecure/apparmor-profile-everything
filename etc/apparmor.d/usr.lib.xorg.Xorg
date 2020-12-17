@@ -2,6 +2,7 @@
 ## See the file COPYING for copying conditions.
 
 #include <tunables/global>
+#include <tunables/init-systemd>
 
 profile Xorg /usr/lib/xorg/Xorg flags=(attach_disconnected) {
   #include <abstractions/base>
@@ -51,13 +52,13 @@ profile Xorg /usr/lib/xorg/Xorg flags=(attach_disconnected) {
   @{sys}/class/ r,
   @{sys}/class/{drm,input,tty}/ r,
   @{sys}/devices/**/{uevent,name} r,
-  @{sys}/devices/pci*/**/{device,revision,subsystem_device,subsystem_vendor,class,vendor,boot_vga,config,resource} r,
+  @{sys_pci}/{device,revision,subsystem_device,subsystem_vendor,class,vendor,boot_vga,config,resource} r,
 
   /dev/dri/card* rw,
   /dev/fb* rw,
   /dev/input/event* rw,
   /dev/shm/#* rw,
-  /dev/tty* rw,
+  @{dev_ttys} rw,
   /dev/vga_arbiter rw,
 
   /run/lightdm/root/* r,
