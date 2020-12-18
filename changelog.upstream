@@ -1,3 +1,37 @@
+commit a04fd9a0014fe76adf649c4a815722be47b4a868
+Merge: 28d0cce da35f2f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 18 04:01:45 2020 -0500
+
+    Merge remote-tracking branch 'origin/master'
+
+commit da35f2f0823ae3fad67a131df89bf08d37bab15f
+Merge: 28d0cce d9a96bf
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 18 09:00:42 2020 +0000
+
+    Merge pull request #70 from madaidan/master
+    
+    Add sys_pci and dev_ttys tunables
+
+commit d9a96bf99de9b599559e1539f1a4b46d56b52860
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Dec 17 19:04:47 2020 +0000
+
+    Correct file name
+
+commit 020944cec92e2dfc97bc4831adf31be1001befac
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Thu Dec 17 18:59:35 2020 +0000
+
+    Add sys_pci and dev_ttys tunables
+
+commit 28d0ccee3cc79f216d5c5b7447d76d2bea00af83
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Nov 15 03:37:33 2020 -0500
+
+    bumped changelog version
+
 commit fa2e0116ade97c8fb770728d10d00d5077c37cb3
 Merge: e176137 f2af21b
 Author: Patrick Schleizer <adrelanos@riseup.net>
