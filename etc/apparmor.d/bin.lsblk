@@ -2,6 +2,7 @@
 ## See the file COPYING for copying conditions.
 
 #include <tunables/global>
+#include <tunables/init-systemd>
 
 profile lsblk /{,usr/}bin/lsblk flags=(attach_disconnected) {
   #include <abstractions/base>
@@ -9,7 +10,8 @@ profile lsblk /{,usr/}bin/lsblk flags=(attach_disconnected) {
   /{,usr/}bin/lsblk mrix,
 
   @{sys}/block/ r,
-  @{sys}/devices/pci**/block/{s,v}da/{,**} r,
+  ## TODO: May be able to restrict to @{sys_pci}/virtio[0-9]
+  @{sys_pci}/**/block/{s,v}da/{,**} r,
 
   @{PROC}/@{pids}/mount{s,info} r,
   @{PROC}/swaps r,
