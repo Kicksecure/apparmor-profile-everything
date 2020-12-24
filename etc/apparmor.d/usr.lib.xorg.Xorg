@@ -21,9 +21,11 @@ profile Xorg /usr/lib/xorg/Xorg flags=(attach_disconnected) {
   capability setgid,
   capability setuid,
   capability sys_admin,
+  capability sys_nice,
 
   signal receive set=(cont, term) peer=init-systemd,
   signal send set=usr1 peer=init-systemd,
+  signal send set=usr1 peer=unconfined,
 
   /{,usr/}bin/dash mrix,
   /{,usr/}bin/xkbcomp mrix,
@@ -52,9 +54,10 @@ profile Xorg /usr/lib/xorg/Xorg flags=(attach_disconnected) {
   @{sys}/class/ r,
   @{sys}/class/{drm,input,tty}/ r,
   @{sys}/devices/**/{uevent,name} r,
-  @{sys_pci}/{device,revision,subsystem_device,subsystem_vendor,class,vendor,boot_vga,config,resource} r,
+  @{sys_pci}/{device,revision,subsystem_device,subsystem_vendor,class,vendor,boot_vga,config,resource,drm/,sound/card[0-9]*/id} r,
 
   /dev/dri/card* rw,
+  /dev/dri/renderD[0-9]* rw,
   /dev/fb* rw,
   /dev/input/event* rw,
   /dev/shm/#* rw,

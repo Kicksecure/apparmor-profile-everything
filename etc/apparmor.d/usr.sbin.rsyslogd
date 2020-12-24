@@ -12,10 +12,10 @@ profile rsyslogd /{,usr/}sbin/rsyslogd flags=(attach_disconnected) {
 
   owner /etc/group r,
   owner /etc/host.conf r,
-  owner /etc/hosts.anondist r,
+  owner /etc/hosts{,.anondist} r,
   owner /etc/nsswitch.conf r,
   owner /etc/passwd r,
-  owner /etc/resolv.conf.whonix r,
+  owner /etc/resolv.conf{,.whonix} r,
   owner /etc/rsyslog.conf r,
   owner /etc/rsyslog.d/{,*.conf} r,
 

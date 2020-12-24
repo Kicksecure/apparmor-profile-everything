@@ -21,6 +21,7 @@ profile networking-aae /{,usr/}sbin/networking-aae flags=(attach_disconnected) {
 
   /etc/default/networking r,
   /etc/network/** mrix,
+  /etc/wpa_supplicant/*.sh mrix,
   owner /etc/nsswitch.conf r,
   owner /etc/passwd r,
 
