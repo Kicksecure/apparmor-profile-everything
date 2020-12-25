@@ -19,16 +19,21 @@ profile dbus-daemon /{,usr/}bin/dbus-daemon flags=(attach_disconnected) {
   /{,usr/}bin/dbus-daemon mr,
   /usr/lib/mate-notification-daemon/mate-notification-daemon mrix,
   /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd mrix,
+  /usr/lib/x86_64-linux-gnu/tumbler-1/tumblerd mrix,  
+  /usr/lib/at-spi2-core/at-spi{-bus-launcher,2-registryd} mrix,
+  /usr/lib/dconf/dconf-service mrix,
+  /usr/bin/gnome-keyring-daemon mrix,
 
   /{usr/share,etc}/dbus-1/** r,
   @{system_share_dirs}/glib-2.0/schemas/gschemas.compiled r,
+  @{system_share_dirs}/defaults/at-spi2/accessibility.conf r,
+  @{system_share_dirs}/desktop-base/profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml/*.xml{,.new} r,
 
   owner @{HOME}/.Xauthority r,
-  owner @{HOME}/.config/dconf/user r,
+  owner @{HOME}/.config/dconf/user{,.*} rw,
   owner @{HOME}/.config/xfce4/xfconf/xfce-perchannel-xml/*.xml{,.new} rw,
 
-  @{PROC}/filesystems r,
-  @{PROC}/@{pid}/cmdline r,
+  @{PROC}/{filesystems,cmdline,@{pid}/cmdline} r,
   owner @{PROC}/@{pid}/mounts r,
   owner @{PROC}/@{pid}/oom_score_adj w,
 
