@@ -1,3 +1,15 @@
+commit b2a2149250f0cda62a395c2bb9b2d181b4631e25
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 28 02:52:59 2020 -0500
+
+    fix linitian warning
+
+commit e4500cfe70c514f85266be6bdbba63835b327063
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 25 07:29:08 2020 -0500
+
+    bumped changelog version
+
 commit 1092823ced85c918996b537ffa83b0307e10d0bc
 Merge: 408c99f 7c2fdb7
 Author: Patrick Schleizer <adrelanos@riseup.net>
