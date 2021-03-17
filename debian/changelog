@@ -2,358 +2,358 @@ apparmor-profile-everything (3:6.0-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Mon, 28 Dec 2020 07:53:15 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Mon, 28 Dec 2020 07:53:15 +0000
 
 apparmor-profile-everything (3:5.9-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Fri, 25 Dec 2020 12:29:08 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Fri, 25 Dec 2020 12:29:08 +0000
 
 apparmor-profile-everything (3:5.8-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Fri, 18 Dec 2020 11:55:27 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Fri, 18 Dec 2020 11:55:27 +0000
 
 apparmor-profile-everything (3:5.7-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Sun, 15 Nov 2020 08:37:33 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Sun, 15 Nov 2020 08:37:33 +0000
 
 apparmor-profile-everything (3:5.6-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Sat, 14 Nov 2020 21:41:16 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Sat, 14 Nov 2020 21:41:16 +0000
 
 apparmor-profile-everything (3:5.5-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Tue, 13 Oct 2020 16:30:33 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Tue, 13 Oct 2020 16:30:33 +0000
 
 apparmor-profile-everything (3:5.4-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Mon, 05 Oct 2020 11:01:22 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Mon, 05 Oct 2020 11:01:22 +0000
 
 apparmor-profile-everything (3:5.3-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Tue, 29 Sep 2020 12:29:15 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Tue, 29 Sep 2020 12:29:15 +0000
 
 apparmor-profile-everything (3:5.2-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Tue, 29 Sep 2020 12:26:14 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Tue, 29 Sep 2020 12:26:14 +0000
 
 apparmor-profile-everything (3:5.1-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Sat, 05 Sep 2020 08:05:57 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Sat, 05 Sep 2020 08:05:57 +0000
 
 apparmor-profile-everything (3:5.0-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Wed, 17 Jun 2020 15:41:16 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Wed, 17 Jun 2020 15:41:16 +0000
 
 apparmor-profile-everything (3:4.9-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Tue, 16 Jun 2020 13:31:47 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Tue, 16 Jun 2020 13:31:47 +0000
 
 apparmor-profile-everything (3:4.8-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Sun, 14 Jun 2020 16:54:20 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Sun, 14 Jun 2020 16:54:20 +0000
 
 apparmor-profile-everything (3:4.7-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Sat, 13 Jun 2020 13:45:30 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Sat, 13 Jun 2020 13:45:30 +0000
 
 apparmor-profile-everything (3:4.6-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Sun, 10 May 2020 08:55:58 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Sun, 10 May 2020 08:55:58 +0000
 
 apparmor-profile-everything (3:4.5-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Wed, 06 May 2020 18:59:21 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Wed, 06 May 2020 18:59:21 +0000
 
 apparmor-profile-everything (3:4.4-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Fri, 17 Apr 2020 14:03:57 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Fri, 17 Apr 2020 14:03:57 +0000
 
 apparmor-profile-everything (3:4.3-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Thu, 16 Apr 2020 12:23:44 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Thu, 16 Apr 2020 12:23:44 +0000
 
 apparmor-profile-everything (3:4.2-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Tue, 14 Apr 2020 16:39:53 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Tue, 14 Apr 2020 16:39:53 +0000
 
 apparmor-profile-everything (3:4.1-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Wed, 08 Apr 2020 12:40:54 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Wed, 08 Apr 2020 12:40:54 +0000
 
 apparmor-profile-everything (3:4.0-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Thu, 02 Apr 2020 11:34:37 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Thu, 02 Apr 2020 11:34:37 +0000
 
 apparmor-profile-everything (3:3.9-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Wed, 01 Apr 2020 14:26:24 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Wed, 01 Apr 2020 14:26:24 +0000
 
 apparmor-profile-everything (3:3.8-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Fri, 27 Mar 2020 11:32:43 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Fri, 27 Mar 2020 11:32:43 +0000
 
 apparmor-profile-everything (3:3.7-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Thu, 26 Mar 2020 12:13:07 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Thu, 26 Mar 2020 12:13:07 +0000
 
 apparmor-profile-everything (3:3.6-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Tue, 24 Mar 2020 07:52:33 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Tue, 24 Mar 2020 07:52:33 +0000
 
 apparmor-profile-everything (3:3.5-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Sun, 08 Mar 2020 13:42:20 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Sun, 08 Mar 2020 13:42:20 +0000
 
 apparmor-profile-everything (3:3.4-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Thu, 05 Mar 2020 13:34:45 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Thu, 05 Mar 2020 13:34:45 +0000
 
 apparmor-profile-everything (3:3.3-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Tue, 03 Mar 2020 14:08:55 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Tue, 03 Mar 2020 14:08:55 +0000
 
 apparmor-profile-everything (3:3.2-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Thu, 13 Feb 2020 14:11:06 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Thu, 13 Feb 2020 14:11:06 +0000
 
 apparmor-profile-everything (3:3.1-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Fri, 17 Jan 2020 08:44:43 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Fri, 17 Jan 2020 08:44:43 +0000
 
 apparmor-profile-everything (3:3.0-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Fri, 17 Jan 2020 08:17:17 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Fri, 17 Jan 2020 08:17:17 +0000
 
 apparmor-profile-everything (3:2.9-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Wed, 15 Jan 2020 16:35:58 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Wed, 15 Jan 2020 16:35:58 +0000
 
 apparmor-profile-everything (3:2.8-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Wed, 15 Jan 2020 15:11:30 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Wed, 15 Jan 2020 15:11:30 +0000
 
 apparmor-profile-everything (3:2.7-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Tue, 14 Jan 2020 14:18:43 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Tue, 14 Jan 2020 14:18:43 +0000
 
 apparmor-profile-everything (3:2.6-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Wed, 01 Jan 2020 20:09:10 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Wed, 01 Jan 2020 20:09:10 +0000
 
 apparmor-profile-everything (3:2.5-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Wed, 01 Jan 2020 14:35:11 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Wed, 01 Jan 2020 14:35:11 +0000
 
 apparmor-profile-everything (3:2.4-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Tue, 24 Dec 2019 23:26:38 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Tue, 24 Dec 2019 23:26:38 +0000
 
 apparmor-profile-everything (3:2.3-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Tue, 24 Dec 2019 12:26:13 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Tue, 24 Dec 2019 12:26:13 +0000
 
 apparmor-profile-everything (3:2.2-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Mon, 23 Dec 2019 07:41:08 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Mon, 23 Dec 2019 07:41:08 +0000
 
 apparmor-profile-everything (3:2.1-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Mon, 23 Dec 2019 07:10:09 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Mon, 23 Dec 2019 07:10:09 +0000
 
 apparmor-profile-everything (3:2.0-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Sat, 21 Dec 2019 19:53:12 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Sat, 21 Dec 2019 19:53:12 +0000
 
 apparmor-profile-everything (3:1.9-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Sat, 21 Dec 2019 19:22:16 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Sat, 21 Dec 2019 19:22:16 +0000
 
 apparmor-profile-everything (3:1.8-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Sat, 21 Dec 2019 10:30:49 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Sat, 21 Dec 2019 10:30:49 +0000
 
 apparmor-profile-everything (3:1.7-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Fri, 20 Dec 2019 12:45:02 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Fri, 20 Dec 2019 12:45:02 +0000
 
 apparmor-profile-everything (3:1.6-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Fri, 20 Dec 2019 12:07:02 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Fri, 20 Dec 2019 12:07:02 +0000
 
 apparmor-profile-everything (3:1.5-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Mon, 16 Dec 2019 11:25:58 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Mon, 16 Dec 2019 11:25:58 +0000
 
 apparmor-profile-everything (3:1.4-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Tue, 10 Dec 2019 16:42:08 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Tue, 10 Dec 2019 16:42:08 +0000
 
 apparmor-profile-everything (3:1.3-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Mon, 09 Dec 2019 13:24:26 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Mon, 09 Dec 2019 13:24:26 +0000
 
 apparmor-profile-everything (3:1.2-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Sun, 08 Dec 2019 09:04:27 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Sun, 08 Dec 2019 09:04:27 +0000
 
 apparmor-profile-everything (3:1.1-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Fri, 06 Dec 2019 17:42:16 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Fri, 06 Dec 2019 17:42:16 +0000
 
 apparmor-profile-everything (3:1.0-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Thu, 28 Nov 2019 08:14:44 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Thu, 28 Nov 2019 08:14:44 +0000
 
 apparmor-profile-everything (3:0.9-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Mon, 25 Nov 2019 08:42:46 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Mon, 25 Nov 2019 08:42:46 +0000
 
 apparmor-profile-everything (3:0.8-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Sat, 23 Nov 2019 14:06:40 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Sat, 23 Nov 2019 14:06:40 +0000
 
 apparmor-profile-everything (3:0.7-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Wed, 20 Nov 2019 20:53:12 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Wed, 20 Nov 2019 20:53:12 +0000
 
 apparmor-profile-everything (3:0.6-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Wed, 20 Nov 2019 20:31:05 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Wed, 20 Nov 2019 20:31:05 +0000
 
 apparmor-profile-everything (3:0.5-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Mon, 18 Nov 2019 10:10:53 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Mon, 18 Nov 2019 10:10:53 +0000
 
 apparmor-profile-everything (3:0.4-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Thu, 31 Oct 2019 16:45:08 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Thu, 31 Oct 2019 16:45:08 +0000
 
 apparmor-profile-everything (3:0.3-1) unstable; urgency=medium
 
   * New upstream version (local package).
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Thu, 31 Oct 2019 16:04:51 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Thu, 31 Oct 2019 16:04:51 +0000
 
 apparmor-profile-everything (3:0.2-1) unstable; urgency=low
 
   * New upstream version.
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Thu, 31 Oct 2019 13:00:00 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Thu, 31 Oct 2019 13:00:00 +0000
 
 apparmor-profile-everything (3:0.1-2) unstable; urgency=low
 
   * Initial release.
 
- -- Patrick Schleizer <adrelanos@riseup.net>  Thu, 31 Oct 2019 12:00:00 +0000
+ -- Patrick Schleizer <adrelanos@whonix.org>  Thu, 31 Oct 2019 12:00:00 +0000
