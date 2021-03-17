@@ -2,6 +2,7 @@
 ## See the file COPYING for copying conditions.
 
 #include <tunables/global>
+#include <tunables/init-systemd>
 
 ## Experimental full system AppArmor policy for Whonix.
 
