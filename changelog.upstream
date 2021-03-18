@@ -1,3 +1,31 @@
+commit 0fa0450d9df0a03aa736995188955f7476fb9a17
+Merge: b6b6f37 b1160bc
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Mar 18 05:39:40 2021 -0400
+
+    Merge remote-tracking branch 'github-whonix/master'
+
+commit b1160bcf189b6308bba9b9a480914cdd4de2f511
+Merge: b6b6f37 d35a5c5
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Mar 18 05:38:37 2021 -0400
+
+    Merge pull request #73 from madaidan/tunable
+    
+    Include init-systemd tunables
+
+commit d35a5c59d78ac820ff6d683d8ce4bcf13bdd017b
+Author: madaidan <50278627+madaidan@users.noreply.github.com>
+Date:   Wed Mar 17 23:39:13 2021 +0000
+
+    Include init-systemd tunables
+
+commit b6b6f37eb862ce1491b9e23756e999b0a1809792
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Mar 17 10:58:15 2021 -0400
+
+    bumped changelog version
+
 commit fee94e58307b160a9939dcbb594d0997f2fe2c44
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Mar 17 10:58:14 2021 -0400
