@@ -22,107 +22,111 @@ packages_refuse_removal="apparmor $kernel_package $header_package"
 ## https://forums.whonix.org/t/disable-grub-output-verbose-by-default/8656
 packages_refuse_install="grub-output-verbose"
 
+## proper whitespace handling
+## https://www.whonix.org/wiki/Dev/bash
+unset command
+declare -a command
+
 while :
 do
       case $1 in
       update)
-         ## TODO: this is wrong. Needs to be an array with proper quotes handling.
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       upgrade)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       install)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       reinstall)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       remove)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       purge)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       autoremove)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       dist-upgrade)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       clean)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       autoclean)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       check)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       source)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       download)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       changelog)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       --fix-missing)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       --fix-broken)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       --no-install-recommends)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       --simulate)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       --quiet=1)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
       --quiet=2)
-         command+="$1 "
+         command+=("$1")
          shift
          continue
          ;;
@@ -140,7 +144,10 @@ do
          shift
          continue
          ;;
-      *)
+       *)
+         ## TODO: currently not possible to add parameters at the end.
+         ## rapt install hello --simulate
+         ## For now, package name(s) need to be at the end.
          break
          ;;
       esac
@@ -161,6 +168,7 @@ packages_list_merged="$(echo "$packages_list_merged" | sort --unique --version-s
 
 true "arg: '$arg'"
 
+unset pkg
 declare -A -g pkg
 
 if [[ ! "" = "$@" ]] ; then
@@ -181,7 +189,7 @@ if [[ ! "" = "$@" ]] ; then
       if [ "${pkg["${arg}"]}" = "ok" ]; then
          continue
       else
-         echo "ERROR: invalid package! $arg"
+         echo "ERROR: invalid package! arg: '$arg'"
          exit 1
       fi
    done
@@ -212,7 +220,7 @@ check_for_packages_on_refused_removal_list() {
       for package in $packages_refuse_install ; do
          if [ "$arg" = "$package" ]; then
             error_output
-            echo "ERROR: forbidden to install package! $package"
+            echo "ERROR: forbidden to install package! package: '$package'"
             exit 1
          fi
       done
@@ -222,7 +230,7 @@ check_for_packages_on_refused_removal_list() {
       for package in $packages_refuse_removal ; do
          if [ "$arg" = "$package" ]; then
             error_output
-            echo "ERROR: forbidden to remove package! $package"
+            echo "ERROR: forbidden to remove package! package: '$package'"
             exit 1
          fi
       done
@@ -234,7 +242,7 @@ check_for_packages_on_refused_removal_list() {
          for package in $packages_refuse_removal ; do
             if [ "$second" = "$package" ]; then
                error_output
-               echo "ERROR: forbidden to remove package! $package"
+               echo "ERROR: forbidden to remove package! package: '$package'"
                exit 1
             fi
          done
@@ -244,10 +252,10 @@ check_for_packages_on_refused_removal_list() {
 
 apt_simulate_exit_code=0
 ## We don't want to preserve the environment to prevent any LD_PRELOAD tricks.
-output_stdout="$(env -i /usr/bin/apt-get --simulate --quiet=2 $command "${@}" 2>/dev/null)" || { apt_simulate_exit_code=$? ; true; }
+output_stdout="$(env -i /usr/bin/apt-get --simulate --quiet=2 "${command[@]}" "${@}" 2>/dev/null)" || { apt_simulate_exit_code=$? ; true; }
 
 ## How to safely capture stdout and stderr into different variables in a single command?
-output_stderr="$(env -i /usr/bin/apt-get --simulate --quiet=2 $command "${@}" 2>&1 1>/dev/null)" || { apt_simulate_exit_code=$? ; true; }
+output_stderr="$(env -i /usr/bin/apt-get --simulate --quiet=2 "${command[@]}" "${@}" 2>&1 1>/dev/null)" || { apt_simulate_exit_code=$? ; true; }
 
 if [ "$apt_simulate_exit_code" = "100" ]; then
    if [ "$output_stderr" = "E: Command line option --simulate is not understood in combination with the other options" ]; then
@@ -261,5 +269,4 @@ if [ "$apt_simulate_exit_code" = "100" ]; then
 fi
 
 check_for_packages_on_refused_removal_list "$@"
-
-env -i /usr/bin/apt-get $command "${@}"
+env -i /usr/bin/apt-get "${command[@]}" "${@}"
