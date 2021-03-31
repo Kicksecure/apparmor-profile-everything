@@ -1,3 +1,23 @@
+commit c88167c5a551c2a55746e1456dd117463e6cd175
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Mar 31 16:42:18 2021 -0400
+
+    copyright
+
+commit d3eccd40b1547114159ef5309518a75f14800391
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Mar 31 16:39:35 2021 -0400
+
+    proper whitespace handling
+    
+    https://www.whonix.org/wiki/Dev/bash
+
+commit 48c2f95b80ab9c95c13bf50532746b3c461e41d5
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Mar 18 09:00:01 2021 -0400
+
+    bumped changelog version
+
 commit 4a8f5d22c12c1916d2668d73aa6e7b7db24970a0
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Mar 18 08:57:18 2021 -0400
