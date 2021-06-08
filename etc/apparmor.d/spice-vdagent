@@ -6,13 +6,25 @@
 profile spice-vdagent /{,usr/}bin/spice-vdagent flags=(attach_disconnected) {
   #include <abstractions/base>
 
+  ## Allow systemd to kill us.
+  signal receive set=(kill, cont, stop, term, hup) peer=init-systemd,
+  signal receive set=(kill, cont, stop, term) peer=systemd-shutdown,
+
   /{,usr/}bin/spice-vdagent mr,
 
   @{system_share_dirs}/drirc.d/{,*.conf} r,
   @{system_share_dirs}/themes/** r,
+  @{system_share_dirs}/alsa/{,pulse-}alsa.conf r,
+  @{system_share_dirs}/alsa/alsa.conf.d/{,*.conf} r,
+  /etc/alsa/conf.d/{,*.conf} r,
+  /etc/pulse/client.conf r,
+  /etc/pulse/client.conf.d/{,*.conf} r,
 
   owner @{HOME}/.Xauthority r,
   owner @{HOME}/.xsession-errors a,
+
+  /dev/snd/controlC[0-9] rw,
+  /dev/shm/ r,
 
   # Site-specific additions and overrides. See local/README for details.
   #include if exists <local/spice-vdagent>
@@ -21,6 +33,10 @@ profile spice-vdagent /{,usr/}bin/spice-vdagent flags=(attach_disconnected) {
 
 profile spice-vdagentd /{,usr/}sbin/spice-vdagentd flags=(attach_disconnected) {
   #include <abstractions/base>
+
+  ## Allow systemd to kill us.
+  signal receive set=(kill, cont, stop, term) peer=init-systemd,
+  signal receive set=(kill, cont, stop, term) peer=systemd-shutdown,
 
   /{,usr/}sbin/spice-vdagentd mr,
 
