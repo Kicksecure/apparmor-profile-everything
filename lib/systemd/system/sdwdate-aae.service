@@ -1,6 +1,9 @@
 ## Copyright (C) 2012 - 2021 ENCRYPTED SUPPORT LP <adrelanos@whonix.org>
 ## See the file COPYING for copying conditions.
 
+## similar file by package sdwdate:
+## /lib/systemd/system/sdwdate.service
+
 [Unit]
 Description=Secure Distributed Web Date
 Documentation=https://www.whonix.org/wiki/sdwdate
