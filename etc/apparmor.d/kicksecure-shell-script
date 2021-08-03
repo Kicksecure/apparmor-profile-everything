@@ -37,6 +37,6 @@
   #include <abstractions/kicksecure-shell-script>
 }
 
-/usr/lib/helper-scripts/first-boot-skel flags=(attach_disconnected) {
+/usr/libexec/helper-scripts/first-boot-skel flags=(attach_disconnected) {
   #include <abstractions/kicksecure-shell-script>
 }
