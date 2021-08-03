@@ -12,7 +12,7 @@
   capability fowner,
   capability fsetid,
 
-  /usr/lib/security-misc/* r,
+  /usr/libexec/security-misc/* r,
   /{,usr/}sbin/pam_tally2 mrix,
   /{,usr/}bin/bash rix,
   /{,usr/}bin/chmod mrix,

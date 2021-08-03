@@ -5,23 +5,23 @@
 
 ## Generic profile for Kicksecure shell scripts.
 
-/usr/lib/security-misc/pam_tally2-info flags=(attach_disconnected) {
+/usr/libexec/security-misc/pam_tally2-info flags=(attach_disconnected) {
   #include <abstractions/kicksecure-shell-script>
 }
 
-/usr/lib/security-misc/pam_only_if_login flags=(attach_disconnected) {
+/usr/libexec/security-misc/pam_only_if_login flags=(attach_disconnected) {
   #include <abstractions/kicksecure-shell-script>
 }
 
-/usr/lib/security-misc/pam-abort-on-locked-password flags=(attach_disconnected) {
+/usr/libexec/security-misc/pam-abort-on-locked-password flags=(attach_disconnected) {
   #include <abstractions/kicksecure-shell-script>
 }
 
-/usr/lib/security-misc/permission-lockdown flags=(attach_disconnected) {
+/usr/libexec/security-misc/permission-lockdown flags=(attach_disconnected) {
   #include <abstractions/kicksecure-shell-script>
 }
 
-/usr/lib/security-misc/remove-system.map flags=(attach_disconnected) {
+/usr/libexec/security-misc/remove-system.map flags=(attach_disconnected) {
   #include <abstractions/kicksecure-shell-script>
   
   owner / r,
@@ -33,7 +33,7 @@
   owner /lib/modules/*/*/System.map* rw,
 }
 
-/usr/lib/security-misc/panic-on-oops flags=(attach_disconnected) {
+/usr/libexec/security-misc/panic-on-oops flags=(attach_disconnected) {
   #include <abstractions/kicksecure-shell-script>
 }
 
