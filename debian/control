@@ -5,11 +5,12 @@ Source: apparmor-profile-everything
 Section: misc
 Priority: optional
 Maintainer: Patrick Schleizer <adrelanos@whonix.org>
-Build-Depends: debhelper (>= 12), dh-apparmor, config-package-dev
+Build-Depends: debhelper (>= 13), debhelper-compat (= 13), dh-apparmor, config-package-dev
 Homepage: https://www.whonix.org/wiki/AppArmor
 Vcs-Browser: https://github.com/Whonix/apparmor-profile-everything
 Vcs-Git: https://github.com/Whonix/apparmor-profile-everything.git
-Standards-Version: 4.3.0
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
 
 Package: apparmor-profile-everything
 Architecture: all
