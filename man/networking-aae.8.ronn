@@ -19,9 +19,9 @@ networking-aae(8) -- ifup and ifdown wrapper for apparmor-profile-everything
 `networking.service.d/30_apparmor_profile_everything.conf`
 overwrites this and runs
 
-`ExecStart=/sbin/networking-aae up`
+`ExecStart=/usr/sbin/networking-aae up`
 
-`ExecStop=/sbin/networking-aae down`
+`ExecStop=/usr/sbin/networking-aae down`
 
 instead.
 
