@@ -13,7 +13,7 @@ override_dh_install:
 	dh_apparmor --profile-name='bin.lsblk'
 	dh_apparmor --profile-name='usr.sbin.rsyslogd'
 	dh_apparmor --profile-name='kicksecure-shell-script'
-	dh_apparmor --profile-name='sbin.networking-aae'
+	dh_apparmor --profile-name='usr.sbin.networking-aae'
 	dh_apparmor --profile-name='spice-vdagent'
 	dh_apparmor --profile-name='systemd-modules-load'
 	dh_apparmor --profile-name='systemd-shutdown'
