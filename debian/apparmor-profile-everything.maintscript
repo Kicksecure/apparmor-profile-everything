@@ -1,0 +1,5 @@
+## Copyright (C) 2021 - 2021 ENCRYPTED SUPPORT LP <adrelanos@whonix.org>
+## See the file COPYING for copying conditions.
+
+## Was renamed because of usrmerge.
+rm_conffile /etc/apparmor.d/sbin.networking-aae
