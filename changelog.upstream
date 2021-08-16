@@ -1,3 +1,51 @@
+commit d2090fdce8f0a0cf90654fe101ba0ea6f8abdc08
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Aug 16 15:05:31 2021 -0400
+
+    re-generate man pages (generated using "genmkfile manpages")
+
+commit f2350b4f2bf4724e6dc578ece8a3d846102b3a7a
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Aug 16 14:49:59 2021 -0400
+
+    genmkfile debinstfile
+
+commit 51d75f497ac629d7d82f8c96623edd985b52bf85
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Aug 16 14:47:38 2021 -0400
+
+    rm_conffile /etc/apparmor.d/sbin.networking-aae
+
+commit c57bc3aa485f82dc755c80a4b57415e92cad5330
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Aug 16 14:45:59 2021 -0400
+
+    update path
+
+commit 895ddd1c06289dab673906cbdf19d61ea1bdf794
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Aug 16 14:45:17 2021 -0400
+
+    usrmerge - renamed:    etc/apparmor.d/sbin.networking-aae -> etc/apparmor.d/usr.sbin.networking-aae
+
+commit 2bc3770260e5f7a4902ddafaf18efa895f136186
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Aug 16 14:44:27 2021 -0400
+
+    update path
+
+commit 6d70eefe95d3399faed96352a339810393e4833a
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Aug 16 14:42:29 2021 -0400
+
+    usrmerge - renamed:    sbin/networking-aae -> usr/sbin/networking-aae
+
+commit e8c5225b81291458f2c28862033dcabd7ab53f8c
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Aug 5 16:32:53 2021 -0400
+
+    bumped changelog version
+
 commit 2107691e2593077f65fa475f9d50cb72e0bd4e0b
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Aug 4 15:25:06 2021 -0400
