@@ -22,7 +22,7 @@ for file_name in /boot/vmlinuz-* ; do
    ## vmlinuz-4.19.0-6-amd64
    search="vmlinuz-"
    replace=""
-   version="$(echo "$base_name" | str_replace "$search" "$replace")"
+   version="$(echo "$base_name" | LANG=C str_replace "$search" "$replace")"
    ## example version:
    ## 4.19.0-6-amd64"
    ## Stop after first file.
@@ -54,24 +54,24 @@ fi
 
 search=" GNU/Linux"
 replace=""
-str_replace "$search" "$replace" "$file_replace" &>/dev/null || echo "$0: failed"
+LANG=C str_replace "$search" "$replace" "$file_replace" &>/dev/null || echo "$0: failed"
 
 search=", with Linux $version"
 ## example search: ', with Linux 4.19.0-6-amd64'
 replace=""
-str_replace "$search" "$replace" "$file_replace" &>/dev/null || echo "$0: failed"
+LANG=C str_replace "$search" "$replace" "$file_replace" &>/dev/null || echo "$0: failed"
 
 search="menuentry '$GRUB_DISTRIBUTOR'"
 ## example search:
 replace="menuentry 'PERSISTENT mode USER (For daily activities.)'"
 
-str_replace "$search" "$replace" "$file_replace" &>/dev/null || echo "$0: failed"
+LANG=C str_replace "$search" "$replace" "$file_replace" &>/dev/null || echo "$0: failed"
 
 search="menuentry '$GRUB_DISTRIBUTOR (recovery mode)'"
 ## example search:
 replace="menuentry 'Recovery PERSISTENT mode SUPERADMIN (Be very cautious!)'"
 
-str_replace "$search" "$replace" "$file_replace" &>/dev/null || echo "$0: failed"
+LANG=C str_replace "$search" "$replace" "$file_replace" &>/dev/null || echo "$0: failed"
 
 if ! test -x /usr/bin/grub-script-check ; then
    echo "$0: ERROR: /usr/bin/grub-script-check not executable."
