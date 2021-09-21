@@ -1,3 +1,15 @@
+commit 3b2c68137002add0126462bc8bc03f1d26f8922a
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Sep 21 03:31:11 2021 -0400
+
+    sdwdate-aae.service: backport changes from sdwdate
+
+commit 02eed7ce0df059bf544703ef4988d283f8941452
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Sep 11 18:34:54 2021 -0400
+
+    bumped changelog version
+
 commit e0735afb2f477cb41eb0f79b2c1a733661fce0a2
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Sep 11 16:31:08 2021 -0400
