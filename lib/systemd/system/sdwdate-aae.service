@@ -30,6 +30,7 @@ Conflicts=systemd-timesyncd.service
 Type=notify
 User=sdwdate
 Group=sdwdate
+ExecStartPre=+/usr/libexec/sdwdate/sdwdate-pre
 ExecStart=/usr/bin/sdwdate
 SuccessExitStatus=143
 TimeoutSec=30
