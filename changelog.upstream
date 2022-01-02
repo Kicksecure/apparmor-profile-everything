@@ -1,3 +1,21 @@
+commit da5e8a834380e520877ec51f2bcfe78e3e688cf3
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sun Jan 2 08:18:06 2022 -0500
+
+    ConditionPathExists=!/run/qubes-service/no-sdwdate
+
+commit 41cc2ba3af6de89671179eb80a00978c80d53673
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Nov 9 14:32:28 2021 -0500
+
+    readme
+
+commit 9307325406ed346c560713fc59fdc3a2abd553cd
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Sep 21 04:07:45 2021 -0400
+
+    bumped changelog version
+
 commit 3b2c68137002add0126462bc8bc03f1d26f8922a
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Tue Sep 21 03:31:11 2021 -0400
