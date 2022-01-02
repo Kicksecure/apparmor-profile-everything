@@ -8,6 +8,7 @@
 Description=Secure Distributed Web Date
 Documentation=https://www.whonix.org/wiki/sdwdate
 ConditionPathExists=!/run/qubes/this-is-templatevm
+ConditionPathExists=!/run/qubes-service/no-sdwdate
 ConditionPathExists=/usr/bin/sdwdate
 
 ## systemd-nspawn does not allow clock to be changed inside the container.
