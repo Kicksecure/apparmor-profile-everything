@@ -13,7 +13,7 @@ ConditionPathExists=/usr/bin/sdwdate
 
 ## systemd-nspawn does not allow clock to be changed inside the container.
 ## Quote https://www.freedesktop.org/software/systemd/man/systemd-nspawn.html
-## The host’s network interfaces and the system clock may not be changed from within the container.
+## The host's network interfaces and the system clock may not be changed from within the container.
 ## https://forums.whonix.org/t/bootclockrandomization-always-moving-clock-plus-or-5-seconds/2200/10
 ConditionVirtualization=!systemd-nspawn
 
