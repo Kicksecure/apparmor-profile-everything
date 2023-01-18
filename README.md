@@ -41,7 +41,7 @@ The Tor Project.
 1\. Download the APT Signing Key.
 
 ```
-wget https://www.kicksecure.com/derivative.asc
+wget https://www.kicksecure.com/keys/derivative.asc
 ```
 
 Users can [check the Signing Key](https://www.kicksecure.com/wiki/Signing_Key) for better security.
