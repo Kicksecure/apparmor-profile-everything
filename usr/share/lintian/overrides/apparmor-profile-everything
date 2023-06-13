@@ -2,7 +2,7 @@
 ## See the file COPYING for copying conditions.
 
 ## Expected.
-apparmor-profile-everything: unusual-interpreter usr/bin/rapt #!-S
+apparmor-profile-everything: unusual-interpreter -S [usr/bin/rapt]
 
 ## Caused by config-package-dev hide. Creates an empty folder to move files to after installation.
-package-contains-empty-directory usr/share/apparmor-profile-everything/
+package-contains-empty-directory [usr/share/apparmor-profile-everything/]
