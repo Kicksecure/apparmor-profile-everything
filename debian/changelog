@@ -1,3 +1,9 @@
+apparmor-profile-everything (3:7.7-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@whonix.org>  Wed, 14 Jun 2023 09:55:20 +0000
+
 apparmor-profile-everything (3:7.6-1) unstable; urgency=medium
 
   * New upstream version (local package).
