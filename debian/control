@@ -1,12 +1,12 @@
-## Copyright (C) 2012 - 2023 ENCRYPTED SUPPORT LP <adrelanos@whonix.org>
+## Copyright (C) 2012 - 2023 ENCRYPTED SUPPORT LP <adrelanos@kicksecure.com>
 ## See the file COPYING for copying conditions.
 
 Source: apparmor-profile-everything
 Section: misc
 Priority: optional
-Maintainer: Patrick Schleizer <adrelanos@whonix.org>
+Maintainer: Patrick Schleizer <adrelanos@kicksecure.com>
 Build-Depends: debhelper (>= 13), debhelper-compat (= 13), dh-apparmor, config-package-dev
-Homepage: https://www.kicksecure.com/wiki/AppArmor
+Homepage: https://www.kicksecure.com/wiki/Apparmor-profile-everything
 Vcs-Browser: https://github.com/Kicksecure/apparmor-profile-everything
 Vcs-Git: https://github.com/Kicksecure/apparmor-profile-everything.git
 Standards-Version: 4.6.2
