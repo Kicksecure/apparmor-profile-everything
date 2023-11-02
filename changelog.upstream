@@ -1,3 +1,17 @@
+commit 75bbd1a5100c3a3d456257284d6b4e8307c2537e
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Thu Nov 2 11:59:00 2023 -0400
+
+    change license to `GPL-2.0-or-later`
+    
+    fixes https://github.com/Kicksecure/apparmor-profile-everything/issues/78
+
+commit 68453acc56d94f3a82f169c461ed0dcdb04b68c8
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Jul 17 11:31:34 2023 -0400
+
+    bumped changelog version
+
 commit c8d7e5924bc0e99ec37cc54d8c411cc1f667a8e8
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Mon Jul 17 11:16:36 2023 -0400
